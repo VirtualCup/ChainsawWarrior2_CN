@@ -1,0 +1,1373 @@
+<EnemyData Version="1.0" Title = "Chainsaw Warrior" Platform="steam">							
+							
+	<Enemy Name="Enemy_Zombie" Category="level_1" Image="Zombie" SubType="zombie" MonsterType="Zombie" Background="Card_Monster_Background_Orange" KillScore="50">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_Zombie</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="4" />				
+			<Deck Name="City" Weighting="3" />				
+			<Deck Name="Pyramid" Weighting="2" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="7" Max="8"/>				
+			<Stat Name="Reflex" Min="5" Max="7"/>				
+			<Stat Name="Armour" Min="0" Max="0"/>				
+		</Stats>					
+		<Types>					
+							
+		</Types>
+							
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>							
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect><Animation Name="FX_Screen_Venom"/></Effect>
+					<Effect><Sound Name="Venom" Loop="false" Volume="1"/></Effect>
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>
+					<Effect Target="Player" Field="venomDelta" Op="MINUS" Val="1"/>
+				</Effects>
+			</EventAction>				
+		</EventPlayerHit>
+												
+	</Enemy>						
+							
+	<Enemy Name="Enemy_IrradiatedZombie" Category="level_1" Image="Zombie"  SubType="rad" MonsterType="Zombie" Background="Card_Monster_Background_Poison" KillScore="50">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_IrradiatedZombie</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="1" />				
+			<Deck Name="City" Weighting="2" />				
+			<Deck Name="Pyramid" Weighting="2" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="7" Max="8"/>				
+			<Stat Name="Reflex" Min="5" Max="7"/>				
+			<Stat Name="Armour" Min="0" Max="0"/>				
+		</Stats>					
+		<Types>										
+		</Types>
+							
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>				
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect><Animation Name="FX_Screen_Venom"/></Effect>
+					<Effect><Sound Name="Venom" Loop="false" Volume="1"/></Effect>
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>
+					<Effect Target="Player" Field="venomDelta" Op="MINUS" Val="1"/>
+				</Effects>		
+			</EventAction>				
+		</EventPlayerHit>
+							
+		<EventFlip>
+			<EventAction>
+				<Effects>
+					<Effect Target="Player" Field="radiationDelta" Op="MINUS"><RandomVal Min="1" Max="3"/></Effect>
+					<Effect><Animation Name="FX_Screen_Radiation"/></Effect>
+					<Effect><Sound Name="Radiation" Loop="false" Volume="1"/></Effect>
+				</Effects>
+			</EventAction>
+		</EventFlip>
+											
+	</Enemy>						
+							
+	<Enemy Name="Enemy_SpittingZombie" Category="level_1" Image="Spitting_Zombie"  SubType="zombie" MonsterType="Zombie" Background="Card_Monster_Background_Venom" KillScore="50">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_SpittingZombie</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="2" />				
+			<Deck Name="City" Weighting="1" />				
+			<Deck Name="Pyramid" Weighting="2" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="9" Max="10"/>				
+			<Stat Name="Reflex" Min="6" Max="8"/>				
+			<Stat Name="Armour" Min="0" Max="0"/>				
+		</Stats>					
+		<Types>					
+			<Type Name="Ranged"/>				
+		</Types>					
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>
+					<Effect><Animation Name="FX_Screen_Venom"/></Effect>
+					<Effect><Sound Name="Venom" Loop="false" Volume="1"/></Effect>	
+					<Effect Target="Player" Field="venomDelta" Op="MINUS" Val="1"/>
+				</Effects>
+			</EventAction>				
+		</EventPlayerHit>									
+	</Enemy>						
+							
+	<Enemy Name="Enemy_Crawler" Category="level_1" Image="Zombie"  SubType="zombie" MonsterType="Zombie" Background="Card_Monster_Background_Crawler" KillScore="50">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_Crawler</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="3" />				
+			<Deck Name="City" Weighting="1" />				
+			<Deck Name="Pyramid" Weighting="0" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="6" Max="7"/>				
+			<Stat Name="Reflex" Min="5" Max="6"/>				
+			<Stat Name="Armour" Min="0" Max="0"/>				
+		</Stats>					
+		<Types>					
+			<Type Name="Ambush"/>				
+		</Types>					
+		
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>							
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect><Animation Name="FX_Screen_Venom"/></Effect>
+					<Effect><Sound Name="Venom" Loop="false" Volume="1"/></Effect>
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>
+					<Effect Target="Player" Field="venomDelta" Op="MINUS" Val="1"/>
+				</Effects>
+			</EventAction>				
+		</EventPlayerHit>										
+	</Enemy>						
+							
+	<Enemy Name="Enemy_VenomCloudZombie" Category="level_1" Image="Zombie"  SubType="zombie" MonsterType="Zombie" Background="Card_Monster_Background_Venom" KillScore="50">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_VenomCloudZombie</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="1" />				
+			<Deck Name="City" Weighting="2" />				
+			<Deck Name="Pyramid" Weighting="2" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="7" Max="8"/>				
+			<Stat Name="Reflex" Min="6" Max="7"/>				
+			<Stat Name="Armour" Min="0" Max="0"/>				
+		</Stats>					
+		<Types>					
+							
+		</Types>
+							
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>							
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect><Animation Name="FX_Screen_Venom"/></Effect>
+					<Effect><Sound Name="Venom" Loop="false" Volume="1"/></Effect>
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>
+					<Effect Target="Player" Field="venomDelta" Op="MINUS" Val="1"/>
+				</Effects>
+			</EventAction>				
+		</EventPlayerHit>
+							
+		<EventEnterMelee>
+			<EventAction>
+				<Effects>
+					<Effect><Animation Name="FX_Screen_Venom"/></Effect>
+					<Effect><Sound Name="Venom" Loop="false" Volume="1"/></Effect>
+					<Effect Target="Player" Field="venomDelta" Op="MINUS"><RandomVal Min="1" Max="3"/></Effect>
+				</Effects>
+			</EventAction>
+		</EventEnterMelee>
+											
+	</Enemy>						
+							
+	<Enemy Name="Enemy_Crocodile" Category="level_1" Image="Crocodile"  SubType="living" MonsterType="Crocodile" Background="Card_Monster_Background_Jungle" KillScore="50">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_Crocodile</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="2" />				
+			<Deck Name="City" Weighting="0" />				
+			<Deck Name="Pyramid" Weighting="0" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="8" Max="9"/>				
+			<Stat Name="Reflex" Min="6" Max="7"/>				
+			<Stat Name="Armour" Min="1" Max="1"/>				
+		</Stats>					
+		<Types>					
+			<Type Name="Ambush"/><Type Name="Animal"/>				
+		</Types>
+							
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect><Sound Name="Wounds" Loop="false" Volume="1"/></Effect>				
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>			
+				</Effects>
+			</EventAction>				
+		</EventPlayerHit>					
+					
+	</Enemy>						
+							
+	<Enemy Name="Enemy_Jaguar" Category="level_1" Image="Jaguar"  SubType="living" MonsterType="Jaguar" Background="Card_Monster_Background_Jungle" KillScore="50">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_Jaguar</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="2" />				
+			<Deck Name="City" Weighting="0" />				
+			<Deck Name="Pyramid" Weighting="0" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="7" Max="8"/>				
+			<Stat Name="Reflex" Min="8" Max="9"/>				
+			<Stat Name="Armour" Min="0" Max="0"/>				
+		</Stats>					
+		<Types>					
+			<Type Name="Ambush"/><Type Name="Animal"/>				
+		</Types>					
+		
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect><Sound Name="Wounds" Loop="false" Volume="1"/></Effect>				
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>
+				</Effects>
+			</EventAction>				
+		</EventPlayerHit>				
+		
+		<EventFlip>
+			<EventAction>
+				<Effects>
+					<Effect><Sound Name="Growl" Loop="false" Volume="1"/></Effect>
+				</Effects>
+			</EventAction>
+		</EventFlip>
+							
+	</Enemy>						
+							
+	<Enemy Name="Enemy_MoonCultGuard" Category="level_1" Image="Moon_Cult_Guard"  SubType="living" MonsterType="Cultist" Background="Card_Monster_Background_Moon" KillScore="50">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_MoonCultGuard</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="1" />				
+			<Deck Name="City" Weighting="3" />				
+			<Deck Name="Pyramid" Weighting="1" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="8" Max="9"/>				
+			<Stat Name="Reflex" Min="7" Max="9"/>				
+			<Stat Name="Armour" Min="0" Max="1"/>				
+		</Stats>					
+		<Types>					
+			<Type Name="Ranged"/><Type Name="MoonCultist"/>				
+		</Types>
+							
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect><Sound Name="Wounds" Loop="false" Volume="1"/></Effect>				
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>			
+				</Effects>
+			</EventAction>				
+		</EventPlayerHit>					
+												
+	</Enemy>						
+							
+	<Enemy Name="Enemy_MoonCultFanatic" Category="level_1" Image="Moon_Cult_Fanatic"  SubType="living" MonsterType="Cultist" Background="Card_Monster_Background_Moon" KillScore="50">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_MoonCultFanatic</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="1" />				
+			<Deck Name="City" Weighting="1" />				
+			<Deck Name="Pyramid" Weighting="1" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="7" Max="10"/>				
+			<Stat Name="Reflex" Min="7" Max="9"/>				
+			<Stat Name="Armour" Min="0" Max="0"/>				
+		</Stats>					
+		<Types>					
+			<Type Name="MoonCultist"/>				
+		</Types>					
+		
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>				
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect><Animation Name="FX_Screen_Venom"/></Effect>
+					<Effect><Sound Name="Venom" Loop="false" Volume="1"/></Effect>
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>
+					<Effect Target="Player" Field="venomDelta" Op="MINUS" Val="1"/>
+				</Effects>		
+			</EventAction>				
+		</EventPlayerHit>					
+						
+	</Enemy>						
+							
+	<Enemy Name="Enemy_MoonCultPoisoner" Category="level_1" Image="Moon_Cult_Poisoner"  SubType="living" MonsterType="Cultist" Background="Card_Monster_Background_Poison" GlobalUses="2" KillScore="50">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_MoonCultPoisoner</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="1" />				
+			<Deck Name="City" Weighting="2" />				
+			<Deck Name="Pyramid" Weighting="3" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="7" Max="10"/>				
+			<Stat Name="Reflex" Min="7" Max="9"/>				
+			<Stat Name="Armour" Min="0" Max="0"/>				
+		</Stats>					
+		<Types>					
+			<Type Name="MoonCultist"/>				
+		</Types>					
+		
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>				
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect><Animation Name="FX_Screen_Venom"/></Effect>
+					<Effect><Sound Name="Venom" Loop="false" Volume="1"/></Effect>
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>
+					<Effect Target="Player" Field="venomDelta" Op="MINUS" Val="1"/>
+					<Effect><CachedVal Field="PoisonRoll" Op="SET" ><DiceVal Roll="2d6" Type="enemy" Show="true"/></CachedVal></Effect>
+					<Effect><Buff>Poison</Buff></Effect>
+				</Effects>		
+			</EventAction>				
+		</EventPlayerHit>
+					
+	</Enemy>						
+							
+	<Enemy Name="Enemy_MoonCultThief" Category="level_1" Image="Moon_Cult_Poisoner"  SubType="living" MonsterType="Cultist" Background="Card_Monster_Background_Crawler" GlobalUses="1" KillScore="50">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_MoonCultThief</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="0" />				
+			<Deck Name="City" Weighting="1" />				
+			<Deck Name="Pyramid" Weighting="1" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="7" Max="10"/>				
+			<Stat Name="Reflex" Min="7" Max="9"/>				
+			<Stat Name="Armour" Min="0" Max="0"/>				
+		</Stats>					
+		<Types>					
+			<Type Name="Ambush"/><Type Name="MoonCultist"/>				
+		</Types>
+							
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>				
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>		
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect Target="Game" Field="DestroyEquipment[Random]" Op="FUNCTION"/>
+					<!--<Effect><Message><Text Lang="en">[Equipment] was stolen!</Text></Message></Effect>-->
+					<Effect><Animation Name="FX_Screen_Broken"/></Effect>
+				</Effects>
+			</EventAction>				
+		</EventPlayerHit>					
+					
+	</Enemy>						
+							
+	<Enemy Name="Enemy_ArmourZombie" Category="level_2" Image="Armored_Zombie"  SubType="zombie" MonsterType="Zombie" Background="Card_Monster_Background_Orange" KillScore="100">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_ArmourZombie</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="1" />				
+			<Deck Name="City" Weighting="3" />				
+			<Deck Name="Pyramid" Weighting="2" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="8" Max="10"/>				
+			<Stat Name="Reflex" Min="5" Max="7"/>				
+			<Stat Name="Armour" Min="2" Max="3"/>				
+		</Stats>					
+		<Types>					
+							
+		</Types>					
+		
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>				
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect><Animation Name="FX_Screen_Venom"/></Effect>
+					<Effect><Sound Name="Venom" Loop="false" Volume="1"/></Effect>
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>
+					<Effect Target="Player" Field="venomDelta" Op="MINUS" Val="1"/>
+				</Effects>		
+			</EventAction>				
+		</EventPlayerHit>					
+						
+	</Enemy>						
+							
+	<Enemy Name="Enemy_SprintingZombie" Category="level_2" Image="Zombie"  SubType="zombie" MonsterType="Zombie" Background="Card_Monster_Background_Orange" KillScore="100">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_SprintingZombie</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="3" />				
+			<Deck Name="City" Weighting="2" />				
+			<Deck Name="Pyramid" Weighting="2" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="8" Max="10"/>				
+			<Stat Name="Reflex" Min="8" Max="10"/>				
+			<Stat Name="Armour" Min="0" Max="0"/>				
+		</Stats>					
+		<Types>					
+			<Type Name="Ambush"/>				
+		</Types>					
+		
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>				
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect><Animation Name="FX_Screen_Venom"/></Effect>
+					<Effect><Sound Name="Venom" Loop="false" Volume="1"/></Effect>
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>
+					<Effect Target="Player" Field="venomDelta" Op="MINUS" Val="1"/>
+				</Effects>		
+			</EventAction>				
+		</EventPlayerHit>					
+					
+	</Enemy>						
+							
+	<Enemy Name="Enemy_BloatedZombie" Category="level_2" Image="Zombie"  SubType="zombie" MonsterType="Zombie" Background="Card_Monster_Background_Venom" KillScore="100">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_BloatedZombie</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="2" />				
+			<Deck Name="City" Weighting="1" />				
+			<Deck Name="Pyramid" Weighting="2" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="7" Max="8"/>				
+			<Stat Name="Reflex" Min="6" Max="7"/>				
+			<Stat Name="Armour" Min="0" Max="0"/>				
+		</Stats>					
+		<Types>					
+							
+		</Types>					
+		
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>				
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect><Animation Name="FX_Screen_Venom"/></Effect>
+					<Effect><Sound Name="Venom" Loop="false" Volume="1"/></Effect>
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>
+					<Effect Target="Player" Field="venomDelta" Op="MINUS" Val="1"/>
+				</Effects>		
+			</EventAction>				
+		</EventPlayerHit>
+						
+		<EventEnemyHit>
+			<EventAction>
+				<Effects>
+					<Effect Position="Melee" Target="Player" Field="venomDelta" Op="MINUS"><RandomVal Min="3" Max="5"/></Effect>
+					<Effect Position="Melee"><Message><Text Lang="en">咔，扑哧！丧尸爆炸了，你被感染的肉块以及碎骨淋了一身！</Text></Message></Effect>
+					<Effect Position="Melee"><Animation Name="FX_Explosion"/></Effect>
+					<Effect Position="Melee"><Animation Name="FX_Screen_Venom"/></Effect>
+				</Effects>
+			</EventAction>
+		</EventEnemyHit>					
+				
+	</Enemy>											
+							
+	<Enemy Name="Enemy_ZombieMonkey" Category="level_1" Image="Zombie_Monkey"  SubType="zombie" MonsterType="Monkey" Background="Card_Monster_Background_Jungle" KillScore="20">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_ZombieMonkey</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="1" />				
+			<Deck Name="City" Weighting="0" />				
+			<Deck Name="Pyramid" Weighting="0" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="6" Max="7"/>				
+			<Stat Name="Reflex" Min="8" Max="9"/>				
+			<Stat Name="Armour" Min="0" Max="0"/>				
+		</Stats>					
+		<Types>					
+			<Type Name="Animal"/>				
+		</Types>					
+		
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>				
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect><Animation Name="FX_Screen_Venom"/></Effect>
+					<Effect><Sound Name="Venom" Loop="false" Volume="1"/></Effect>
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>
+					<Effect Target="Player" Field="venomDelta" Op="MINUS" Val="1"/>
+				</Effects>		
+			</EventAction>				
+		</EventPlayerHit>					
+				
+	</Enemy>						
+							
+	<Enemy Name="Enemy_MoonCultLookout" Category="level_2" Image="Moon_Cult_Guard"  SubType="living" MonsterType="Cultist" Background="Card_Monster_Background_Moon" KillScore="100">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_MoonCultLookout</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="1" />				
+			<Deck Name="City" Weighting="2" />				
+			<Deck Name="Pyramid" Weighting="1" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="8" Max="9"/>				
+			<Stat Name="Reflex" Min="7" Max="9"/>				
+			<Stat Name="Armour" Min="0" Max="0"/>				
+		</Stats>					
+		<Types>					
+			<Type Name="Ranged"/><Type Name="MoonCultist"/>				
+		</Types>
+							
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect><Sound Name="Wounds" Loop="false" Volume="1"/></Effect>				
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>			
+				</Effects>
+			</EventAction>				
+		</EventPlayerHit>					
+		
+		<EventEnterCombat>
+			<EventAction>
+				<Effects>
+					<Effect><CachedVal Field="lookout" Op="SET" Val="0"/></Effect>
+				</Effects>
+			</EventAction>
+		</EventEnterCombat>
+		
+		<EventEnemyHit>
+			<EventAction>
+				<Effects>
+					<Effect><CachedVal Field="lookout" Op="SET" Val="0"/></Effect>
+				</Effects>
+			</EventAction>
+		</EventEnemyHit>
+		
+		<EventRoundBegin>
+			<EventAction LogicalOp="IF">
+				<Conditions>
+					<Cond CombineOp="EQUALS">
+						<Cond><CachedVal Field="lookout" Op="GET" /></Cond>
+						<Cond><LiteralVal Val="0"/></Cond></Cond>
+				</Conditions>
+				<Effects>
+					<Effect><CachedVal Field="lookout" Op="SET" Val="1" /></Effect>
+					<Effect Target="Game" Field="AddEnemiesToCombat[level_1,living,Enemy_MoonCultGuard]" Op="FUNCTION" Val="2"/>
+					<Effect><Message><Text Lang="en">瞭望员在呼叫增援！</Text></Message></Effect>
+				</Effects>
+			</EventAction>
+		</EventRoundBegin>
+				
+	</Enemy>						
+							
+	<Enemy Name="Enemy_MoonCultNecromancer" Category="level_2" Image="Moon_Cultist_Necromancer"  SubType="living" MonsterType="Cultist" Background="Card_Monster_Background_Moon" GlobalUses="1" KillScore="100">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_MoonCultNecromancer</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="1" />				
+			<Deck Name="City" Weighting="0" />				
+			<Deck Name="Pyramid" Weighting="1" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="8" Max="9"/>				
+			<Stat Name="Reflex" Min="7" Max="9"/>				
+			<Stat Name="Armour" Min="0" Max="0"/>				
+		</Stats>					
+		<Types>					
+			<Type Name="MoonCultist"/>				
+		</Types>
+							
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect><Sound Name="Wounds" Loop="false" Volume="1"/></Effect>				
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>			
+				</Effects>
+			</EventAction>				
+		</EventPlayerHit>	
+						
+		<EventEnterCombat>
+			<EventAction >
+				<Effects>
+					<Effect Target="Game" Field="AddEnemiesToCombat[level_1,zombie,Enemy_Zombie]" Op="FUNCTION">
+						<RandomVal Min="2" Max="3"/>
+					</Effect>
+					<Effect>
+						<Message><Text Lang="en">增加2到3只丧尸</Text></Message>
+					</Effect>
+				</Effects>
+			</EventAction>
+		</EventEnterCombat>										
+	</Enemy>						
+							
+	<Enemy Name="Enemy_MutantThing" Category="level_2" Image="Mutant"  SubType="rad" MonsterType="Mutant" Background="Card_Monster_Background_Poison" KillScore="150">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_MutantThing</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="1" />				
+			<Deck Name="City" Weighting="2" />				
+			<Deck Name="Pyramid" Weighting="2" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="10" Max="11"/>				
+			<Stat Name="Reflex" Min="8" Max="9"/>				
+			<Stat Name="Armour" Min="1" Max="2"/>				
+		</Stats>					
+		<Types>					
+							
+		</Types>					
+		
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect><Sound Name="Wounds" Loop="false" Volume="1"/></Effect>				
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>			
+				</Effects>
+			</EventAction>				
+		</EventPlayerHit>
+							
+		<EventFlip>
+			<EventAction>
+				<Effects>
+					<Effect Target="Player" Field="radiationDelta" Op="MINUS"><RandomVal Min="3" Max="5"/></Effect>
+					<Effect><Animation Name="FX_Screen_Radiation"/></Effect>
+					<Effect><Sound Name="Radiation" Loop="false" Volume="1"/></Effect>
+					<Effect><Sound Name="Mutant" Loop="false" Volume="1"/></Effect>
+				</Effects>
+			</EventAction>
+		</EventFlip>
+							
+	</Enemy>										
+							
+	<Enemy Name="Enemy_Statue" Category="guardian" Image="Giant_Statue"  SubType="" MonsterType="Aberration" Background="Card_Monster_Background_Guardian" GlobalUses="1" KillScore="400">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_Statue</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="0" />				
+			<Deck Name="City" Weighting="1" />				
+			<Deck Name="Pyramid" Weighting="1" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="14" Max="14"/>				
+			<Stat Name="Reflex" Min="8" Max="8"/>				
+			<Stat Name="Armour" Min="6" Max="6"/>				
+		</Stats>					
+		<Types>					
+							
+		</Types>
+		<InvalidEquipment><Equipment Name="Equipment_FlashBomb"/><Equipment Name="Equipment_WarpGrenade"/><Equipment Name="Equipment_ThrowingNet"/></InvalidEquipment> 					
+
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect><Sound Name="Wounds" Loop="false" Volume="1"/></Effect>				
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>			
+				</Effects>
+			</EventAction>				
+		</EventPlayerHit>
+							
+		<EventEnterCombat>
+			<EventAction>
+				<Effects>
+					<Effect Target="Game" Field="AddEnemiesToCombat[level_1,null,Enemy_StatueHand]" Op="FUNCTION" Val="2"/>
+				</Effects>
+			</EventAction>
+		</EventEnterCombat>
+		
+		<EventFlip>
+			<EventAction>
+				<Effects>
+					<Effect><Sound Name="Boulder_Trap" Loop="false" Volume="1"/></Effect>
+				</Effects>
+			</EventAction>
+		</EventFlip>
+		
+		<EventEnemyHit>
+			<EventAction>
+				<Effects>
+					<Effect Target="Game" Field="DestroyEnemiesByName[Enemy_StatueHand]" Op="FUNCTION"/>
+				</Effects>
+			</EventAction>
+		</EventEnemyHit>
+							
+	</Enemy>						
+							
+	<Enemy Name="Enemy_StatueHand" Category="level_2" Image="Statue_Hand"  SubType="" MonsterType="Aberration" Background="Card_Monster_Background_Guardian" KillScore="50">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_StatueHand</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="0" />				
+			<Deck Name="City" Weighting="0" />				
+			<Deck Name="Pyramid" Weighting="0" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="12" Max="12"/>				
+			<Stat Name="Reflex" Min="9" Max="9"/>				
+			<Stat Name="Armour" Min="1" Max="1"/>				
+		</Stats>					
+		<Types>					
+							
+		</Types>
+		<InvalidEquipment><Equipment Name="Equipment_FlashBomb"/><Equipment Name="Equipment_WarpGrenade"/><Equipment Name="Equipment_ThrowingNet"/></InvalidEquipment> 					
+								
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect><Sound Name="Wounds" Loop="false" Volume="1"/></Effect>				
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>			
+				</Effects>
+			</EventAction>				
+		</EventPlayerHit>
+							
+		<EventEnemyHit>
+			<EventAction>
+				<Effects>
+					<Effect Target="Enemy[Enemy_Statue]" Field="Armour" Op="MINUS" Val="2"/>
+				</Effects>
+			</EventAction>
+		</EventEnemyHit> 					
+							
+	</Enemy>						
+							
+	<Enemy Name="Enemy_MeatMachine" Category="guardian" Image="Meat_Machine"  SubType="" MonsterType="Aberration" Background="Card_Monster_Background_Guardian" GlobalUses="1" KillScore="500">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_MeatMachine</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="0" />				
+			<Deck Name="City" Weighting="1" />				
+			<Deck Name="Pyramid" Weighting="1" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="14" Max="14"/>				
+			<Stat Name="Reflex" Min="10" Max="10"/>				
+			<Stat Name="Armour" Min="1" Max="1"/>				
+		</Stats>					
+		<Types>					
+							
+		</Types>	
+			
+		<EventPlayerHit>					
+			<EventAction><Effects>				
+				<Effect Target="Player" Field="woundsDelta" Op="MINUS"><RandomVal Min="1" Max="3"/></Effect>			
+				<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+			</Effects></EventAction>	
+					
+			<EventAction LogicalOp="ALWAYS">
+				<Effects>
+					
+					<Effect>
+						<CachedVal Field="DebuffRoll" Op="SET"><RandomVal Min="1" Max="6" /></CachedVal>
+					</Effect>
+					
+					<Effect><Message><Text Lang="en">减损效果点数=[DebuffRoll]</Text></Message></Effect>
+					
+				</Effects>
+			</EventAction>
+
+			<!-- 000 KILL -->
+			<EventAction LogicalOp="IF">
+				<Conditions>
+					<Cond Target="Player" Field="hthValue" Comp="LESS_THAN_OR_EQUAL" Val="5"/>
+					<Cond Target="Player" Field="marksmanshipValue" Comp="LESS_THAN_OR_EQUAL" Val="5"/>
+					<Cond Target="Player" Field="reflexValue" Comp="LESS_THAN_OR_EQUAL" Val="5"/>
+				</Conditions>
+
+				<Effects>
+					<Effect Target="Game" Field="GameOver[Wounds]" Op="FUNCTION"/>
+				</Effects>
+			</EventAction>
+
+			<!-- 111 1/3 -->
+			<EventAction LogicalOp="ELSEIF">
+				<Conditions>
+					<Cond Target="Player" Field="hthValue" Comp="GREATER_THAN" Val="5"/>
+					<Cond Target="Player" Field="marksmanshipValue" Comp="GREATER_THAN" Val="5"/>
+					<Cond Target="Player" Field="reflexValue" Comp="GREATER_THAN" Val="5"/>
+					
+					<Cond CombineOp="GREATER_THAN_OR_EQUAL">
+						<Cond><CachedVal Field="DebuffRoll" Op="GET"/></Cond>
+						<Cond><LiteralVal Val="5"/></Cond>
+					</Cond>
+				</Conditions>
+
+				<Effects>
+					<Effect Target="Player" Field="hthValue" Op="MINUS" Val="1"/>
+					<Effect><Message><Text Lang="en">-1搏斗</Text></Message></Effect>
+				</Effects>
+			</EventAction>
+
+			<EventAction LogicalOp="ELSEIF">
+				<Conditions>
+					<Cond Target="Player" Field="hthValue" Comp="GREATER_THAN" Val="5"/>
+					<Cond Target="Player" Field="marksmanshipValue" Comp="GREATER_THAN" Val="5"/>
+					<Cond Target="Player" Field="reflexValue" Comp="GREATER_THAN" Val="5"/>
+					
+					<Cond CombineOp="GREATER_THAN_OR_EQUAL">
+						<Cond><CachedVal Field="DebuffRoll" Op="GET"/></Cond>
+						<Cond><LiteralVal Val="3"/></Cond>
+					</Cond>
+				</Conditions>
+
+				<Effects>
+					<Effect Target="Player" Field="marksmanshipValue" Op="MINUS" Val="1"/>
+					<Effect><Message><Text Lang="en">-1射术</Text></Message></Effect>
+				</Effects>
+			</EventAction>
+
+			<EventAction LogicalOp="ELSEIF">
+				<Conditions>
+					<Cond Target="Player" Field="hthValue" Comp="GREATER_THAN" Val="5"/>
+					<Cond Target="Player" Field="marksmanshipValue" Comp="GREATER_THAN" Val="5"/>
+					<Cond Target="Player" Field="reflexValue" Comp="GREATER_THAN" Val="5"/>
+				</Conditions>
+
+				<Effects>
+					<Effect Target="Player" Field="reflexValue" Op="MINUS" Val="1"/>
+					<Effect><Message><Text Lang="en">-1反应</Text></Message></Effect>
+				</Effects>
+			</EventAction>
+
+			<!-- 110 1/2 -->
+			<EventAction LogicalOp="ELSEIF">
+				<Conditions>
+					<Cond Target="Player" Field="hthValue" Comp="GREATER_THAN" Val="5"/>
+					<Cond Target="Player" Field="marksmanshipValue" Comp="GREATER_THAN" Val="5"/>
+					<Cond CombineOp="GREATER_THAN_OR_EQUAL">
+						<Cond><CachedVal Field="DebuffRoll" Op="GET"/></Cond>
+						<Cond><LiteralVal Val="4"/></Cond>
+					</Cond>
+				</Conditions>
+
+				<Effects>
+					<Effect Target="Player" Field="hthValue" Op="MINUS" Val="1"/>
+					<Effect><Message><Text Lang="en">-1搏斗</Text></Message></Effect>
+				</Effects>
+			</EventAction>
+
+			<EventAction LogicalOp="ELSEIF">
+				<Conditions>
+					<Cond Target="Player" Field="hthValue" Comp="GREATER_THAN" Val="5"/>
+					<Cond Target="Player" Field="marksmanshipValue" Comp="GREATER_THAN" Val="5"/>
+				</Conditions>
+
+				<Effects>
+					<Effect Target="Player" Field="marksmanshipValue" Op="MINUS" Val="1"/>
+					<Effect><Message><Text Lang="en">-1射术</Text></Message></Effect>
+				</Effects>
+			</EventAction>
+
+			<!-- 101 1/2 -->
+			<EventAction LogicalOp="ELSEIF">
+				<Conditions>
+					<Cond Target="Player" Field="hthValue" Comp="GREATER_THAN" Val="5"/>
+					<Cond Target="Player" Field="reflexValue" Comp="GREATER_THAN" Val="5"/>
+					<Cond CombineOp="GREATER_THAN_OR_EQUAL">
+						<Cond><CachedVal Field="DebuffRoll" Op="GET"/></Cond>
+						<Cond><LiteralVal Val="4"/></Cond>
+					</Cond>
+				</Conditions>
+
+				<Effects>
+					<Effect Target="Player" Field="hthValue" Op="MINUS" Val="1"/>
+					<Effect><Message><Text Lang="en">-1搏斗</Text></Message></Effect>
+				</Effects>
+			</EventAction>
+
+			<EventAction LogicalOp="ELSEIF">
+				<Conditions>
+					<Cond Target="Player" Field="hthValue" Comp="GREATER_THAN" Val="5"/>
+					<Cond Target="Player" Field="reflexValue" Comp="GREATER_THAN" Val="5"/>
+				</Conditions>
+
+				<Effects>
+					<Effect Target="Player" Field="reflexValue" Op="MINUS" Val="1"/>
+					<Effect><Message><Text Lang="en">-1反应</Text></Message></Effect>
+				</Effects>
+			</EventAction>
+
+			<!-- 100 -->
+			<EventAction LogicalOp="ELSEIF">
+				<Conditions>
+					<Cond Target="Player" Field="hthValue" Comp="GREATER_THAN" Val="5"/>
+				</Conditions>
+
+				<Effects>
+					<Effect Target="Player" Field="hthValue" Op="MINUS" Val="1"/>
+					<Effect><Message><Text Lang="en">-1搏斗</Text></Message></Effect>
+				</Effects>
+			</EventAction>
+
+
+			<!-- 011  1/2 -->
+			<EventAction LogicalOp="ELSEIF">
+				<Conditions>
+					<Cond Target="Player" Field="marksmanshipValue" Comp="GREATER_THAN" Val="5"/>
+					<Cond Target="Player" Field="reflexValue" Comp="GREATER_THAN" Val="5"/>
+					<Cond CombineOp="GREATER_THAN_OR_EQUAL">
+						<Cond><CachedVal Field="DebuffRoll" Op="GET"/></Cond>
+						<Cond><LiteralVal Val="4"/></Cond>
+					</Cond>
+				</Conditions>
+
+				<Effects>
+					<Effect Target="Player" Field="marksmanshipValue" Op="MINUS" Val="1"/>
+					<Effect><Message><Text Lang="en">-1射术</Text></Message></Effect>
+				</Effects>
+			</EventAction>
+
+			<EventAction LogicalOp="ELSEIF">
+				<Conditions>
+					<Cond Target="Player" Field="marksmanshipValue" Comp="GREATER_THAN" Val="5"/>
+					<Cond Target="Player" Field="reflexValue" Comp="GREATER_THAN" Val="5"/>
+				</Conditions>
+
+				<Effects>
+					<Effect Target="Player" Field="reflexValue" Op="MINUS" Val="1"/>
+					<Effect><Message><Text Lang="en">-1反应</Text></Message></Effect>
+				</Effects>
+			</EventAction>
+
+			<!-- 010 -->
+			<EventAction LogicalOp="ELSEIF">
+				<Conditions>
+					<Cond Target="Player" Field="marksmanshipValue" Comp="GREATER_THAN" Val="5"/>
+				</Conditions>
+
+				<Effects>
+					<Effect Target="Player" Field="marksmanshipValue" Op="MINUS" Val="1"/>
+					<Effect><Message><Text Lang="en">-1射术</Text></Message></Effect>
+				</Effects>
+			</EventAction>
+
+			<!-- 001 -->
+			<EventAction LogicalOp="ELSEIF">
+				<Conditions>
+					<Cond Target="Player" Field="reflexValue" Comp="GREATER_THAN" Val="5"/>
+				</Conditions>
+
+				<Effects>
+					<Effect Target="Player" Field="reflexValue" Op="MINUS" Val="1"/>
+					<Effect><Message><Text Lang="en">-1反应</Text></Message></Effect>
+				</Effects>
+			</EventAction>
+			
+			<!-- No conditions met: This shouldn't ever happen -->
+			<EventAction LogicalOp="ELSE">
+				<Effects>
+					
+				</Effects>
+			</EventAction>
+	
+		</EventPlayerHit>	
+		
+								
+		<InvalidEquipment><Equipment Name="Equipment_FlashBomb"/><Equipment Name="Equipment_WarpGrenade"/><Equipment Name="Equipment_ThrowingNet"/></InvalidEquipment> 					
+		<EventFlip><EventAction><Effects><Effect><Sound Name="Comic_01_Door" Loop="false" Volume="1"/></Effect></Effects></EventAction></EventFlip>					
+	</Enemy>						
+																																																																																					
+	<Enemy Name="Enemy_Slime" Category="guardian" Image="Slime"  SubType="" MonsterType="Aberration" Background="Card_Monster_Background_Guardian" GlobalUses="1" KillScore="500">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_Slime</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="1" />				
+			<Deck Name="City" Weighting="1" />				
+			<Deck Name="Pyramid" Weighting="0" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="14" Max="14"/>				
+			<Stat Name="Reflex" Min="9" Max="9"/>				
+			<Stat Name="Armour" Min="0" Max="0"/>				
+		</Stats>					
+		<Types>					
+							
+		</Types>
+		<ValidEquipment><Equipment Name="Equipment_LaserLance"/><Equipment Name="Equipment_Flamethrower"/><Equipment Name="Equipment_Dynamite"/><Equipment Name="Equipment_CyberNeuralElectronScrambler"/></ValidEquipment>					
+								
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>				
+					<Effect><Animation Name="FX_Screen_Venom"/></Effect>					
+					<Effect Target="Game" Field="GameOver[Slime]" Op="FUNCTION"/>
+				</Effects>
+			</EventAction>				
+		</EventPlayerHit>					
+						
+		<EventFlip>
+			<EventAction>
+				<Effects>
+					<Effect><Sound Name="Slime" Loop="false" Volume="1"/></Effect>
+				</Effects>
+			</EventAction>
+		</EventFlip>
+							
+	</Enemy>						
+							
+	<Enemy Name="Enemy_FlamethrowerCultist" Category="guardian" Image="Flamethrower_Cultist"  MonsterType="Cultist" SubType="living" Background="Card_Monster_Background_Guardian" GlobalUses="1" KillScore="500">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_FlamethrowerCultist</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="0" />				
+			<Deck Name="City" Weighting="1" />				
+			<Deck Name="Pyramid" Weighting="1" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="13" Max="13"/>				
+			<Stat Name="Reflex" Min="9" Max="9"/>				
+			<Stat Name="Armour" Min="1" Max="1"/>				
+		</Stats>					
+		<Types>					
+			<Type Name="Ranged"/><Type Name="MoonCultist"/>				
+		</Types>
+		<InvalidEquipment><Equipment Name="Equipment_FlashBomb"/><Equipment Name="Equipment_WarpGrenade"/><Equipment Name="Equipment_ThrowingNet"/></InvalidEquipment> 					
+							
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>				
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>			
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect><CachedVal Field="FireRoll" Op="SET"><RandomVal Min="3" Max="5" /></CachedVal></Effect>
+					<Effect><Buff>Fire</Buff></Effect>
+				</Effects>
+			</EventAction>				
+		</EventPlayerHit>
+							
+		<DamageTypes> <DamageType Name="Fire"/> </DamageTypes>					
+							
+	</Enemy>						
+							
+	<Enemy Name="Enemy_ZombieCrocodile" Category="guardian" Image="Zombie_Crocodile"  SubType="zombie" MonsterType="Crocodile" Background="Card_Monster_Background_Guardian" GlobalUses="1" KillScore="500">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_ZombieCrocodile</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="1" />				
+			<Deck Name="City" Weighting="0" />				
+			<Deck Name="Pyramid" Weighting="0" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="13" Max="13"/>				
+			<Stat Name="Reflex" Min="8" Max="8"/>				
+			<Stat Name="Armour" Min="3" Max="3"/>				
+		</Stats>					
+		<Types>					
+			<Type Name="Animal"/>				
+		</Types>
+		<InvalidEquipment><Equipment Name="Equipment_FlashBomb"/><Equipment Name="Equipment_WarpGrenade"/><Equipment Name="Equipment_ThrowingNet"/></InvalidEquipment> 					
+							
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>				
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="2"/>			
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect Target="Player" Field="venomDelta" Op="MINUS" Val="1"/>
+					<Effect><Animation Name="FX_Screen_Venom"/></Effect>
+					<Effect><Sound Name="Venom" Loop="false" Volume="1"/></Effect>
+				</Effects>
+			</EventAction>				
+		</EventPlayerHit>
+							
+		<EventEnterMelee>
+			<EventAction>
+				<Effects>
+					<Effect Target="Player" Field="venomDelta" Op="MINUS"><RandomVal Min="1" Max="3"/></Effect>
+					<Effect><Animation Name="FX_Screen_Venom"/></Effect>
+					<Effect><Sound Name="Venom" Loop="false" Volume="1"/></Effect>
+				</Effects>
+			</EventAction>
+		</EventEnterMelee>					
+							
+	</Enemy>						
+							
+	<Enemy Name="Enemy_JaguarMatriarch" Category="guardian" Image="Jaguar_Matriarch"  SubType="living" MonsterType="Jaguar" Background="Card_Monster_Background_Guardian" GlobalUses="1" KillScore="400">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_JaguarMatriarch</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="1" />				
+			<Deck Name="City" Weighting="0" />				
+			<Deck Name="Pyramid" Weighting="0" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="13" Max="13"/>				
+			<Stat Name="Reflex" Min="12" Max="12"/>				
+			<Stat Name="Armour" Min="0" Max="0"/>				
+		</Stats>					
+		<Types>					
+			<Type Name="Ambush"/><Type Name="Animal"/>				
+		</Types>
+		<InvalidEquipment><Equipment Name="Equipment_FlashBomb"/><Equipment Name="Equipment_WarpGrenade"/><Equipment Name="Equipment_ThrowingNet"/></InvalidEquipment> 
+							
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>				
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>			
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect><Sound Name="Wounds" Loop="false" Volume="1"/></Effect>
+				</Effects>
+			</EventAction>				
+		</EventPlayerHit>
+							
+		<EventEnterCombat>
+			<EventAction LogicalOp="ALWAYS">
+				<Effects>
+					<Effect Target="Game" Field="AddEnemiesToCombat[level_1,living,Enemy_Jaguar]" Op="FUNCTION">
+						<RandomVal Min="2" Max="3"/>
+					</Effect>
+					<Effect><Message><Text Lang="en">出现了[Value]只美洲虎！</Text></Message></Effect>
+				</Effects>
+			</EventAction>
+		</EventEnterCombat>					
+							
+		<EventFlip>
+			<EventAction>
+				<Effects>
+					<Effect><Sound Name="Growl" Loop="false" Volume="1"/></Effect>
+				</Effects>
+			</EventAction>
+		</EventFlip>
+							
+	</Enemy>						
+							
+	<Enemy Name="Enemy_SuicideCultist" Category="guardian" Image="Moon_Cult_Suicide"  SubType="living" MonsterType="Cultist" Background="Card_Monster_Background_Guardian" GlobalUses="1" KillScore="100">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_SuicideCultist</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="0" />				
+			<Deck Name="City" Weighting="1" />				
+			<Deck Name="Pyramid" Weighting="1" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="10" Max="10"/>				
+			<Stat Name="Reflex" Min="10" Max="10"/>				
+			<Stat Name="Armour" Min="0" Max="0"/>				
+		</Stats>					
+		<Types>					
+			<Type Name="MoonCultist"/>				
+		</Types>
+		<InvalidEquipment><Equipment Name="Equipment_FlashBomb"/><Equipment Name="Equipment_WarpGrenade"/><Equipment Name="Equipment_ThrowingNet"/></InvalidEquipment> 					
+						
+		<EventEnterMelee>
+			<EventAction>
+				<Effects>
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS"><RandomVal Min="3" Max="5"/></Effect>
+					<Effect Target="Game" Field="DestroyEquipment[Random]" Op="FUNCTION" />
+					<Effect><Message><Text Lang="en">邪教徒引爆了自己！</Text></Message></Effect>
+					<Effect Target="Game" Field="DestroyEnemy" Op="FUNCTION"/>
+					<Effect><Animation Name="FX_Explosion"/></Effect>
+					<Effect><Animation Name="FX_Screen_BloodSplatter"/></Effect>
+				</Effects>
+			</EventAction>
+		</EventEnterMelee>					
+		
+		<EventFlip>
+			<EventAction>
+				<Effects>
+					<Effect><Sound Name="Crazy_Chuckle" Loop="false" Volume="1"/></Effect>
+				</Effects>
+			</EventAction>
+		</EventFlip>					
+	</Enemy>						
+							
+	<Enemy Name="Enemy_TempleGuardChampion" Category="guardian" Image="Temple_Guardian"  MonsterType="Aberration" SubType="" Background="Card_Monster_Background_Guardian" GlobalUses="1" KillScore="500">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_TempleGuardChampion</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="1" />				
+			<Deck Name="City" Weighting="0" />				
+			<Deck Name="Pyramid" Weighting="1" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="17" Max="17"/>				
+			<Stat Name="Reflex" Min="8" Max="8"/>				
+			<Stat Name="Armour" Min="4" Max="4"/>				
+		</Stats>					
+		<Types>					
+							
+		</Types>
+		<InvalidEquipment><Equipment Name="Equipment_FlashBomb"/><Equipment Name="Equipment_WarpGrenade"/><Equipment Name="Equipment_ThrowingNet"/></InvalidEquipment> 					
+		
+												
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>				
+					<Effect><Animation Name="FX_Screen_Venom"/></Effect>
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>
+					<Effect><Sound Name="Wounds" Loop="false" Volume="1"/></Effect>
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="3"/>
+					<Effect Target="Player" Field="venomDelta" Op="MINUS" Val="1"/>		
+				</Effects>
+			</EventAction>							
+		</EventPlayerHit>					
+							
+		<EventFlip>
+			<EventAction>
+				<Effects>
+					<Effect><Sound Name="Mutant" Loop="false" Volume="1"/></Effect>
+				</Effects>
+			</EventAction>
+		</EventFlip>
+							
+	</Enemy>						
+							
+	<Enemy Name="Enemy_Shade" Category="shade" Image="Shade_of_Darkness"  SubType="" MonsterType="Darkness" Background="Card_Monster_Background_Guardian" GlobalUses="5" KillScore="100">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_Shade</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="0" />				
+			<Deck Name="City" Weighting="0" />				
+			<Deck Name="Pyramid" Weighting="5" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="12" Max="12"/>				
+			<Stat Name="Reflex" Min="10" Max="10"/>				
+			<Stat Name="Armour" Min="0" Max="0"/>				
+		</Stats>					
+		<Types>					
+							
+		</Types>
+		<InvalidEquipment><Equipment Name="Equipment_FlashBomb"/><Equipment Name="Equipment_WarpGrenade"/><Equipment Name="Equipment_ThrowingNet"/></InvalidEquipment> 					
+			
+													
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>							
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect Target="Player" Field="venomDelta" Op="MINUS" Val="1"/>
+					<Effect><Animation Name="FX_Screen_Venom"/></Effect>
+					<Effect><Sound Name="Venom" Loop="false" Volume="1"/></Effect>
+				</Effects>
+			</EventAction>				
+		</EventPlayerHit>
+							
+		<EventEnemyHit>
+			<EventAction>
+				<Effects>
+					<Effect><Message><Text Lang="en">已击杀暗影：[Game.shadeCount]</Text></Message></Effect>
+				</Effects>
+			</EventAction> 
+		</EventEnemyHit> 					
+						
+	</Enemy>						
+							
+	<Enemy Name="Enemy_Darkness" Category="darkness" Image="Darkness"  SubType="darkness" MonsterType="Darkness" Background="Card_Monster_Background_Darkness" GlobalUses="1" KillScore="2000">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_Darkness</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="0" />				
+			<Deck Name="City" Weighting="0" />				
+			<Deck Name="Pyramid" Weighting="1" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="17" Max="17"/>				
+			<Stat Name="Reflex" Min="16" Max="16"/>				
+			<Stat Name="Armour" Min="0" Max="0"/>				
+		</Stats>					
+		<Types>					
+							
+		</Types>
+		<ValidEquipment><Equipment Name="Equipment_LaserLance"/><Equipment Name="Equipment_FlashBomb"/></ValidEquipment>					
+		
+												
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>				
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="2"/>			
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect Target="Player" Field="venomDelta" Op="MINUS" Val="1"/>
+					<Effect><Animation Name="FX_Screen_Venom"/></Effect>
+					<Effect><Sound Name="Venom" Loop="false" Volume="1"/></Effect>
+				</Effects>
+			</EventAction>				
+		</EventPlayerHit>
+							
+		<EventEnterCombat>
+			<EventAction LogicalOp="ALWAYS">
+				<Effects>
+					<Effect Target="Enemy" Field="Power" Op="MINUS"><FieldVal Target="Game" Field="shadeCount" Op="GET"/></Effect>
+					<Effect Target="Enemy" Field="Reflex" Op="MINUS"><FieldVal Target="Game" Field="shadeCount" Op="GET"/></Effect>
+					<Effect><Message><Text Lang="en">暗冥的力量与反应降低了[Game.shadeCount]点。</Text></Message></Effect>
+				</Effects>
+			</EventAction>
+		</EventEnterCombat>
+							
+		<EventFlip>
+			<EventAction>
+				<Effects>
+					<Effect><Sound Name="Evil_Laugh" Loop="false" Volume="1"/></Effect>
+				</Effects>
+			</EventAction>
+		</EventFlip>
+							
+	</Enemy>						
+							
+	<Enemy Name="Enemy_ZombieCrocodileTrap" Category="level_2" Image="Zombie_Crocodile"  SubType="zombie" Background="Card_Monster_Background_Orange" KillScore="300">						
+		<Description>					
+			<Text Lang="en">Enemy_Description_ZombieCrocodileTrap</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="0" />				
+			<Deck Name="City" Weighting="0" />				
+			<Deck Name="Pyramid" Weighting="0" />				
+		</DeckWeighting>					
+		<Stats>					
+			<Stat Name="Power" Min="13" Max="13"/>				
+			<Stat Name="Reflex" Min="8" Max="8"/>				
+			<Stat Name="Armour" Min="3" Max="3"/>				
+		</Stats>					
+		<Types>					
+			<Type Name="Animal"/>				
+		</Types>
+		<InvalidEquipment><Equipment Name="Equipment_FlashBomb"/><Equipment Name="Equipment_WarpGrenade"/><Equipment Name="Equipment_ThrowingNet"/></InvalidEquipment> 					
+		
+												
+		<EventPlayerHit>					
+			<EventAction>
+				<Effects>				
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="2"/>			
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>			
+					<Effect Target="Player" Field="venomDelta" Op="MINUS" Val="1"/>
+					<Effect><Animation Name="FX_Screen_Venom"/></Effect>
+					<Effect><Sound Name="Venom" Loop="false" Volume="1"/></Effect>
+				</Effects>
+			</EventAction>				
+		</EventPlayerHit>					
+		
+		<EventEnterMelee>
+			<EventAction>
+				<Effects>
+					<Effect Target="Player" Field="venomDelta" Op="MINUS"><RandomVal Min="1" Max="3"/></Effect>
+					<Effect><Animation Name="FX_Screen_Venom"/></Effect>
+					<Effect><Sound Name="Venom" Loop="false" Volume="1"/></Effect>
+				</Effects>
+			</EventAction>
+		</EventEnterMelee>					
+							
+	</Enemy>						
+							
+</EnemyData>							

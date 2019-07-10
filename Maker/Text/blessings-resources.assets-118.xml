@@ -1,0 +1,124 @@
+<BlessingData Version="1.0" Title = "Chainsaw Warrior" Platform="steam">
+	
+
+	<Blessing Name="Blessing_Mountains" Image="Bless_Icon_Mountain_Icon" Image2="Bless_Icon_Sun_Base" Category="Blessing" Protected="true">
+
+		<Description><Text Lang="en">Blessing_Description_Mountains</Text></Description>
+		
+		<EventReceived>
+			<EventAction LogicalOp="ALWAYS">
+				<Effects>
+					<Effect><Message><Text Lang="en">你受到了山峦之神『泰佩约洛特』之力的祝福</Text></Message></Effect>
+					<Effect><Message><Text Lang="en">每5分钟+1生命。</Text></Message></Effect>
+					<Effect><CachedVal Field="MountainTimer" Op="SET" Val="1"/></Effect>
+					<Effect><Buff>Mountains</Buff></Effect>
+					<Effect><Buff>MountainTime</Buff></Effect>
+				</Effects>
+			</EventAction>
+		</EventReceived>
+		
+	</Blessing>
+	
+	
+<!---	<Blessing Name="Blessing_War" Image="" Image2="" Uses="" Category="Blessing" Protected="true">
+		
+		<Description><Text Lang="en">Blessing_Description_War</Text></Description>
+		
+		<EventUses>	
+				<Event State="passive" Type="blessing" Useage="melee">
+			
+				<EventEnterMelee>
+					<EventAction LogicalOp="ALWAYS">
+						<Effects>
+							<Effect>
+								<Message>
+									<Text Lang="en">You have been blessed with the the fury of Huitzilopochtli, patron of war and fire</Text>
+								</Message>
+								<Message>
+									<Text Lang="en">Berzerk: Increase HtH by 1 for each round of Melee combat</Text>
+								</Message>
+							</Effect>
+							<Effect><Buff>Berzerk</Buff></Effect>	
+						</Effects>
+					</EventAction>
+				</EventEnterMelee>
+			
+	</Blessing> -->
+	
+
+	<Blessing Name="Blessing_Providence" Image="Bless_Icon_Bear_Icon" Image2="Bless_Icon_Bear_Base" Category="Blessing" Protected="true" >
+		
+		<Description><Text Lang="en">Blessing_Description_Providence</Text></Description>>
+
+		<EventReceived>
+			<EventAction LogicalOp="ALWAYS">
+				<Effects>
+					<Effect><Message><Text Lang="en">命运的祝福：幸运射击的点数永久+1。</Text></Message></Effect>
+					<Effect Target="Player" Field="desperateShotValue" Op="PLUS" Val="1"/>
+				</Effects>
+			</EventAction>
+		</EventReceived>
+
+	</Blessing>
+
+
+	<Blessing Name="Blessing_Rebirth" Image="Bless_Icon_Veg_Icon" Image2="Bless_Icon_Veg_Base" UsesMax="1" UsesInit="1" Category="Blessing" Protected="true" >
+				
+		<Description><Text Lang="en">Blessing_Description_Rebirth</Text></Description>
+		
+		<EventUses>		
+			<Event State="active" Type="blessing" Useage="preFlip">
+				<EventAction>
+					<Effects>
+
+						<Effect>	
+							<Message><Text Lang="en">治疗3点毒液和辐射伤害。</Text>	</Message>
+						</Effect>	
+	
+						<Effect Target="Player" Field="venomDelta" Op="PLUS" Val="3"/>
+						<Effect Target="Player" Field="radiationDelta" Op="PLUS" Val="3"/>
+							
+					</Effects>
+				</EventAction>
+			</Event>
+			<Event State="active" Type="blessing" Useage="clear">
+				<EventAction>
+					<Effects>
+					
+						<Effect>
+							<Message><Text Lang="en">治疗3点毒液和辐射伤害。</Text>	</Message>
+						</Effect>	
+	
+						<Effect Target="Player" Field="venomDelta" Op="PLUS" Val="3"/>
+						<Effect Target="Player" Field="radiationDelta" Op="PLUS" Val="3"/>
+							
+					</Effects>
+				</EventAction>
+			</Event>
+		</EventUses>
+	</Blessing>	
+	
+	
+	<Blessing Name="Blessing_Temporals" Image="Bless_Icon_Timer_Icon" Image2="Bless_Icon_Timer_Base" Category="Blessing" Protected="true">
+			
+		<Description><Text Lang="en">Blessing_Description_Temporals</Text></Description>
+		
+		<EventReceived>
+			<EventAction LogicalOp="ALWAYS">
+				<Effects>
+					<Effect><Message><Text Lang="en">获得了时间的祝福：免疫所有负面状态效果。</Text></Message></Effect>
+				</Effects>
+			</EventAction>
+		</EventReceived>
+		
+		<IgnoreBuffs>
+			<Buff name="Fire"/>
+			<Buff name="EMP"/>
+			<Buff name="Poison"/>
+			<Buff name="StimMinus"/>
+		</IgnoreBuffs>
+	</Blessing>
+
+	
+
+</BlessingData>

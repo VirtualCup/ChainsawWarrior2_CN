@@ -1,0 +1,65 @@
+function SetUI;
+
+if(titleLabelText == "Tutorial"){
+	titleLabelText = "教程";
+}
+else if(titleLabelText == "Character Creation"){
+	titleLabelText = "角色创建";
+}
+else if(titleLabelText == "Wounds"){
+	titleLabelText = "生命";
+}
+else if(titleLabelText == "Resistance"){
+	titleLabelText = "抗性";
+}
+else if(titleLabelText == "Combat Stats"){
+	titleLabelText = "战斗状态";
+}
+else if(titleLabelText == "Skills and Blessings"){
+	titleLabelText = "技能";
+}
+else if(titleLabelText == "Inventory"){
+	titleLabelText = "背包";
+}
+else if(titleLabelText == "Mission Start"){
+	titleLabelText = "开始游戏";
+}
+else if(titleLabelText == "Card One"){
+	titleLabelText = "第一张卡";
+}
+else if(titleLabelText == "Enemy!"){
+	titleLabelText = "敌人！";
+}
+else if(titleLabelText == "Combat!"){
+	titleLabelText = "战斗！";
+}
+else if(titleLabelText == "Melee!"){
+	titleLabelText = "近战！";
+}
+else if(titleLabelText == "Trap!"){
+	titleLabelText = "陷阱！";
+}
+else if(titleLabelText == "Radiation!"){
+	titleLabelText = "辐射！";
+}
+else if(titleLabelText == "Venom!"){
+	titleLabelText = "毒液！";
+}
+else if(titleLabelText == "Temple"){
+	titleLabelText = "神庙";
+}
+else if(titleLabelText == "Blessing"){
+	titleLabelText = "祝福";
+}
+else if(titleLabelText == "Guardian"){
+	titleLabelText = "守护者";
+}
+else if(titleLabelText == "New Zone"){
+	titleLabelText = "新区域";
+}
+
+okButtonLabel.text = okButtonLabelText;
+titleLabel.text = titleLabelText;
+descriptionLabel.text = descriptionLabelText;
+skipButtonLabel.text = skipButtonLabelText;
+skipButton.gameObject.SetActive(showSkipButton);

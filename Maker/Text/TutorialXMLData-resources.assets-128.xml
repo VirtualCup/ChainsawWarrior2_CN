@@ -1,0 +1,272 @@
+<Tutorials>						
+						
+	<Module>					
+		<Index>0</Index>				
+		<ModuleType>Popup</ModuleType>				
+		<ModuleOrder>Sequential</ModuleOrder>				
+		<Name>Tutorial</Name>				
+		<Popup>				
+			<Description>是时候去拯救世界了！什么，你不知道击晕拳环和电脑辅助瞄准系统的区别？即使你之前已经玩过，我们还是强烈建议你开启教程来帮你顺利完成第一轮游戏。该出发了，战士！</Description>			
+			<Button>			
+				<Description>无需教程</Description>		
+				<ButtonType>Discard</ButtonType>		
+			</Button>			
+			<Button>			
+				<Description>我要教程！</Description>		
+				<ButtonType>Confirm</ButtonType>		
+			</Button>			
+		</Popup>				
+	</Module>					
+						
+	<Module>					
+		<Index>1</Index>				
+		<ModuleType>Popup</ModuleType>				
+		<ModuleOrder>Sequential</ModuleOrder>				
+		<Name>Character Creation</Name>				
+		<Popup>				
+			<Description>这是电锯战士的面板。他已经生成了自己的技能和能力，这也反映了游戏的困难程度。查看信息框以了解详情以及其它游戏信息。</Description>
+			<Button>			
+				<Description>明白</Description>			
+				<ButtonType>Confirm</ButtonType>		
+			</Button>			
+		</Popup>				
+	</Module>					
+						
+	<Module>					
+		<Index>2</Index>				
+		<ModuleType>Popup</ModuleType>				
+		<ModuleOrder>Sequential</ModuleOrder>				
+		<Name>Wounds</Name>				
+		<Popup>				
+			<Description>电锯战士的生命指的是他承受伤害的能力。战斗中产生的伤害以及陷阱都会致使生命损失。部分装备能恢复生命。当生命降为零时，电锯战士便会死亡。</Description>			
+			<Button>			
+				<Description>明白</Description>		
+				<ButtonType>Confirm</ButtonType>		
+			</Button>			
+		</Popup>				
+	</Module>					
+						
+	<Module>					
+		<Index>3</Index>				
+		<ModuleType>Popup</ModuleType>				
+		<ModuleOrder>Sequential</ModuleOrder>				
+		<Name>Resistance</Name>				
+		<Popup>				
+			<Description>当电锯战士暴露在丧尸毒液或辐射中时，就会损失相应的状态点数。任意一项抗性降为零时，电锯战士都会死亡。</Description>			
+			<Button>			
+				<Description>明白</Description>		
+				<ButtonType>Confirm</ButtonType>		
+			</Button>			
+		</Popup>				
+	</Module>					
+						
+	<Module>					
+		<Index>4</Index>				
+		<ModuleType>Popup</ModuleType>				
+		<ModuleOrder>Sequential</ModuleOrder>				
+		<Name>Combat Stats</Name>				
+		<Popup>				
+			<Description>搏斗是指电锯战士近身战的能力，射术是指对敌人使用远程武器的能力，而反应是指闪避敌人攻击的能力。好的状态能让电锯战士在对付敌人时更加轻松。</Description>			
+			<Button>			
+				<Description>明白</Description>		
+				<ButtonType>Confirm</ButtonType>		
+			</Button>			
+		</Popup>				
+	</Module>					
+						
+	<Module>					
+		<Index>5</Index>				
+		<ModuleType>Popup</ModuleType>				
+		<ModuleOrder>Sequential</ModuleOrder>				
+		<Name>Skills and Blessings</Name>				
+		<Popup>				
+			<Description>这是分配给你的技能。查看提示框以了解更多信息。技能可以给电锯战士带来生存上的优势。</Description>			
+			<Button>			
+				<Description>明白</Description>		
+				<ButtonType>Confirm</ButtonType>		
+			</Button>			
+		</Popup>				
+	</Module>					
+						
+	<Module>					
+		<Index>6</Index>				
+		<ModuleType>Popup</ModuleType>				
+		<ModuleOrder>Sequential</ModuleOrder>				
+		<Name>Inventory</Name>				
+		<Popup>				
+			<Description>你只有数量有限的装备点以及装备槽可以进行分配。每种道具都会从总点数中扣除相应的点数。其中枪械和重武器你只能携带一把。分配完电锯战士的装备后，按下『继续』键开始你的任务。</Description>			
+			<Button>			
+				<Description>明白</Description>		
+				<ButtonType>Confirm</ButtonType>		
+			</Button>			
+		</Popup>				
+	</Module>					
+						
+	<Module>					
+		<Index>7</Index>				
+		<ModuleType>Popup</ModuleType>				
+		<ModuleOrder>Sequential</ModuleOrder>				
+		<Name>Mission Start</Name>				
+		<Popup>				
+			<Description>电锯战士已准备就绪，是时候动身了。关闭本弹出框后，点击『开始』键开始你的任务。你可以在任意时刻查看自己的属性和装备，只需点击屏幕右下角的『背包』键即可。</Description>
+			<Button>			
+				<Description>明白</Description>		
+				<ButtonType>Confirm</ButtonType>		
+			</Button>			
+		</Popup>				
+	</Module>								
+						
+	<Module>					
+		<Index>8</Index>				
+		<ModuleType>Popup</ModuleType>				
+		<ModuleOrder>Sequential</ModuleOrder>				
+		<Name>Card One</Name>				
+		<Popup>				
+			<Description>你已经抽出了第一张卡。但回合还没结束。部分装备和能力会在你回合结束前发挥效果。当此类效果发生时这些选项就会出现在屏幕下方的行动槽内。关闭本弹出框后，点击卡牌以结束回合。</Description>
+			<Button>			
+				<Description>明白</Description>		
+				<ButtonType>Confirm</ButtonType>		
+			</Button>			
+		</Popup>				
+	</Module>					
+						
+	<Module>					
+		<Index>9</Index>				
+		<ModuleType>Popup</ModuleType>				
+		<ModuleOrder>Dynamic</ModuleOrder>				
+		<Name>Enemy!</Name>				
+		<Popup>				
+			<Description>这是张敌人卡。不是它死就是你亡！你可以用远程武器从远处进行战斗，也可以突进过去与敌人进行肉搏。敌人的状态从上到下分别是：力量：敌人的进攻能力，反应：敌人的灵活程度，护甲：吸收伤害的能力。</Description>
+			<Button>			
+				<Description>明白</Description>		
+				<ButtonType>Confirm</ButtonType>		
+			</Button>			
+		</Popup>				
+	</Module>					
+						
+	<Module>					
+		<Index>10</Index>				
+		<ModuleType>Popup</ModuleType>				
+		<ModuleOrder>Dynamic</ModuleOrder>				
+		<Name>Combat!</Name>				
+		<Popup>				
+			<Description>战斗开始了！你可以选择远程武器或者突进过去用近战武器进行战斗。如果你选择了近战且敌人拥有远程武器的话，他们便会在你突进的时候向你射击。</Description>			
+			<Button>			
+				<Description>明白</Description>		
+				<ButtonType>Confirm</ButtonType>		
+			</Button>			
+		</Popup>				
+	</Module>					
+						
+	<Module>					
+		<Index>11</Index>				
+		<ModuleType>Popup</ModuleType>				
+		<ModuleOrder>Dynamic</ModuleOrder>				
+		<Name>Melee!</Name>				
+		<Popup>				
+			<Description>在近身战中，你的搏斗技能将会和敌人的力量进行对比。在进行过一轮近战后，你可以尝试躲回到远程位置进行战斗。关闭本弹出框后，请选择一件近战武器进行攻击。</Description>
+			<Button>			
+				<Description>明白</Description>		
+				<ButtonType>Confirm</ButtonType>		
+			</Button>			
+		</Popup>				
+	</Module>					
+						
+	<Module>					
+		<Index>12</Index>				
+		<ModuleType>Popup</ModuleType>				
+		<ModuleOrder>Dynamic</ModuleOrder>				
+		<Name>Trap!</Name>				
+		<Popup>				
+			<Description>这是张陷阱卡。你必须回避陷阱，使陷阱失效或是捱过陷阱才能继续前进。部分武器和装备能用来消除陷阱，在此种情况下会出现额外的按键选项。注意，不少道具的子弹和使用次数是有限的，所以使用它们时要谨慎考虑。</Description>
+			<Button>			
+				<Description>明白</Description>		
+				<ButtonType>Confirm</ButtonType>		
+			</Button>			
+		</Popup>				
+	</Module>					
+						
+	<Module>					
+		<Index>13</Index>				
+		<ModuleType>Popup</ModuleType>				
+		<ModuleOrder>Dynamic</ModuleOrder>				
+		<Name>Radiation!</Name>				
+		<Popup>				
+			<Description>你被辐射了！如果你的辐射抗性降为零，那么电锯战士就会死亡。部分道具也许能帮你恢复点数或是保护你。</Description>			
+			<Button>			
+				<Description>明白</Description>		
+				<ButtonType>Confirm</ButtonType>		
+			</Button>				
+		</Popup>				
+	</Module>					
+						
+	<Module>					
+		<Index>14</Index>				
+		<ModuleType>Popup</ModuleType>				
+		<ModuleOrder>Dynamic</ModuleOrder>				
+		<Name>Venom!</Name>
+		<Popup>				
+			<Description>你被感染了！如果你的毒液抗性降为零，那么电锯战士就会死亡。部分道具也许能帮你恢复点数或是保护你。</Description>
+			<Button>			
+				<Description>明白</Description>		
+				<ButtonType>Confirm</ButtonType>		
+			</Button>			
+		</Popup>				
+	</Module>					
+						
+	<Module>					
+		<Index>15</Index>				
+		<ModuleType>Popup</ModuleType>				
+		<ModuleOrder>Dynamic</ModuleOrder>				
+		<Name>Temple</Name>				
+		<Popup>				
+			<Description>你遇见了一座隐藏神庙。这里有大量的敌人在负责防守。不过假如你能通过它的考研，你就能获得祝福，这是一种能帮你顺利进行任务的强大能力。通过点击行动槽里的『略过』或『进入』键来决定要不要进入神庙。</Description>			
+			<Button>			
+				<Description>明白</Description>		
+				<ButtonType>Confirm</ButtonType>		
+			</Button>			
+		</Popup>				
+	</Module>					
+						
+	<Module>					
+		<Index>16</Index>				
+		<ModuleType>Popup</ModuleType>				
+		<ModuleOrder>Dynamic</ModuleOrder>				
+		<Name>Blessing</Name>				
+		<Popup>				
+			<Description>祝福是一种非常强大的能力。根据祝福的种类，它们能给你永久的被动加成，或是通过点击行动槽里的『祝福』键来主动激活。查看提示框以了解更多信息。</Description>			
+			<Button>			
+				<Description>明白</Description>		
+				<ButtonType>Confirm</ButtonType>		
+			</Button>			
+		</Popup>				
+	</Module>					
+						
+	<Module>					
+		<Index>17</Index>				
+		<ModuleType>Popup</ModuleType>				
+		<ModuleOrder>Dynamic</ModuleOrder>				
+		<Name>Guardian</Name>				
+		<Popup>				
+			<Description>负责区域（卡组）最后防线的便是守护者，你必须击败它才能继续前进。守护者都是些强力的敌人，你或许需要特别的战术或装备来击败它。</Description>			
+			<Button>
+				<Description>明白</Description>		
+				<ButtonType>Confirm</ButtonType>		
+			</Button>			
+		</Popup>				
+	</Module>					
+						
+	<Module>					
+		<Index>18</Index>				
+		<ModuleType>Popup</ModuleType>				
+		<ModuleOrder>Dynamic</ModuleOrder>				
+		<Name>New Zone</Name>				
+		<Popup>				
+			<Description>你已经顺利完成第一区域（一副卡组）了！现在你要移动至下一个区域……</Description>	
+			<Button>			
+				<Description>明白</Description>		
+				<ButtonType>Confirm</ButtonType>		
+			</Button>			
+		</Popup>				
+	</Module>	
+</Tutorials>						

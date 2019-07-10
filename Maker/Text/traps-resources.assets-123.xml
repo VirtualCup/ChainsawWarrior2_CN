@@ -1,0 +1,399 @@
+<TrapData Version="1.0" Title = "Chainsaw Warrior" Platform="steam">									
+									
+	<Trap Name="Trap_Razorwire" Category="trap" Image="Trap_Default" SubType="metal" Background="Card_Monster_Background_Moon">								
+		<DeckWeighting>							
+			<Deck Name="Jungle" Weighting="2" />						
+			<Deck Name="City" Weighting="1" />						
+			<Deck Name="Pyramid" Weighting="1" />						
+		</DeckWeighting>							
+		<Description>							
+			<Text Lang="en">Trap_Description_Razorwire</Text>						
+		</Description>							
+									
+		<EventEnterTrap Reflex="false">							
+			<EventAction LogicalOp="ALWAYS"><Effects><Effect><CachedVal Field="WaitTime" Op="SET" ><DiceVal Roll="1d6" Type="enemy" Show="true"/></CachedVal></Effect><Effect Target="Game" Field="ReduceGameTime" Op="FUNCTION"><CachedVal Field="WaitTime" Op="GET"/></Effect></Effects></EventAction>						
+			<EventAction LogicalOp="ALWAYS"><Effects><Effect><CachedVal Field="ZombieRoll" Function="SET"><RandomVal Min="0" Max="3"/></CachedVal></Effect></Effects></EventAction><EventAction LogicalOp="IF"><Conditions><Cond CombineOp="EQUALS"><Cond><CachedVal Field="ZombieRoll" Op="GET"/></Cond><Cond><LiteralVal Val="1"/></Cond></Cond></Conditions><Effects><Effect Target="Game" Field="AddEnemiesToCombat[level_1,zombie,Enemy_Zombie]" Op="FUNCTION"><CachedVal Field="ZombieRoll" Op="GET"/></Effect><Effect><Message><Text Lang="en">丧尸来袭！在你尝试挣脱铁丝网时出现了一只丧尸。</Text></Message></Effect></Effects></EventAction><EventAction LogicalOp="ELSEIF"><Conditions><Cond CombineOp="GREATER_THAN"><Cond><CachedVal Field="ZombieRoll" Op="GET"/></Cond><Cond><LiteralVal Val="1"/></Cond></Cond></Conditions><Effects><Effect Target="Game" Field="AddEnemiesToCombat[level_1,zombie,Enemy_Zombie]" Op="FUNCTION"><CachedVal Field="ZombieRoll" Op="GET"/></Effect><Effect><Message><Text Lang="en">丧尸来袭！在你尝试挣脱陷阱时出现了[ZombieRoll]只丧尸。</Text></Message></Effect></Effects></EventAction><EventAction LogicalOp="ELSE"><Effects><Effect><Message><Text Lang="en">虽然花了点时间，但你还是顺利逃脱了。</Text></Message></Effect></Effects></EventAction>						
+									
+		</EventEnterTrap>							
+	</Trap>								
+									
+	<Trap Name="Trap_Mines" Category="trap" Image="Trap_Default" SubType="metal" Background="Card_Monster_Background_Moon" GlobalUses="2">								
+		<DeckWeighting>							
+			<Deck Name="Jungle" Weighting="1" />						
+			<Deck Name="City" Weighting="2" />						
+			<Deck Name="Pyramid" Weighting="1" />						
+		</DeckWeighting>							
+		<Description>							
+			<Text Lang="en">Trap_Description_Mines</Text>						
+		</Description>							
+									
+		<EventEnterTrap Reflex="true" Modifier="-2">							
+			<EventAction LogicalOp="ALWAYS"><Effects><Effect Target="Player" Field="woundsDelta" Op="MINUS"><RandomVal Min="2" Max="6"/></Effect><Effect><Sound Name="Wounds" Loop="false" Volume="1"/></Effect></Effects></EventAction>						
+			<EventAction LogicalOp="IF"><Conditions><Cond CombineOp="GREATER_THAN_OR_EQUAL"><Cond><RandomVal Min="1" Max="6"/></Cond><Cond><LiteralVal Val="4"/></Cond></Cond></Conditions><Effects><Effect Target="Game" Field="DestroyEquipment[Random]" Op="FUNCTION"/><Effect><Animation Name="FX_Screen_Broken"/></Effect></Effects></EventAction>						
+									
+		</EventEnterTrap>							
+	</Trap>								
+									
+	<Trap Name="Trap_MagneticField" Category="trap" Image="Trap_Default" SubType="" Background="Card_Monster_Background_Moon" GlobalUses="1">								
+		<DeckWeighting>							
+			<Deck Name="Jungle" Weighting="1" />						
+			<Deck Name="City" Weighting="1" />						
+			<Deck Name="Pyramid" Weighting="0" />						
+		</DeckWeighting>							
+		<Description>							
+			<Text Lang="en">Trap_Description_MagneticField</Text>						
+		</Description>							
+									
+		<EventEnterTrap Reflex="false">							
+			<EventAction LogicalOp="ALWAYS"><Effects><Effect><CachedVal Field="EMPRoll" Op="PLUS"><DiceVal Roll="2d6" Type="enemy" Show="true"/></CachedVal></Effect><Effect><Buff>EMP</Buff></Effect></Effects></EventAction>						
+									
+									
+		</EventEnterTrap>							
+	</Trap>								
+									
+	<Trap Name="Trap_Net" Category="trap" Image="Trap_Default" SubType="" Background="Card_Monster_Background_Crawler">								
+		<DeckWeighting>							
+			<Deck Name="Jungle" Weighting="1" />						
+			<Deck Name="City" Weighting="0" />						
+			<Deck Name="Pyramid" Weighting="3" />						
+		</DeckWeighting>							
+		<Description>							
+			<Text Lang="en">Trap_Description_Net</Text>						
+		</Description>							
+									
+		<EventEnterTrap Reflex="true" Modifier="0">							
+			<EventAction LogicalOp="ALWAYS"><Effects><Effect><CachedVal Field="WaitTime" Op="SET" ><DiceVal Roll="1d6" Type="enemy" Show="true"/></CachedVal></Effect><Effect Target="Game" Field="ReduceGameTime" Op="FUNCTION"><CachedVal Field="WaitTime" Op="GET"/></Effect></Effects></EventAction>						
+			<EventAction LogicalOp="ALWAYS"><Effects><Effect><CachedVal Field="ZombieRoll" Function="SET"><RandomVal Min="0" Max="3"/></CachedVal></Effect></Effects></EventAction><EventAction LogicalOp="IF"><Conditions><Cond CombineOp="EQUALS"><Cond><CachedVal Field="ZombieRoll" Op="GET"/></Cond><Cond><LiteralVal Val="1"/></Cond></Cond></Conditions><Effects><Effect Target="Game" Field="AddEnemiesToCombat[level_1,zombie,Enemy_Zombie]" Op="FUNCTION"><CachedVal Field="ZombieRoll" Op="GET"/></Effect><Effect><Message><Text Lang="en">丧尸来袭！在你尝试挣脱铁丝网时出现了一只丧尸。</Text></Message></Effect></Effects></EventAction><EventAction LogicalOp="ELSEIF"><Conditions><Cond CombineOp="GREATER_THAN"><Cond><CachedVal Field="ZombieRoll" Op="GET"/></Cond><Cond><LiteralVal Val="1"/></Cond></Cond></Conditions><Effects><Effect Target="Game" Field="AddEnemiesToCombat[level_1,zombie,Enemy_Zombie]" Op="FUNCTION"><CachedVal Field="ZombieRoll" Op="GET"/></Effect><Effect><Message><Text Lang="en">丧尸来袭！在你尝试挣脱陷阱时出现了[ZombieRoll]只丧尸。</Text></Message></Effect></Effects></EventAction><EventAction LogicalOp="ELSE"><Effects><Effect><Message><Text Lang="en">虽然花了点时间，但你还是顺利逃脱了。</Text></Message></Effect></Effects></EventAction>						
+									
+		</EventEnterTrap>							
+	</Trap>								
+									
+	<Trap Name="Trap_CaveIn" Category="trap" Image="Trap_Default" SubType="" Background="Card_Monster_Background_Crawler" GlobalUses="2">								
+		<DeckWeighting>							
+			<Deck Name="Jungle" Weighting="0" />						
+			<Deck Name="City" Weighting="0" />						
+			<Deck Name="Pyramid" Weighting="1" />						
+		</DeckWeighting>							
+		<Description>							
+			<Text Lang="en">Trap_Description_CaveIn</Text>						
+		</Description>							
+									
+		<EventEnterTrap Reflex="true" Modifier="-3">							
+			<EventAction LogicalOp="ALWAYS"><Effects><Effect><CachedVal Field="WaitTime" Op="SET" ><DiceVal Roll="1d6" Type="enemy" Show="true"/></CachedVal></Effect><Effect Target="Game" Field="ReduceGameTime" Op="FUNCTION"><CachedVal Field="WaitTime" Op="GET"/></Effect></Effects></EventAction>						
+			<EventAction LogicalOp="ALWAYS"><Effects><Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"></Effect><Effect><Sound Name="Wounds" Loop="false" Volume="1"/></Effect></Effects></EventAction>						
+			<EventAction LogicalOp="IF"><Conditions><Cond CombineOp="GREATER_THAN_OR_EQUAL"><Cond><RandomVal Min="1" Max="6"/></Cond><Cond><LiteralVal Val="4"/></Cond></Cond></Conditions><Effects><Effect Target="Game" Field="DestroyEquipment[Random]" Op="FUNCTION"/><Effect><Animation Name="FX_Screen_Broken"/></Effect></Effects></EventAction>						
+		</EventEnterTrap>							
+	</Trap>								
+									
+	<!-- <Trap Name="Trap_Boulder" Category="trap" Image="Trap_Default" SubType="" Background="Card_Monster_Background_Guardian">								
+		<DeckWeighting>							
+			<Deck Name="Jungle" Weighting="0" />						
+			<Deck Name="City" Weighting="0" />						
+			<Deck Name="Pyramid" Weighting="0" />						
+		</DeckWeighting>							
+		<Description>							
+			<Text Lang="en">Trap_Description_Boulder</Text>						
+		</Description>							
+									
+		<EventEnterTrap Reflex="true" Modifier="0">							
+			<EventAction ><Effects><Effect><Message><Text Lang="en">RUMBLERUMBLERUMBLERUMBLEYOUREREALLYFUCKEDNOWRUMBLERUMBLERUMBLE</Text></Message></Effect></Effects></EventAction>						
+									
+									
+		</EventEnterTrap>							
+	</Trap>		-->						
+									
+	<Trap Name="Trap_Lunatic" Category="trap" Image="Trap_Default" SubType="lunatic" Background="Card_Monster_Background_Guardian" GlobalUses="1">							
+		<DeckWeighting>							
+			<Deck Name="Jungle" Weighting="0" />						
+			<Deck Name="City" Weighting="1" />						
+			<Deck Name="Pyramid" Weighting="0" />						
+		</DeckWeighting>							
+		<Description>							
+			<Text Lang="en">Trap_Description_Lunatic</Text>						
+		</Description>							
+									
+		<EventEnterTrap Reflex="false">							
+			<EventAction LogicalOp="ALWAYS"><Effects><Effect Target="Game" Field="DestroyEquipment[Random]" Op="FUNCTION"/><Effect><Animation Name="FX_Screen_Broken"/></Effect><Effect><Sound Name="Item_Broken" Loop="false" Volume="1"/></Effect></Effects></EventAction>						
+									
+									
+		</EventEnterTrap>							
+	</Trap>								
+									
+	<Trap Name="Trap_Swamp" Category="trap" Image="Trap_Default" SubType="" Background="Card_Monster_Background_Jungle" GlobalUses="2">								
+		<DeckWeighting>							
+			<Deck Name="Jungle" Weighting="2" />						
+			<Deck Name="City" Weighting="0" />						
+			<Deck Name="Pyramid" Weighting="0" />						
+		</DeckWeighting>							
+		<Description>							
+			<Text Lang="en">Trap_Description_Swamp</Text>						
+		</Description>							
+									
+		<EventEnterTrap Reflex="false">							
+			<EventAction LogicalOp="ALWAYS"><Effects><Effect><CachedVal Field="WaitTime" Op="SET" ><DiceVal Roll="1d6" Type="enemy" Show="true"/></CachedVal></Effect><Effect Target="Game" Field="ReduceGameTime" Op="FUNCTION"><CachedVal Field="WaitTime" Op="GET"/></Effect></Effects></EventAction>						
+			<EventAction LogicalOp="ALWAYS"><Effects><Effect Target="Game" Field="AddEnemiesToCombat[level_1,living,Enemy_Crocodile]" Op="FUNCTION"><RandomVal Min="1" Max="4"/></Effect><Effect><Message><Text Lang="en">有埋伏！当你穿越沼泽时出现了[Value]条鳄鱼。</Text></Message></Effect></Effects></EventAction>						
+									
+		</EventEnterTrap>							
+	</Trap>								
+									
+	<Trap Name="Trap_PitTrap" Category="trap" Image="Trap_Default" SubType="" Background="Card_Monster_Background_Crawler">								
+		<DeckWeighting>							
+			<Deck Name="Jungle" Weighting="2" />						
+			<Deck Name="City" Weighting="2" />						
+			<Deck Name="Pyramid" Weighting="1" />						
+		</DeckWeighting>							
+		<Description>							
+			<Text Lang="en">Trap_Description_PitTrap</Text>						
+		</Description>							
+									
+		<EventEnterTrap Reflex="true" Modifier="-1">							
+			<EventAction LogicalOp="ALWAYS"><Effects><Effect><CachedVal Field="WaitTime" Op="SET" ><DiceVal Roll="1d6" Type="enemy" Show="true"/></CachedVal></Effect><Effect Target="Game" Field="ReduceGameTime" Op="FUNCTION"><CachedVal Field="WaitTime" Op="GET"/></Effect></Effects></EventAction>						
+			<EventAction LogicalOp="ALWAYS"><Effects><Effect Target="Player" Field="woundsDelta" Op="MINUS"><RandomVal Min="1" Max="3"/></Effect><Effect><Sound Name="Wounds" Loop="false" Volume="1"/></Effect></Effects></EventAction>						
+									
+		</EventEnterTrap>							
+	</Trap>								
+									
+	<Trap Name="Trap_RadCanister" Category="trap" Image="Trap_Default" SubType="rad" Background="Card_Monster_Background_Poison" GlobalUses="1">								
+		<DeckWeighting>							
+			<Deck Name="Jungle" Weighting="0" />						
+			<Deck Name="City" Weighting="1" />						
+			<Deck Name="Pyramid" Weighting="1" />						
+		</DeckWeighting>							
+		<Description>							
+			<Text Lang="en">Trap_Description_RadCanister</Text>						
+		</Description>							
+									
+		<EventEnterTrap Reflex="false">							
+			<EventAction LogicalOp="ALWAYS">
+			<Effects>
+				<Effect Target="Player" Field="radiationDelta" Op="MINUS"><DiceVal Roll="1d6+1" Type="enemy" Show="true"/></Effect>
+				<Effect><Animation Name="FX_Screen_Radiation"/></Effect>
+				<Effect><Message><Text Lang="en">辐射：D6+1=[Value]</Text></Message></Effect>
+				<Effect><Sound Name="Radiation" Loop="false" Volume="1"/></Effect>
+			</Effects>
+			</EventAction>											
+		</EventEnterTrap>							
+	</Trap>								
+									
+	<Trap Name="Trap_VenomCloud" Category="trap" Image="Trap_Default" SubType="" Background="Card_Monster_Background_Poison" GlobalUses="1">								
+		<DeckWeighting>							
+			<Deck Name="Jungle" Weighting="1" />						
+			<Deck Name="City" Weighting="0" />						
+			<Deck Name="Pyramid" Weighting="1" />						
+		</DeckWeighting>							
+		<Description>							
+			<Text Lang="en">Trap_Description_VenomCloud</Text>						
+		</Description>							
+									
+		<EventEnterTrap Reflex="false">							
+			<EventAction ><Effects><Effect Target="Player" Field="venomDelta" Op="MINUS" ><DiceVal Roll="1d6" Type="enemy" Show="true"/></Effect><Effect><Animation Name="FX_Screen_Venom"/></Effect><Effect></Effect><Effect><Sound Name="Venom" Loop="false" Volume="1"/></Effect></Effects></EventAction>						
+									
+									
+		</EventEnterTrap>							
+	</Trap>								
+									
+	<Trap Name="Trap_EMPMines" Category="trap" Image="Trap_Default" SubType="metal" Background="Card_Monster_Background_Moon" GlobalUses="1">								
+		<DeckWeighting>							
+			<Deck Name="Jungle" Weighting="0" />						
+			<Deck Name="City" Weighting="1" />						
+			<Deck Name="Pyramid" Weighting="1" />						
+		</DeckWeighting>							
+		<Description>							
+			<Text Lang="en">Trap_Description_EMPMines</Text>						
+		</Description>							
+									
+		<EventEnterTrap Reflex="true" Modifier="-2">							
+			<EventAction LogicalOp="ALWAYS">
+				<Effects>
+					<Effect><CachedVal Field="EMPRoll" Op="SET"><DiceVal Roll="2d6" Type="enemy" Show="true"/></CachedVal></Effect>
+					<Effect><Buff>EMP</Buff></Effect>
+				</Effects>
+			</EventAction>											
+		</EventEnterTrap>							
+	</Trap>								
+									
+	<Trap Name="Trap_RiverCrossing" Category="trap" Image="Trap_Default" SubType="" Background="Card_Monster_Background_Jungle">								
+		<DeckWeighting>							
+			<Deck Name="Jungle" Weighting="1" />						
+			<Deck Name="City" Weighting="0" />						
+			<Deck Name="Pyramid" Weighting="0" />						
+		</DeckWeighting>							
+		<Description>							
+			<Text Lang="en">Trap_Description_RiverCrossing</Text>						
+		</Description>							
+									
+		<EventEnterTrap Reflex="false">							
+			<EventAction LogicalOp="ALWAYS">
+				<Effects>
+					<Effect><CachedVal Field="River" Op="SET" ><DiceVal Roll="1d6" Type="enemy" Show="true"/></CachedVal></Effect>
+					</Effects>
+			</EventAction>
+			
+			<EventAction LogicalOp="IF">
+				<Conditions>
+					<Cond CombineOp="EQUALS">
+						<Cond><CachedVal Field="River" Op="GET" /></Cond>
+						<Cond><LiteralVal Val="1"/></Cond>
+					</Cond>
+				</Conditions>
+			
+				<Effects>
+					<Effect Target="Game" Field="AddEnemiesToCombat[level_1,zombie,Enemy_ZombieCrocodileTrap]" Op="FUNCTION" Val="1"/>
+				</Effects>
+			</EventAction>
+			<EventAction LogicalOp="ELSEIF">
+				<Conditions>
+					<Cond CombineOp="LESS_THAN">
+						<Cond><CachedVal Field="River" Op="GET" /></Cond>
+						<Cond><LiteralVal Val="5"/></Cond>
+					</Cond>
+				</Conditions>
+				<Effects>
+					<Effect Target="Game" Field="AddEnemiesToCombat[level_1,living,Enemy_Crocodile]" Op="FUNCTION"/>
+				</Effects>
+			</EventAction>
+			<EventAction LogicalOp="ELSE">
+				<Effects>
+					<Effect><Message><Text Lang="en">你平安渡过了河。</Text></Message></Effect>
+				</Effects>
+			</EventAction>										
+		</EventEnterTrap>							
+	</Trap>								
+									
+	<Trap Name="Trap_ThickUndergrowth" Category="trap" Image="Trap_Default" SubType="deadend" Background="Card_Monster_Background_Orange" GlobalUses="1">								
+		<DeckWeighting>							
+			<Deck Name="Jungle" Weighting="1" />						
+			<Deck Name="City" Weighting="0" />						
+			<Deck Name="Pyramid" Weighting="0" />						
+		</DeckWeighting>							
+		<Description>							
+			<Text Lang="en">Trap_Description_ThickUndergrowth</Text>						
+		</Description>							
+									
+		<EventEnterTrap Reflex="false">							
+			<EventAction LogicalOp="IF"><Effects><Effect><SpawnCards Cards="4"><Categories><Category Name="trap" Cards="1"/><Category Name="level_1" Cards="2"/><Category Name="level_2" Cards="1"/></Categories></SpawnCards></Effect><Effect><Message><Text Lang="en">因为无路可走你不得不原路折返。卡组增加4张卡。</Text></Message></Effect></Effects></EventAction>						
+									
+									
+		</EventEnterTrap>							
+	</Trap>								
+									
+	<Trap Name="Trap_DeadEnd" Category="trap" Image="Trap_Default" SubType="deadend" Background="Card_Monster_Background_Orange" GlobalUses="2">								
+		<DeckWeighting>							
+			<Deck Name="Jungle" Weighting="0" />						
+			<Deck Name="City" Weighting="1" />						
+			<Deck Name="Pyramid" Weighting="1" />						
+		</DeckWeighting>							
+		<Description>							
+			<Text Lang="en">Trap_Description_DeadEnd</Text>						
+		</Description>							
+									
+		<EventEnterTrap Reflex="false">							
+			<EventAction LogicalOp="IF"><Effects><Effect><SpawnCards Cards="4"><Categories><Category Name="trap" Cards="1"/><Category Name="level_1" Cards="2"/><Category Name="level_2" Cards="1"/></Categories></SpawnCards></Effect><Effect><Message><Text Lang="en">因为无路可走你不得不原路折返。卡组增加4张卡。</Text></Message></Effect></Effects></EventAction>						
+									
+									
+		</EventEnterTrap>							
+	</Trap>								
+									
+	<Trap Name="Trap_ZombieHorde" Category="trap" Image="Zombie" SubType="" Background="Card_Monster_Background_Pack">								
+		<DeckWeighting>							
+			<Deck Name="Jungle" Weighting="2" />						
+			<Deck Name="City" Weighting="1" />						
+			<Deck Name="Pyramid" Weighting="1" />						
+		</DeckWeighting>							
+		<Description>							
+			<Text Lang="en">Trap_Description_ZombieHorde</Text>						
+		</Description>							
+									
+		<EventEnterTrap Reflex="false">							
+			<EventAction LogicalOp="ALWAYS">
+				<Effects>
+					<Effect Target="Game" Field="ClearCard" Op="FUNCTION"/>
+					<Effect Target="Game" Field="AddEnemiesToCombat[level_1,zombie,Enemy_Zombie]" Op="FUNCTION">
+						<RandomVal Min="2" Max="4"/>
+					</Effect>
+					<Effect><Message><Text Lang="en">有[Value]只丧尸发起了进攻！</Text></Message></Effect>
+				</Effects>
+			</EventAction>											
+		</EventEnterTrap>							
+	</Trap>								
+									
+	<Trap Name="Trap_ZombieMonkeys" Category="trap" Image="Zombie_Monkey" SubType="" Background="Card_Monster_Background_Pack" GlobalUses="2">								
+		<DeckWeighting>							
+			<Deck Name="Jungle" Weighting="2" />						
+			<Deck Name="City" Weighting="0" />						
+			<Deck Name="Pyramid" Weighting="0" />						
+		</DeckWeighting>							
+		<Description>							
+			<Text Lang="en">Trap_Description_ZombieMonkeys</Text>						
+		</Description>							
+									
+		<EventEnterTrap Reflex="false">							
+			<EventAction LogicalOp="ALWAYS">
+				<Effects>
+					<Effect Target="Game" Field="ClearCard" Op="FUNCTION"/>
+					<Effect Target="Game" Field="AddEnemiesToCombat[level_1,zombie,Enemy_ZombieMonkey]" Op="FUNCTION">
+						<RandomVal Min="2" Max="4"/>
+					</Effect>
+					<Effect><Message><Text Lang="en">有[Value]只丧尸猴从树上发起了进攻！</Text></Message></Effect>
+				</Effects>
+			</EventAction>				
+		</EventEnterTrap>							
+	</Trap>	
+	
+	<!-- Competition Cards -->
+	<Trap Name="Trap_Flood" Category="trap" Image="Trap_Default" SubType="" Background="Card_Monster_Background_Jungle" GlobalUses="1">								
+		<DeckWeighting>							
+			<Deck Name="Jungle" Weighting="0" />						
+			<Deck Name="City" Weighting="0" />						
+			<Deck Name="Pyramid" Weighting="1" />						
+		</DeckWeighting>							
+		<Description>							
+			<Text Lang="en">Trap_Description_Flood</Text>						
+		</Description>							
+									
+		<EventEnterTrap Reflex="true" Modifier="-2">							
+			<EventAction LogicalOp="ALWAYS">
+				<Effects>
+					<Effect><Sound Name="Flamethrower" Loop="false" Volume="1"/></Effect>
+					<Effect><Animation Name="FX_Screen_Water"/></Effect>
+					<Effect Target="Game" Field="ReduceGameTime" Op="FUNCTION"><RandomVal Min="4" Max="4"/></Effect>
+					<Effect Target="Game" Field="ClearCard" Op="FUNCTION"/>
+					<Effect Target="Game" Field="AddCardsToDeckEvent[trap,null,Trap_Piranha]" Op="FUNCTION"><RandomVal Min="1" Max="1"/></Effect>
+					<Effect><Message><Text Lang="en">你无法避开水，顺着通道被冲了回去。损失2分钟。</Text></Message></Effect>
+				</Effects>
+			</EventAction>				
+		</EventEnterTrap>							
+	</Trap>
+	
+	<Trap Name="Trap_Piranha" Category="trap" Image="Piranha_Multiple" SubType="" Background="Card_Monster_Background_Moon" KillScore="50">						
+		<Description>					
+			<Text Lang="en">Trap_Description_Piranha</Text>				
+		</Description>					
+		<DeckWeighting>					
+			<Deck Name="Jungle" Weighting="0" />				
+			<Deck Name="City" Weighting="0" />				
+			<Deck Name="Pyramid" Weighting="0" />				
+		</DeckWeighting>					
+		
+		<EventFlip>
+			<EventAction LogicalOp="ALWAYS">
+				<Effects>
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS"><RandomVal Min="2" Max="2"/></Effect>
+					<Effect><Sound Name="Wounds" Loop="false" Volume="1"/></Effect>
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>
+				</Effects>
+			</EventAction>
+		</EventFlip>
+		
+		<EventEnterTrap Reflex="true">							
+			<EventAction LogicalOp="ALWAYS">
+				<Effects>
+					<Effect Target="Player" Field="woundsDelta" Op="MINUS"><RandomVal Min="1" Max="6"/></Effect>
+					<Effect><Sound Name="Wounds" Loop="false" Volume="1"/></Effect>
+					<Effect><Animation Name="FX_Screen_Damage"/></Effect>
+				</Effects>
+			</EventAction>
+		</EventEnterTrap>													
+	</Trap>		
+									
+</TrapData>									

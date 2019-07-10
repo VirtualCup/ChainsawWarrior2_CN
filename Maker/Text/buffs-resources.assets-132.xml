@@ -1,0 +1,237 @@
+<BuffData Version="1.0" Title = "Chainsaw Warrior" Platform="steam">								
+
+	<Buff name="Poison" durationType="Rounds" duration="PoisonRoll" buffDisplay="Icon_Poison" tooltip="TT_Buff_Poison">
+		<EventApplication>
+			<Effects>
+									
+				<Effect Target="Player" Field="hthValue" Op="MINUS" Val="3"/>
+				<Effect Target="Player" Field="marksmanshipValue" Op="MINUS" Val="3"/>
+				<Effect Target="Player" Field="reflexValue" Op="MINUS" Val="3"/>
+				<Effect><Animation Name="FX_Screen_Poison"/></Effect>
+				
+				<Effect><Message><Text Lang="en">[23da00]毒素发作[-]！</Text></Message></Effect>
+				<Effect><Message><Text Lang="en">-3搏斗，射术和反应，持续[PoisonRoll]回合。</Text></Message></Effect>
+			
+			</Effects>
+		</EventApplication>
+		
+		<EventBuffEnd>
+			<Effects>
+				<Effect>
+					<Message><Text Lang="en"></Text></Message>
+				</Effect>
+				
+				<Effect Target="Player" Field="hthValue" Op="PLUS" Val="3"/>
+				<Effect Target="Player" Field="marksmanshipValue" Op="PLUS" Val="3"/>
+				<Effect Target="Player" Field="reflexValue" Op="PLUS" Val="3"/>
+				
+			</Effects>
+		</EventBuffEnd>
+	</Buff>
+	
+	
+	<Buff name="Fire" durationType="Rounds" duration="FireRoll" buffDisplay="Icon_Fire" tooltip="TT_Buff_Fire">
+	
+		<DamageTypes>
+			<DamageType Name="Fire"/>
+		</DamageTypes>
+		
+		<EventImmediate>
+			<Effects>
+			
+				<Effect><Message><Text Lang="en">你着[FF6600]火[-]了！</Text></Message></Effect>
+				<Effect><Message><Text Lang="en">每回合都会受到伤害，持续[FireRoll]回合。</Text></Message></Effect>
+				
+				<Effect>
+					<Animation Name="FX_Screen_Fire"/>
+				</Effect>
+				
+			</Effects>
+		</EventImmediate>
+		
+		<EventRoundEnd>
+			<Effects>
+				
+				<Effect>
+					<Message><Text Lang="en">1点[FF6600]火焰[-]伤害。</Text></Message>
+				</Effect>
+				
+				<Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="1"/>
+				
+				<Effect>
+					<Animation Name="FX_Screen_Fire"/>
+				</Effect>
+				
+			</Effects>
+		</EventRoundEnd>
+		
+		<EventBuffEnd>
+			<Effects>
+			
+				<Effect>
+					<Message><Text Lang="en">[FF6600]火已熄灭[-]。</Text></Message>
+				</Effect>
+			
+			</Effects>
+		</EventBuffEnd>
+	</Buff>
+	
+
+	
+	<Buff name="StimPlus" durationType="Rounds" duration="StimRoll" buffDisplay="Icon_Stim+" tooltip="TT_Buff_Stim+">
+		
+		<EventApplication>
+			<Effects>
+				<Effect Target="Player" Field="hthValue" Op="PLUS" Val="3"/>
+				<Effect>
+					<Message><Text Lang="en">兴奋生效！+3搏斗，持续D6+2（[StimRoll]）回合。</Text></Message>
+				</Effect>
+			</Effects>
+		</EventApplication>
+
+		<EventBuffEnd>
+			<Effects>
+				<Effect Target="Player" Field="hthValue" Op="MINUS" Val="3"/>
+				<Effect><Buff>StimMinus</Buff></Effect> 
+			</Effects>
+		</EventBuffEnd>
+	</Buff>
+	
+	<Buff name="StimMinus" durationType="Rounds" duration="StimRoll" buffDisplay="Icon_Stim-" tooltip="TT_Buff_Stim-">
+		<EventApplication>
+			<Effects>
+				<Effect Target="Player" Field="hthValue" Op="MINUS" Val="2"/>
+				<Effect Target="Player" Field="reflexValue" Op="MINUS" Val="2"/>
+				<Effect Target="Player" Field="woundsMod" Op="MINUS">
+					<DiceVal  Roll="1d6" Type="enemy" Show="true" />
+				</Effect>
+				<Effect><Message><Text Lang="en">兴奋消退！-2搏斗和反应，持续[StimRoll]回合，并受到[Value]点伤害。</Text></Message></Effect>
+			</Effects>
+		</EventApplication>
+
+		<EventBuffEnd>
+			<Effects>
+				<Effect Target="Player" Field="hthValue" Op="PLUS" Val="2"/>
+				<Effect Target="Player" Field="reflexValue" Op="PLUS" Val="2"/>
+			</Effects>
+		</EventBuffEnd>
+	</Buff>
+	
+	
+	
+	<Buff name="EMP" durationType="Rounds" duration="EMPRoll" buffDisplay="Icon_EMP" tooltip="TT_Buff_EMP">
+		<EventImmediate>
+			<Effects>				
+		
+				<Effect Target="Game" Field="DisableEquipment[Electrical]" Op="FUNCTION">
+					<CachedVal Field="EMPRoll" Op="GET"/>
+				</Effect>
+				
+				<Effect>
+					<Animation Name="FX_Screen_Electric"/>
+				</Effect>
+
+				<Effect>
+					<Sound Name="Comic_02_Sparks" Loop="false" Volume="1"/>
+				</Effect>
+			
+			</Effects>
+		</EventImmediate>
+	
+	</Buff>
+
+
+	
+	<Buff name="Berzerk" durationType="Rounds" duration="EndCombat" buffDisplay="Icon_Venom" tooltip="TT_Buff_Berzerk">
+		<EventImmediate>
+			<Effect>
+				<Message><Text Lang="en">狂暴开始！</Text></Message>
+			</Effect>
+		</EventImmediate>
+		
+		<EventRoundEnd>
+		
+			<Effect Target="Player" Field="hthMod" Op="PLUS" Val="1"/>
+			<Effect>	
+				<CachedVal Field="berzerkTimer" Op="SET" Val="1"/>
+			</Effect>
+			
+		</EventRoundEnd>
+		
+		<EventBuffEnd>
+		</EventBuffEnd>
+	</Buff> 
+	
+	
+	
+	<Buff name="Mountains" durationType="Rounds" duration="-1" buffDisplay="" tooltip="TT_Buff_Mountain">
+		
+		<EventApplication>
+			<Effects>		
+				<Effect>
+					<Message><Text Lang="en">山峦的祝福：+1生命。</Text></Message>
+				</Effect>
+				<Effect>
+					<CachedVal Field="MountainTimer" Op="SET" Val="0"/>
+				</Effect>
+			</Effects>
+			
+		</EventApplication>
+
+		<EventRoundEnd>
+			<EventAction LogicalOp="IF">
+					<Conditions>	
+						<Cond CombineOp="GREATER_THAN_OR_EQUAL">
+							<Cond><CachedVal Field="MountainTimer" Op="GET"/></Cond>
+							<Cond><LiteralVal Val="10"/></Cond>
+						</Cond>
+					</Conditions>
+					<Effects>
+						
+						<Effect Target="Player" Field="woundsDelta" Op="PLUS" Val="1"/>
+						
+						<Effect>
+							<Message><Text Lang="en">[00FFF0]山峦的祝福：+1生命。[-]</Text></Message>
+						</Effect>
+						
+						<Effect>
+							<CachedVal Field="MountainTimer" Op="SET" Val="0"/>
+						</Effect>
+						
+					</Effects>
+			</EventAction>
+		</EventRoundEnd>
+		
+	</Buff>
+	
+	
+	<Buff name="MountainTime" durationType="Rounds" duration="-1" >
+	
+	 	<EventRoundEnd>
+			<Effects>
+				<Effect>
+					<CachedVal Field="MountainTimer" Op="PLUS" Val="1"/>
+				</Effect>
+			</Effects>
+		</EventRoundEnd> 
+		
+	</Buff>
+	
+	
+	
+	<Buff name="Sunset" durationType="Rounds" duration="-1" buffDisplay="" tooltip="TT_Buff_Moon">
+		<EventApplication>
+		
+			<Effects>
+			<Effect>
+				<Message><Text Lang="en">太阳下山了！从现在开始-1搏斗。</Text></Message>
+			</Effect>
+			<Effect Target="Player" Field="hthValue" Op="MINUS" Val="1"/>
+			</Effects>
+		</EventApplication>
+		
+	</Buff>
+	
+	
+
+</BuffData>									

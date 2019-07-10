@@ -1,0 +1,92 @@
+0 MonoBehaviour Base
+ 0 PPtr<GameObject> m_GameObject
+  0 int m_FileID = 0
+  0 int m_PathID = 4080
+ 1 UInt8 m_Enabled = 1
+ 0 PPtr<MonoScript> m_Script
+  0 int m_FileID = 2
+  0 int m_PathID = 685
+ 1 string m_Name = ""
+ 0 AnchorPoint leftAnchor
+  0 PPtr<$Transform> target
+   0 int m_FileID = 0
+   0 int m_PathID = 8110
+  0 float relative = 0
+  0 int absolute = 23
+ 0 AnchorPoint rightAnchor
+  0 PPtr<$Transform> target
+   0 int m_FileID = 0
+   0 int m_PathID = 0
+  0 float relative = 1
+  0 int absolute = 0
+ 0 AnchorPoint bottomAnchor
+  0 PPtr<$Transform> target
+   0 int m_FileID = 0
+   0 int m_PathID = 0
+  0 float relative = 0
+  0 int absolute = 0
+ 0 AnchorPoint topAnchor
+  0 PPtr<$Transform> target
+   0 int m_FileID = 0
+   0 int m_PathID = 0
+  0 float relative = 1
+  0 int absolute = 0
+ 0 int updateAnchors = 1
+ 0 ColorRGBA mColor
+  0 float r = 1
+  0 float g = 1
+  0 float b = 1
+  0 float a = 1
+ 0 int mPivot = 3
+ 0 int mWidth = 215
+ 0 int mHeight = 24
+ 0 int mDepth = 32
+ 1 UInt8 autoResizeBoxCollider = 0
+ 1 UInt8 hideIfOffScreen = 0
+ 0 int keepAspectRatio = 0
+ 0 float aspectRatio = 8.95833302
+ 0 int keepCrispWhenShrunk = 1
+ 0 PPtr<$Font> mTrueTypeFont
+  0 int m_FileID = 0
+  0 int m_PathID = 964
+ 0 PPtr<$UIFont> mFont
+  0 int m_FileID = 0
+  0 int m_PathID = 0
+ 1 string mText = "受到的伤害："
+ 0 int mFontSize = 26
+ 0 int mFontStyle = 0
+ 0 int mAlignment = 0
+ 1 UInt8 mEncoding = 1
+ 0 int mMaxLineCount = 0
+ 0 int mEffectStyle = 0
+ 0 ColorRGBA mEffectColor
+  0 float r = 0
+  0 float g = 0
+  0 float b = 0
+  0 float a = 1
+ 0 int mSymbols = 1
+ 0 Vector2f mEffectDistance
+  0 float x = 1
+  0 float y = 1
+ 0 int mOverflow = 0
+ 0 PPtr<$Material> mMaterial
+  0 int m_FileID = 0
+  0 int m_PathID = 0
+ 1 UInt8 mApplyGradient = 0
+ 0 ColorRGBA mGradientTop
+  0 float r = 1
+  0 float g = 1
+  0 float b = 1
+  0 float a = 1
+ 0 ColorRGBA mGradientBottom
+  0 float r = 0.699999988
+  0 float g = 0.699999988
+  0 float b = 0.699999988
+  0 float a = 1
+ 0 int mSpacingX = 0
+ 0 int mSpacingY = 0
+ 1 UInt8 mShrinkToFit = 0
+ 0 int mMaxLineWidth = 0
+ 0 int mMaxLineHeight = 0
+ 0 float mLineWidth = 0
+ 1 UInt8 mMultiline = 1

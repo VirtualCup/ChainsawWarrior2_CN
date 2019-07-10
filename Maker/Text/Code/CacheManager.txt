@@ -1,0 +1,25 @@
+function Set;
+
+if(key == "statPlayer"){
+	if(value == "HtH"){
+		value = "搏斗";
+	}
+	else if(value == "Marksmanship"){
+		value = "射术";
+	}
+	else if(value == "Reflex"){
+		value = "反应";
+	}
+}
+
+if(key == "statEnemy"){
+	if(value == "Power"){
+		value = "力量";
+	}
+	else if(value == "Reflex"){
+		value = "反应";
+	}
+	else if(value == "Armour"){
+		value = "护甲";
+	}
+}

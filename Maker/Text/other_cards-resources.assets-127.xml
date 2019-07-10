@@ -1,0 +1,68 @@
+<CardData Version="1.0" Title = "Chainsaw Warrior" Platform="steam">
+	
+	<Card Name="Card_Clear" Category="clear" Image="Empty_Card" Back="corridor" Background="Card_Monster_Background_Jungle">
+		<DeckWeighting>
+			<Deck Name="Jungle" Weighting="4"/>
+			<Deck Name="City" Weighting="4"/>
+			<Deck Name="Pyramid" Weighting="2"/>
+		</DeckWeighting>
+		
+		<Description>							
+			<Text Lang="en">Card_Clear_Description</Text>						
+		</Description>
+	</Card>
+	
+	
+	
+	<Card Name="Card_AirDrop" Category="airdrop" Image="Air_Drop" Back="corridor" Background="Card_Monster_Background_Jungle">
+	
+		<DeckWeighting>
+			<Deck Name="Jungle" Weighting="2"/>
+			<Deck Name="City" Weighting="2"/>
+			<Deck Name="Pyramid" Weighting="2"/>
+		</DeckWeighting>
+		
+		<Description>							
+			<Text Lang="en">Card_AirDrop_Description</Text>						
+		</Description>
+		
+		<AirDrop>
+			<Equipment Category="Device" Amount="3"/>
+		</AirDrop>
+		
+	</Card>
+	
+	<Card Name="Card_Temple" Category="temple" Image="Temple" Back="corridor" Background="Card_Monster_Background_Jungle">
+	
+		<Description>							
+			<Text Lang="en">Card_Temple_Description</Text>						
+		</Description>	
+		
+		<DeckWeighting>
+			<Deck Name="Jungle" Weighting="1"/>
+			<Deck Name="City" Weighting="1"/>
+			<Deck Name="Pyramid" Weighting="1"/>
+		</DeckWeighting>
+		
+		<EventEnterTemple>
+	
+			<EventAction LogicalOp="ALWAYS">
+				<Effects>
+					<Effect>
+						<Message>
+							<Text Lang="en">进入神庙中</Text>
+						</Message>
+					</Effect>
+					<Effect><Animation Name="FX_Screen_Mist"/></Effect>
+					<Effect HoldTime="1">
+						<Message>
+							<Text Lang="en">发现守护者！</Text>
+						</Message>
+					</Effect>
+				</Effects>
+			</EventAction>
+			
+		</EventEnterTemple>
+	</Card>
+
+</CardData>

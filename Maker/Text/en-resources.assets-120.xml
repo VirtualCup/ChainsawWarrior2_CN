@@ -1,0 +1,951 @@
+<LanguageData symbol="en" name="English" steam="english">
+	<!-- Menu Items (Frontend) -->
+	<Tag name="Menu_Main" 						text="主菜单"/>
+	<Tag name="Menu_NewGame" 					text="新游戏"/>	
+	<Tag name="Menu_Load" 						text="读取"/>
+	<Tag name="Menu_Settings" 					text="设置"/>
+	<Tag name="Menu_Extras" 					text="额外"/>	
+	<Tag name="Menu_Achievements" 				text="成就"/>	
+	<Tag name="Menu_DLC" 						text="购买电锯战士"/>	
+	<Tag name="Menu_DF" 						text="暗之未来：血红雕像"/>	
+	<Tag name="Menu_Quit" 						text="退出"/>	
+	
+	<Tag name="Menu_Difficulty_Select" 			text="选择难度"/>	
+	<Tag name="Menu_Normal" 					text="普通"/>	
+	<Tag name="Menu_Hard" 						text="困难"/>	
+	<Tag name="Menu_Classic" 					text="经典"/>
+	<Tag name="Menu_Start" 						text="开始"/>	
+	<Tag name="Menu_Cancel" 					text="取消"/>
+	
+	<Tag name="Menu_LoadGame_Title" 			text="读取游戏"/>
+	<Tag name="Menu_SaveGame_Title" 			text="保存游戏"/>	
+	<Tag name="Menu_Delete" 					text="删除"/>
+	<Tag name="Menu_Save" 						text="保存"/>	
+	<Tag name="Menu_Load" 						text="读取"/>	
+	<Tag name="Menu_Overwrite_Confirm"			text="要覆盖该存档吗？将会遗失旧的存档。"/>	
+	<Tag name="Menu_Delete_Confirm"				text="删除该存档？"/>	
+	
+	
+	<Tag name="Menu_Settings_Title" 			text="设置"/>
+	<Tag name="Menu_Settings_Sound" 			text="声音"/>
+	<Tag name="Menu_Settings_Music" 			text="音乐"/>
+	<Tag name="Menu_Settings_Resolution" 		text="分辨率"/>
+	<Tag name="Menu_Settings_ScreenMode" 		text="屏幕模式"/>
+	<Tag name="Menu_Settings_WindowMode" 		text="窗口"/>
+	<Tag name="Menu_Settings_Fullscreen" 		text="全屏"/>
+	<Tag name="Menu_Settings_Tutorial" 			text="教程"/>
+	<Tag name="Menu_Settings_VSync" 			text="垂直同步"/>
+	<Tag name="Menu_Settings_VSync_On" 			text="开启"/>
+	<Tag name="Menu_Settings_VSync_Off" 		text="关闭"/>
+	<Tag name="Menu_Settings_Anti-Aliasing" 	text="抗锯齿"/>
+	<Tag name="Menu_Settings_MSAA_0x" 			text="MSAA 关闭"/>
+	<Tag name="Menu_Settings_MSAA_2x" 			text="MSAA 2x"/>
+	<Tag name="Menu_Settings_MSAA_4x" 			text="MSAA 4x"/>
+	<Tag name="Menu_Settings_MSAA_8x" 			text="MSAA 8x"/>
+	<Tag name="Menu_Settings_Off" 				text="关闭"/>
+	<Tag name="Menu_Settings_Roll" 				text="快速战斗"/>
+	
+	
+	<Tag name="Menu_Settings_Save" 				text="保存"/>
+	
+	<Tag name="Menu_Settings_Resolution_Title" 	text="分辨率"/>
+
+	<Tag name="Menu_ResolutionTitle" 			text="确认分辨率"/>
+	<Tag name="Menu_ResolutionText1" 			text="要保留该分辨率设置吗？"/>
+	<Tag name="Menu_ResolutionText2" 			text="屏幕分辨率将会在"/>
+	<Tag name="Menu_ResolutionText3" 			text="秒后复原。"/>
+	
+	<Tag name="Menu_Settings_Confirm" 		text="要保留该设置吗？"/>
+	
+	<Tag name="Menu_Extras_Title" 			text="额外"/>	
+	<Tag name="Menu_Cinematics" 			text="过场动画"/>	
+	<Tag name="Menu_Social" 				text="社区"/>	
+	<Tag name="Menu_Credits" 				text="制作组"/>
+	
+	<Tag name="Menu_SocialButtons"			text="在你的浏览器中打开此链接"/>
+		
+	<Tag name="Menu_Cinematics_Title" 		text="过场动画"/>
+	<Tag name="Menu_Cinematic1"				text="丛林"/>
+	<Tag name="Menu_Cinematic2"				text="城市"/>
+	<Tag name="Menu_Cinematic3"				text="金字塔"/>
+	<Tag name="Menu_Cinematic4"				text="神庙"/>	
+	
+	<Tag name="Menu_Credits_Title" 			text="制作组"/>
+	
+	<Tag name="Menu_Quit_Confirm" 			text="要退出至桌面吗？"/>
+	
+	<Tag name="Menu_ConfirmTitle"		 	text="确认"/>
+	<Tag name="Menu_Confirm_Yes"		 	text="是"/>
+	<Tag name="Menu_Confirm_No"		 		text="否"/>
+	
+	<Tag name="Menu_Close"		 			text="关闭"/>
+	<Tag name="Menu_Restart"		 		text="重新开始"/>
+	
+	<Tag name="Menu_Achievements_Title"		text="成就"/>
+	<Tag name="Menu_Achievements_Text"		text="查看你的进度以及成就。"/>
+	<Tag name="Menu_Achievements_Not_Logged_In"		text="未登录%s"/>
+	<Tag name="Menu_View_Achievements"		text="查看"/>
+	<Tag name="Achievements_Complete"				text="已完成"/>
+	<Tag name="Achievements_Incomplete"				text="未完成"/>
+	
+	<Tag name="A_Surprise_Title"					text="成就名称"/>
+	<Tag name="A_Surprise_Description"				text="成就描述"/>
+	<Tag name="A_Please_Stand_Up_Title"				text="请真身站起来"/>
+	<Tag name="A_Please_Stand_Up_Description"		text="在击败暗冥前杀死全部五个暗影。（梗出自《The Real Slim Shady》）"/>
+	<Tag name="A_Groovy_Title"						text="棒极了"/>
+	<Tag name="A_Groovy_Description"				text="阻止疯子偷窃你的电锯。（梗出自《鬼玩人》）"/>
+	<Tag name="A_Vandal_Title"						text="汪达尔破坏者"/>
+	<Tag name="A_Vandal_Description"				text="在一回合内摧毁雕像。"/>
+	<Tag name="A_It_Gets_Worse_Here_Everyday_Title"						text="这个日益变糟的地方"/>
+	<Tag name="A_It_Gets_Worse_Here_Everyday_Description"				text="死于丛林。（梗出自《Welcome To The Jungle》）"/>
+	<Tag name="A_Death_And_Glory_Title"				text="光荣牺牲与牺牲"/>
+	<Tag name="A_Death_And_Glory_Description"		text="找到所有结局。"/>
+	<Tag name="A_Welcome_To_Die_Title"				text="欢迎来死！"/>
+	<Tag name="A_Welcome_To_Die_Description"		text="输掉一局游戏。（梗出自《X战警》）"/>
+	<Tag name="A_Make_Your_Time_Title"				text="珍惜你剩余的时间"/>
+	<Tag name="A_Make_Your_Time_Description"		text="输掉一百局游戏。（梗出自《零翼战机》）"/>
+	<Tag name="A_I_Forgot_Title"					text="我忘了怎么当战士"/>
+	<Tag name="A_I_Forgot_Description"				text="让你的反应、搏斗以及射术都降至五。"/>
+	<Tag name="A_Hot_Stuff_Title"					text="成就标题"/>
+	<Tag name="A_Hot_Stuff_Description"				text="成就描述"/>
+	<Tag name="A_Fisto_Title"						text="铁拳"/>
+	<Tag name="A_Fisto_Description"					text="拳打暗冥。（梗出自《宇宙巨人希曼》）"/>
+	<Tag name="A_Laser_Lost_Title"					text="激光失落"/>
+	<Tag name="A_Laser_Lost_Description"			text="失去激光长枪。"/>
+	<Tag name="A_Laser_Loser_Title"					text="激光失格"/>
+	<Tag name="A_Laser_Loser_Description"			text="在一局游戏中两次失去激光长枪。"/>
+	<Tag name="A_Cruelty_Zoo_Title"					text="残暴动物园"/>
+	<Tag name="A_Cruelty_Zoo_Description"			text="残害野生动物（杀死200只动物）。"/>
+	<Tag name="A_Re_Dead_Title"						text="又死了"/>
+	<Tag name="A_Re_Dead_Description"				text="杀死200只丧尸。"/>
+	<Tag name="A_Waning_Title"						text="月亏"/>
+	<Tag name="A_Waning_Description"				text="杀死200个拜月邪教徒。"/>
+	<Tag name="A_John_15_Title"						text="约翰一书 1:5"/>
+	<Tag name="A_John_15_Description"				text="在任意难度下击杀暗冥25次。"/>
+	<Tag name="A_Normal_Title"						text="普通"/>
+	<Tag name="A_Normal_Description"				text="以普通难度通关游戏。"/>
+	<Tag name="A_Hard_Title"						text="困难"/>
+	<Tag name="A_Hard_Description"					text="以困难难度通关游戏。"/>
+	<Tag name="A_Masochist_Title"					text="受虐狂"/>
+	<Tag name="A_Masochist_Description"				text="以经典难度通关游戏。"/>
+	<Tag name="A_Munchkin_Title"					text="成就名称"/>
+	<Tag name="A_Munchkin_Description"				text="成就描述"/>
+	<Tag name="A_Bleedin_Title"						text="流血中"/>
+	<Tag name="A_Bleedin_Description"				text="受到200点物理伤害。"/>
+	<Tag name="A_Glowin_Title"						text="发光中"/>
+	<Tag name="A_Glowin_Description"				text="受到200点辐射污染。"/>
+	<Tag name="A_Turnin_Title"						text="变化中"/>
+	<Tag name="A_Turnin_Description"				text="受到200点毒液污染。"/>
+	<Tag name="A_Clumsy_Title"						text="笨拙"/>
+	<Tag name="A_Clumsy_Description"				text="连续遭遇3个陷阱。"/>
+	<Tag name="A_Call_Kenny_Title"					text="呼叫肯尼·洛金斯"/>
+	<Tag name="A_Call_Kenny_Description"			text="到达金字塔卡组的最后5张卡。（暗示《Danger Zone》）"/>
+	<Tag name="A_Score_Title"						text="分数"/>
+	<Tag name="A_Score_Description"					text="获得10,000分。"/>
+	<Tag name="A_Sooner_Or_Later_Title"				text="迟早都得放手"/>
+	<Tag name="A_Sooner_Or_Later_Description"		text="解锁『美洲虎』武器。"/>
+
+	
+	<!-- CREDITS -->
+	<Tag name="Menu_Version_Number"			text="Version 1.1.7"/>
+	<Tag name="Menu_Credits_List"		 	text="电锯战士：暗夜领主
+
+			\n\n根据 Stephen Hand 创造的游戏《电锯战士》改编而成
+
+			\n\n由 Auroch Digital 开发与发行
+
+			\n\n设计与监制人
+			\nTomas Rawlings
+
+			\n\n运营总监
+			\nDebbie Rawlings
+
+			\n\n游戏设计
+			\nSteve Martin
+			
+			\n\n设计助理
+			\nJo Giddings
+
+			\n\nAuroch Digital 首席美术
+			\nCodey Dyer
+
+			\n\n美术
+			\nChris Raadjes
+			\nPeter Pielak
+
+			\n\n概念艺术与全动态影像
+			\nStuart Griffin
+
+			\n\nAuroch Digital 首席程序员
+			\nJohnty Clark
+
+			\n\n程序
+			\nGeorge Parker
+			\nHeather Cooper
+			\nAbhishek Sagi
+			\nMark Wonnacott
+
+			\n\n产品支持
+			\nPeter Willington
+			\nNina Adams
+			\nGeoff Lee
+
+			\n\n社区经理与测试
+			\nJake Connor
+
+			\n\n音效与音乐
+			\nStuart Duffield (stuartduffield.com)
+
+			\n\n感谢：
+			\nDaniel Keeble
+			\nChristian Kelly
+
+			\n\n于英国布里斯托尔 Bristol Games Hub 制作"
+		/>
+		
+	<!-- Key bindings -->
+	<Tag name="Menu_Keybinds_Title"		text="Keyboard Shortcuts"/>
+	
+	<Tag name="Menu_Keybinds"		 	text="Esc:	暂停/关闭菜单/取消
+		\n\nEnter: 	确认
+		\n\nI:		打开/关闭背包
+		\n\n1: 		动作 1
+		\n2: 		动作 2
+		\n3: 		动作 3
+		\n4: 		动作 4
+		\n5: 		动作 5
+		\n6: 		动作 6
+		\n7: 		动作 7
+		\n8: 		动作 8
+		\n9: 		动作 9"/>
+		
+	
+	<!-- Menu Items (Character Creation and Inventory) -->
+	<Tag name="Menu_Character_Title"		 		text="角色创建"/>
+	<Tag name="Menu_Character_Info_Title"			text="生成角色"/>
+	<Tag name="Menu_Character_Info_Text"			text="你准备好拯救世界了吗？\n\n点击『创建』生成你的角色属性。"/>
+	<Tag name="Menu_Character_Info_Classic"			text="你准备好拯救世界了吗？\n\n在经典模式中，你的属性全都是随机的，而且你无法看到自己选到了什么装备。\n祝你好运，战士！"/>
+	<Tag name="Menu_Character_Info_Progress"		text="正在生成电锯战士……"/>
+	<Tag name="Menu_Character_Equipment_Text"  		text="选择你的武器，它们将陪你一起执行绝命任务。\n\n枪械和重武器最多只能带一把，尽可能把它们和其它道具都带上吧。"/>
+	<Tag name="Menu_Character_Equipment_Classic"  	text="枪械和重武器最多只能带一把，尽可能把它们和其它道具都带上吧。\n\n经典模式\n状态分配如下：生命：2D6+6，毒液和辐射抗性：4D6，搏斗：D6+6，射术：D6+6，反应：D6+6，装备：D6+2"/>
+	
+	
+	<Tag name="Menu_Character_Stats"		 	text="属性"/>
+	
+	<Tag name="Menu_Cost"		 				text="花费："/>
+	<Tag name="Menu_Cost_01"		 			text="1"/>
+	<Tag name="Menu_Cost_02"		 			text="2"/>
+	<Tag name="Menu_Cost_03"		 			text="3"/>
+	
+	<Tag name="Menu_Character_CreateButton"		text="创建"/>
+	<Tag name="Menu_Character_ReCreateButton"	text="重新创建"/>
+
+	<Tag name="Menu_Character_Equip"			text="装备"/>
+	
+	<Tag name="Menu_Character_Wounds"			text="生命"/>
+	<Tag name="Menu_Character_VenomResist"		text="毒液抗性"/>
+	<Tag name="Menu_Character_RadResist"		text="辐射抗性"/>
+	<Tag name="Menu_Character_Melee"			text="搏斗"/>
+	<Tag name="Menu_Character_Ranged"			text="射术"/>
+	<Tag name="Menu_Character_Reflex"			text="反应"/>
+	<Tag name="Menu_Equipment"					text="装备"/>
+	
+	<Tag name="UI_Empty_Slot"					text="空档"/>
+	
+	<Tag name="UI_Continue"						text="继续"/>
+	
+	<Tag name="UI_Back"							text="返回"/>
+	
+	<Tag name="UI_None"							text="无"/>
+	
+	<Tag name="Menu_Points"						text="装备点："/>
+	
+	<Tag name="Menu_Character_Inventory_Title"	text="背包"/>
+	<Tag name="Menu_Character_Inv_Text"			text="查看人物的装备与状态，包括技能以及你已获得的祝福。"/>
+	
+	<Tag name="Menu_Character_Confirm"			text="你还有剩余的装备点数。\n\n确定要继续吗？"/>
+	<Tag name="Menu_Character_Classic_Confirm"	text="该模式会限制你选择装备的自由。是否继续？"/>
+	
+	<Tag name="Menu_Use"						text="使用"/>
+	
+	<Tag name="Menu_Pause_Title"				text="已暂停"/>
+	
+	
+	<!-- Game Over Screen -->
+	<Tag name="EndGame_Title_Lose" 		text="游戏结束"/>
+	<Tag name="EndGame_Title_Win" 		text="游戏胜利！"/>
+	
+	<Tag name="EndGame_Wounds" 		text="你的战斗很精彩，只是暗冥和它的随从实在太强了。\n\n你是世界最后的希望，没有你，第五纪元必定会走向终结……"/>
+	<Tag name="EndGame_Slime" 		text="史莱姆靠近你的速度比你想象的还要快，它把你裹进了它的毒性粘液中。你动弹不得，只能眼睁睁地看着它吞噬并消化你的肉体。\n\n没有你，这个世界必定会走向灭亡……"/>
+	<Tag name="EndGame_Venom" 		text="那令人恶寒的暗冥毒液完全压制了你。你无法控制自己的身体，慢慢的，连你的意识也不受控制。\n\n没有你去阻止，暗冥的力量可以不受限制地增长，这个世界已注定灭亡……"/>
+	<Tag name="EndGame_Radiation" 	text="你无法用电锯来杀死辐射……\n\n经过反复的暴露，你的身体终于发出了淡淡的光芒。那些看不见的污染做到了连疯子和怪物们都做不到的事：世上再也没有无敌的电锯战士了……"/>
+	<Tag name="EndGame_Lose" 		text="你披荆斩棘闯关无数，只可惜暗冥的实力远超你的想象。\n\n你的努力全都付诸东流，这个注定灭亡的世界也不会有足够的时间来为你哀悼……"/>
+	<Tag name="EndGame_Implosion" 	text="这是一时失手还是放弃了希望？是哪个已经无所谓了，因为你都变成了碎片。嫩嫩的，小小的，碎片。\n\n你还真称得上是最后的希望……"/>
+	<Tag name="EndGame_Time" 		text="虽然暗冥的手下没有能力阻止你，但是它们拖延你的时间已经足够让暗冥取得完全的力量了。\n\n你的时间用完了，其他人也完了。\n\n真希望他们有想过用降落伞来空投你，而不是空投那一箱箱枪械……"/>
+	<Tag name="EndGame_Draw" 		text="为了达到今天这一步你用尽了一切手段，但看来只有一种方法能够结束战斗。\n\n你启动了引爆装置，没有犹豫，也没有抱怨自己宿命的诅咒。\n\n世界安全了，但电锯战士已不复存在……"/>
+	<Tag name="EndGame_Win" 		text="你击败了暗冥！\n\n激光长枪的传闻是真的，暗冥再次被放逐出这个次元。世界安全了。\n虽然只能持续到下一次……"/>
+	
+	<!-- Tooltips (Frontend) -->	
+	<Tag name="TT_Normal" 					text="面板慷慨的人物状态以及数量合理的敌人"/>
+	<Tag name="TT_Hard" 					text="面板合理的人物状态以及数量慷慨的敌人"/>
+	<Tag name="TT_Classic" 					text="随机状态，随机装备，祝你好运……"/>
+	<Tag name="TT_Equipment_Points"			text="装备点数"/>
+	
+	
+	<!-- Tooltips (In Game)-->
+	<Tag name="TT_Wounds" 					text="生命：你能承受的伤害。"/>
+	<Tag name="TT_VenomResist" 				text="毒液抗性：当该属性降为0时你就会被完全感染，变成一只丧尸！"/>
+	<Tag name="TT_RadResist" 				text="辐射抗性：当该属性降为0时你就会死亡！"/>
+	<Tag name="TT_Melee" 					text="搏斗：使用其它道具进行肉搏的熟练度。"/>
+	<Tag name="TT_Ranged" 					text="射术：使用远程武器进行射击的熟练度。"/>
+	<Tag name="TT_Reflex" 					text="反应：你闪避攻击，战时移动以及回避陷阱的能力。"/>
+	<Tag name="TT_EquipmentPoints" 			text="购买装备时需要消耗的点数。"/>
+	
+	<Tag name="TT_Skill_Stealth" 			text="技能：隐匿\n\n每次你遇到敌人都有机会避免被发现。它不仅能让你绕开普通敌人，还能让你免于被守护者埋伏。"/>
+	<Tag name="TT_Skill_RapidFire" 			text="技能：速射\n\n当你射击未命中时有机会进行第二次射击（不消耗子弹与时间），此时-2射术。"/>
+	<Tag name="TT_Skill_Resistance" 		text="技能：抵抗\n\n有概率无视毒液，辐射或中毒。"/>
+	<Tag name="TT_Skill_CombatAgility" 		text="技能：机动\n\n在战斗中改变位置时+2反应。\n+1逃跑点数"/>
+	<Tag name="TT_Skill_Lore" 				text="技能：学识\n\n不知怎么地你成为了阿兹特克方面的专家：在进入神庙前就知道里面是哪种祝福和守护者。"/>
+	<Tag name="TT_Skill_Navigation" 		text="技能：导航\n\n你有非常好的方向感。每副卡组减少5张卡牌。"/>
+	
+	<Tag name="TT_Ammo" 					text="子弹"/>
+	<Tag name="TT_Electricity" 				text="电子：遭遇电磁脉冲会失灵。"/>
+	<Tag name="TT_HtH" 						text="搏斗加成"/>
+	<Tag name="TT_AP" 						text="穿甲：每点穿甲值能破坏敌人一点护甲。"/>
+	<Tag name="TT_Spread" 					text="范围：该武器能同时攻击复数敌人。"/>
+	<Tag name="TT_Uses" 					text="使用次数"/>
+	<Tag name="TT_Marksman" 				text="射术加成"/>
+	
+	<Tag name="Fire" 						text="着火"/>
+	<Tag name="Poison" 						text="中毒"/>
+	<Tag name="StimPlus" 					text="兴奋生效"/>
+	<Tag name="StimMinus" 					text="兴奋消退"/>
+	<Tag name="EMP" 						text="电磁脉冲"/>
+	<Tag name="Berzerk" 					text="狂暴"/>
+	<Tag name="Moon"						text="月亮"/>
+	
+	<Tag name="TT_Buff_Fire" 					text="着火了！回合开始时受到1点伤害。"/>
+	<Tag name="TT_Buff_Poison" 					text="中毒：-2射术，搏斗和反应。"/>
+	<Tag name="TT_Buff_Stim+" 					text="战斗用兴奋剂：+2搏斗。"/>
+	<Tag name="TT_Buff_Stim-" 					text="兴奋消退：射术，搏斗和反应都减少2点。"/>
+	<Tag name="TT_Buff_EMP" 					text="电磁脉冲：所有电子装备都失灵"/>
+	<Tag name="TT_Buff_Berzerk" 				text="狂暴加成已激活。"/>
+	<Tag name="TT_Buff_Moon" 					text="太阳已下山：-1搏斗"/>
+	
+	
+	<!--- Tooltips (Actions) -->
+	<Tag name="TT_Action_Hide" 					text="使用『隐匿』技能绕过敌人！"/>
+	<Tag name="TT_Action_Fight" 				text="进入战斗。"/>
+	<Tag name="TT_Action_Airdrop" 				text="搜索空投点。"/>
+	
+	<Tag name="TT_Action_EnterTemple" 			text="与神庙守护者战斗以获得祝福。"/>
+	<Tag name="TT_Action_SkipTemple" 			text="无视神庙继续上路。"/>
+	
+	<Tag name="TT_Action_EnterTrap" 			text="遇见陷阱。"/>
+	<Tag name="TT_Action_SkipTrap" 				text="使用道具绕过陷阱。"/>
+	
+	<Tag name="TT_Action_Charge"				text="移动至近战位置。"/>
+	<Tag name="TT_Action_Evade"					text="离开近战位置。"/>
+	<Tag name="TT_Action_Melee"					text="选择一件近战武器。"/>
+	<Tag name="TT_Action_Ranged"				text="选择一件远程武器。"/>
+	<Tag name="TT_Action_Desperate"				text="尝试进行幸运射击。"/>
+	<Tag name="TT_Action_Escape"				text="尝试从战斗中逃跑。掷出6点骰子算成功。"/>
+	
+	<Tag name="TT_Action_Wait"					text="30秒内不采取任何行动。"/>
+	<Tag name="TT_Action_Reload"				text="为你的一把武器重新填弹。"/>
+	
+	<Tag name="TT_Action_Item"					text="使用道具。"/>
+	<Tag name="TT_Action_Blessing"				text="激活一项祝福。"/>
+	
+	<Tag name="TT_InventoryButton"				text="查看装备以及能力。"/>
+			
+	<Tag name="TT_TimerSun"						text="太阳出来了。所有状态都是满的。"/>
+	<Tag name="TT_TimerMoon"					text="太阳下山了！接下来的游戏会-1搏斗。"/>
+
+	
+	
+	
+	
+	
+	<!-- Inventory headers -->
+	<Tag name="UI_HtH" 					text="近战武器"/>
+	<Tag name="UI_Gun" 					text="主枪械"/>
+	<Tag name="UI_Heavy" 				text="重武器"/>
+	<Tag name="UI_Device" 				text="设备"/>
+	<Tag name="UI_Clothing" 			text="护具"/>
+	<Tag name="UI_Special" 				text="特殊"/>
+	<Tag name="UI_Chainsaw" 			text="电锯升级物"/>
+	<Tag name="UI_Blessing" 			text="祝福"/>
+	
+	
+	<Tag name="UI_AddSlot" 				text="加入武器槽"/>
+	<Tag name="UI_SlotUnavailable" 		text="槽位不可用"/>
+	
+	<Tag name="UI_Classic_Equipment_Description"	text="该道具会在游戏开始后揭示"/>
+	
+	
+	<!-- Popup Overlay Text> -->
+	
+	<Tag name="UI_Overlay_Blessing_Title" 	text="获得了祝福"/>
+	
+	<!--- Decks -->
+	<Tag name="UI_Jungle"				text="丛林"/>
+	<Tag name="UI_City"					text="失落之城"/>
+	<Tag name="UI_Pyramid"				text="金字塔"/>
+	
+	<!-- Button Actions -->
+	<Tag name="UI_Action_Stealth" 		text="藏匿"/>
+	<Tag name="UI_Action_Fight" 		text="战斗"/>
+	<Tag name="UI_Action_Continue" 		text="继续"/>
+	<Tag name="UI_Action_AirDrop" 		text="空投"/>
+	<Tag name="UI_Action_Enter" 		text="进入"/>
+	<Tag name="UI_Action_Skip" 			text="略过"/>
+	<Tag name="UI_Action_Accept" 		text="接受"/>
+	<Tag name="UI_Action_Charge" 		text="突进"/>
+	<Tag name="UI_Action_Evade" 		text="闪避"/>
+	<Tag name="UI_Action_Melee" 		text="近战"/>
+	<Tag name="UI_Action_Ranged" 		text="远程"/>
+	<Tag name="UI_Action_Desperate" 	text="幸运射击"/>
+	<Tag name="UI_Action_Esc" 			text="逃跑"/>
+	
+	<Tag name="UI_Points" 				text="点数："/>
+	
+	<Tag name="UI_Air_Drop_Toggle" 		text="切换"/>
+	
+	<Tag name="UI_Action_Yes" 			text="是"/>
+	<Tag name="UI_Action_No" 			text="否"/>
+	<Tag name="UI_Action_Back" 			text="返回"/>
+	<Tag name="UI_Replace" 				text="替换"/>
+	
+	<Tag name="UI_Action_Wait" 			text="等待"/>
+	<Tag name="UI_Action_Reload" 		text="重新填弹"/>
+	
+	<Tag name="UI_Action_Item" 			text="道具"/>
+	<Tag name="UI_Action_Blessing" 		text="祝福"/>
+	
+	<Tag name="UI_Spread" 				text="范围"/>
+	<Tag name="UI_Electric" 			text="电子"/>
+	<Tag name="UI_Locked" 				text="未解锁"/>
+	
+	<Tag name="Game_Buff_Ignored" text="时间之神『皮尔特辛特库特利』的祝福让你免于[BuffIgnore]的侵害！"/>
+				
+	<!-- Game Actions -->
+	<Tag name="Game_Action_Damage_Venom" text="[Player.venomDelta]点毒液抗性"/>
+	<Tag name="Game_Action_Damage_Radiation" text="[Player.radiationDelta]点辐射抗性"/>
+	<Tag name="Game_Action_Damage_Wounds" text="受到[Player.woundsDelta]点伤害"/>
+
+	<!--- Dice Rolls -->
+	
+	<Tag name="Game_Roll_Enemy" 			text="敌人的[statEnemy]为：[rollEnemy]+[valEnemy]=[totalEnemy]"/>
+	
+	
+	<Tag name="Game_Roll_Attack_AutoLose" 		text="[Enemy]太强大了，你无法避开此次攻击。"/>
+	<Tag name="Game_Roll_Attack_AutoLose_Reflex" text="[Enemy]太灵活了，你根本没办法命中！"/>
+	<Tag name="Game_Roll_Attack_AutoWin" 		text="无需掷骰子，你的攻击不会失败！"/>
+	<Tag name="Game_Roll_Attack_AutoWin_Reflex"  text="敌人太慢了，你的攻击不会失败！"/>
+
+	<Tag name="Game_Roll_Attack" 				text="玩家的[statPlayer]为[valPlayer]：最少需要掷出[target]点才能成功。"/>
+	<Tag name="Game_Roll_Attack_RollDraw" 		text="玩家的[statPlayer]为[valPlayer]：需要掷出12点才能成功格挡。"/>
+
+	<Tag name="Game_Roll_Attack_Win" 			text="玩家掷出了[rollPlayer]点：攻击成功。"/>
+	<Tag name="Game_Roll_Attack_Reflex_Lose" 	text="玩家掷出了[rollPlayer]点：你的攻击失败了。"/>
+	<Tag name="Game_Roll_Attack_Draw" 			text="玩家掷出了[rollPlayer]点：平手！情况不变。"/>
+	<Tag name="Game_Roll_Attack_Lose" 			text="玩家掷出了[rollPlayer]点：玩家被[Enemy]攻击了。"/>
+
+	<Tag name="Game_Roll_Reflex" 				text="玩家的[statPlayer]为[valPlayer]：最少需要掷出[target]点才能成功。"/>
+	
+	<Tag name="Game_Roll_Reflex_AutoLose" 		text="玩家无法避开敌人。"/>
+	<Tag name="Game_Roll_Reflex_AutoWin" 		text="[Enemy]无法攻击到玩家。"/>
+	
+	<Tag name="Game_Roll_Reflex_Win" 			text="玩家掷出了[rollPlayer]点。"/>
+	
+	<Tag name="Game_Action_Evade_Success" 		text="成功从近身战中脱身。"/>
+	<Tag name="Game_Action_Charge_Success" 		text="突进成功。"/>
+	
+	<Tag name="Game_Roll_Charge_Lose" 			text="玩家掷出了[rollPlayer]点：在你靠近时[Enemy] 向你发起了攻击。"/>
+	<Tag name="Game_Roll_Evade_Lose" 			text="玩家掷出了[rollPlayer]点：在你远离时[Enemy]向你发起了攻击。"/>
+	
+	<Tag name="Game_Action_Combat_Roll_Fast" text="玩家的[statPlayer]为：[valPlayer]+[rollPlayer]=[totalPlayer]\nVS\n[Enemy]的[statEnemy]为：[valEnemy]+[rollEnemy]=[totalEnemy]"/>
+	
+	<Tag name="Game_Action_Armour" text="[Enemy]拥有护甲：有[Armour]的几率免疫伤害。"/>
+	<Tag name="Game_Action_Armour_Fail" text="[Enemy]的护甲没有生效！"/>
+	<Tag name="Game_Action_Armour_Success" text="虽然[Enemy]的护甲挡住了你的攻击，但护甲也被削弱了。"/>
+			
+	<Tag name="Game_Enemy_Weakened" 				text="[Enemy]被削弱了（-1护甲）。"/>
+	<Tag name="Game_Enemy_Destroyed" 				text="敌人被消灭了。"/> 
+	<Tag name="Game_Action_Enemy_Destroyed" 		text="已消灭敌人。"/>    
+			   
+	<Tag name="Game_Action_DesperateShot_Result(=1)" text="幸运射击结果：\n[Equipment]被摧毁了并且你受到了1点伤害。"/>
+	<Tag name="Game_Action_DesperateShot_Result(=2)" text="幸运射击结果：\n你射中了自己！受到了1d6=[Random]点伤害。"/>
+	<Tag name="Game_Action_DesperateShot_Result(=3)" text="幸运射击结果：\n射击失败，受到了1点伤害。"/>
+	<Tag name="Game_Action_DesperateShot_Result(=4)" text="幸运射击结果：\n未命中。"/>
+	<Tag name="Game_Action_DesperateShot_Result(=5)" text="幸运射击结果：\n进行一次普通的攻击（需要掷骰子来跟敌人的反应进行对比）。"/>
+	<Tag name="Game_Action_DesperateShot_Result(=6)" text="幸运射击结果：\n幸运一击！敌人被杀死了！"/>
+
+	<Tag name="Game_Action_Escape" 				text="尝试逃跑：需要掷出[target]点才能成功。"/>
+	<Tag name="Game_Action_Escape_Success" 		text="逃跑成功！你从战斗中逃跑了，只留下[Enemy]在那里吃你的空气。"/>
+	<Tag name="Game_Action_Escape_Fail_Hit" 	text="逃跑失败：在你尝试逃跑时[Enemy]向你发起了攻击。"/>
+	<Tag name="Game_Action_Escape_Fail_Move" 	text="逃跑失败：你太慢了！[Enemy]移至近战范围。"/>
+	<Tag name="Game_Action_Escape_Fail" 		text="逃跑失败：你无法从敌人手上逃跑。"/>
+	
+	<Tag name="Game_Action_Enemy_Escape" text="已顺利逃跑。"/>
+	<Tag name="Game_Action_Next_Combat_Enemy" text="[Enemy]已加入战斗。"/>
+	
+	<Tag name="Game_Action_Enter_Trap" text="踏入陷阱"/>
+	
+	<Tag name="Game_Action_Reflex" text="反应考验：需掷出低于[Target]点的点数。"/>
+	<Tag name="Game_Action_Reflex_Success" text="骰子点数：[Roll]\n成功避开了陷阱！"/>
+	<Tag name="Game_Action_Reflex_Fail" text="骰子点数：[Roll]\n陷阱被触发了！"/>
+	
+	<Tag name="Game_Action_Blessing" text="获得了[Blessing]的祝福。"/>
+	
+	<Tag name="Game_Ambush_Avoided_Equipment" text="你的[Equipment]帮你避开了埋伏。" />
+	<Tag name="Game_Ambush_Avoided_Stealth" text="你的隐匿技能帮你避开了埋伏。" />
+	
+	<!-- Popups -->
+	<Tag name="Popup_Upgrade_Title" 		text="应用升级"/>
+	<Tag name="Popup_Upgrade_Text" 			text="在你挑选的物品里包含升级道具，必须在继续任务前应用它们。\n选择你想升级的道具然后点击『完成』键继续。"/>
+	<Tag name="Popup_Upgrade_Card" 			text="升级"/>
+	<Tag name="Popup_Upgrade_Item_Select" 	text="应用于："/>
+	<Tag name="Popup_Upgrade_Item_Info" 	text="道具详情"/>
+	<Tag name="Popup_Upgrade_OK" 			text="完成"/>
+	<Tag name="Popup_Upgrade_Cancel" 		text="取消"/>
+	
+	<Tag name="Popup_Unlock_Title" 			text="已解锁新道具"/>
+	<Tag name="Popup_Unlock_Text" 			text="注意了，战士！在你身赴前线战斗的时候，我们后方实验室的小伙子们为你研究出了新的科技。\n\n这件%equipment能让你更好地对抗暗冥。好好利用它吧！"/>
+	<Tag name="Popup_Unlock_Text_Jaguar" 	text="你交到了一个朋友！一只幼年美洲虎蹒跚地走了出来，沐浴在阳光之下，它跨过自己家人的尸体，跟你一同走进了世界。"/>
+	
+	<Tag name="Popup_Broken_Title"			text="道具损坏"/>
+	<Tag name="Popup_Broken_Text"			text="运气真差，你的%equipment没了，你只能在没有它的条件下继续执行你的任务……"/>
+	<Tag name="Popup_Broken_Text_Laser"		text="你的激光长枪没了！没有它你根本打不赢暗冥。\n\n只能在下一处空投点找个新的。"/>
+	
+	<!--- Deck Pop-ups -->
+	<Tag name="UI_Overlay_Jungle_Title"					text="丛林"/>
+	<Tag name="UI_Overlay_Jungle"						text="他们把你留在了茂密丛林的边缘，并告诉你正确的方向。\n\n因为这里的植物茂密且高大，你无法看得很远，但你心里明白这和在公园里瞎晃悠完全不是一回事。"/>
+	
+	<Tag name="UI_Overlay_City_Title"					text="失落之城"/>
+	<Tag name="UI_Overlay_City"							text="树木逐渐变稀，你发现自己来到了古代城市的遗迹。\n\n你能看见有什么东西在废墟中穿梭：暗冥的手下无处不在，而通过的方法就只有与它们一战……"/>
+	
+	<Tag name="UI_Overlay_Pyramid_Title"				text="金字塔"/>
+	<Tag name="UI_Overlay_Pyramid"						text="你来到了位于城市中心的金字塔入口。\n\n暗冥就在里面的某个地方聚集力量。留给你找到并彻底摧毁它的时间不多了。"/>
+	
+		
+	
+	
+	
+	<!-- Game Methods -->
+	<Tag name="ReduceGameTime" text="[GameTimeDelta]"/>
+	<Tag name="AddEnemies" text="有[Value]个敌人加入了战场。"/>
+	
+	<Tag name="DetectEnemy_Success" text="侦测到[Enemy]。"/>
+	<Tag name="BackTrack_Success" text="原路折返[Value]张卡。"/>
+	<Tag name="BackTrack_Fail" text="无法原路折返。"/>
+	
+	<Tag name="SkipCards_Success" text="向前跃进[Value]张卡。"/>
+	<Tag name="SkipCards_Fail" text="无法向前跃进。"/>
+	<Tag name="SkipCards_Guardian" text="发现守护者：你无法避开此次战斗！"/>
+	
+	
+	<Tag name="DisableEquipment_Electrical" text="[00FFF0]所有电子装备失灵[Value]回合。[-]"/>
+	<Tag name="DisableEquipment_Random" text="[Equipment]失灵[Value]分钟。"/>
+	
+	<Tag name="DestroyEquipment_Electrical" 	text="电子装备被摧毁了。"/>
+	<Tag name="DestroyEquipment_Random" 		text="[Equipment]被摧毁了。"/>
+	<Tag name="DestroyEquipment_Specific" 		text="[Equipment]被摧毁了。"/>
+	<Tag name="DestroyEquipment_Fail" 			text="没有装备能被摧毁！"/>
+	
+	<Tag name="Title_Ambush" 					text="选择敌人"/>
+	
+	
+	<!-- PLayer Skills -->
+	<Tag name="Player_Skill_CombatAbility_Move" text="[00FF00]机动：突进或闪避时+2反应。[-]"/>
+    <Tag name="Player_Skill_CombatAbility_Escape" text="[00FF00]机动：+1逃跑骰子点数。[-]"/>
+
+	<Tag name="Player_Skill_Navigation_BackTrack" text="[00FF00]导航：原路折返的概率减半。[-]"/>
+	
+	<Tag name="Player_Skill_Resistance" text="[00FF00]抵抗：有3分之1的几率无视毒液和辐射效果。[-]"/>
+	<Tag name="Player_Skill_Resistance_Success" text="抵抗成功。"/>
+	<Tag name="Player_Skill_Resistance_Fail" text="抵抗失败。"/>
+	
+	<Tag name="Player_Skill_RapidFire" text="[00FF00]速射：有3分之1的几率再次射击。[-]"/>
+	<Tag name="Player_Skill_RapidFire_Success" text="速射成功。"/>
+	<Tag name="Player_Skill_RapidFire_Fail" text="速射失败。"/>
+	
+	<Tag name="Player_Skill_Stealth" text="[00FF00]隐匿：有6分之1的几率避开敌人。[-]"/>
+	<Tag name="Player_Skill_Stealth_Success" text="隐匿成功。"/>					
+	<Tag name="Player_Skill_Stealth_Fail" text="隐匿失败。"/>							
+	
+	<Tag name="Player_Skill_Lore" text="[00FF00]学识：搜索神庙。[-]"/>
+	<Tag name="Player_Skill_Lore_Guardian" text="学识：守护者[FF0000][Guardian][-]正等候在神庙中。"/>
+	<Tag name="Player_Skill_Lore_Blessing" text="学识：打通神庙能获得[00FF00][Blessing][-]的祝福。"/>
+	
+	<Tag name="Skill_Stealth" 			text="隐匿"/>
+	<Tag name="Skill_RapidFire" 		text="速射"/>
+	<Tag name="Skill_Resistance" 		text="抵抗"/>
+	<Tag name="Skill_CombatAgility" 	text="机动"/>
+	<Tag name="Skill_Lore" 				text="学识"/>
+	<Tag name="Skill_Navigation" 		text="导航"/>
+	
+	
+	<!-- Equipment -->
+	<Tag name="Equipment_Disabled" text="[Equipment]对[Enemy]无效。"/>
+	
+	
+	<!--- Temples -->
+	<Tag name="Card_Temple" text="神庙"/>	
+	<Tag name="Card_Temple_Description" text="不知道是哪位神的古代神庙。\n\n你可以选择击败里面的强敌来获得祝福，也可以谨慎点略过它继续你的任务。"/>
+	
+	
+	<!--- AirDrop -->
+	<Tag name="Card_AirDrop" 					text="空投点"/>	
+	<Tag name="Card_AirDrop_Description" 		text="新的补给已经空投给你了。\n\n你最多能挑选总计3点的装备，如果你已经损失了激光长枪，也可以在这里拿到新的（消耗1点）。"/>	
+	
+	<Tag name="Menu_Air_Drop_Text"				text="最多挑选总计3点的装备。\n\n如果你已经失去或损坏了激光长枪，也可以花费1点装备点在这里拿到新的。\n\n挑选新的枪械和重武器会直接替换背包里旧的武器，如果有的话。"/>
+	<Tag name="Menu_Air_Drop_Trade"				text="要带走该道具需要摧毁你现有的一件道具。\n\n你确定吗？"/>
+	<Tag name="Menu_Air_Drop_Trade_Title"		text="替换装备"/>
+	
+	<Tag name="Menu_Air_Drop_Take_Button"		text="带走"/>
+	<Tag name="Menu_Air_Drop_Trade_Button"		text="替换"/>
+	
+	
+	<!--- Clear --> 
+	<Tag name="Card_Clear" 						text="晴朗"/>	
+	<Tag name="Card_Clear_Description" 			text="在混沌中出现的片刻安宁。\n\n利用这个机会可以安全地使用道具或重新填弹。"/>	
+	
+	
+	<!--- Blessings -->
+	<Tag name="Blessing_Mountains" text="山峦"/>	
+	<Tag name="Blessing_War" text="战争"/>	
+	<Tag name="Blessing_Providence" text="命运"/>	
+	<Tag name="Blessing_Rebirth" text="重生"/>	
+	<Tag name="Blessing_Temporals" text="时间"/>	
+	
+	<!--- Blessings Descriptions -->
+	<Tag name="Blessing_Description_Mountains" text="你受到了山峦之神『泰佩约洛特』的祝福。\n\n被动：每5分钟+1生命。"/>
+	<Tag name="Blessing_Description_War" text="你受到了战争与火焰之神『维齐洛波奇特利』的祝福。\n\n被动：战斗中每回合+1搏斗。战斗结束后重置。"/>
+	<Tag name="Blessing_Description_Providence" text="你受到了命运之神『特斯卡特利波卡』的祝福。\n\n幸运射击的骰子点数+1。"/>
+	<Tag name="Blessing_Description_Rebirth" text="你受到了重生之神『西佩·托堤克』的祝福。\n\n使用：治疗3点毒液和辐射伤害。"/>
+	<Tag name="Blessing_Description_Temporals" text="你受到了时间之神『皮尔特辛特库特利』的祝福。\n\n被动：免疫所有负面的时效性状态（着火，中毒，电磁脉冲，兴奋消退）。"/>
+					
+	<!--- Blessings Tooltips -->
+	<Tag name="TT_Blessing_Mountains" text="被动：每5分钟+1生命。"/>
+	<Tag name="TT_Blessing_War" text="被动：战斗中每回合+1搏斗。战斗结束后重置。"/>
+	<Tag name="TT_Blessing_Providence" text="幸运射击的骰子点数+1。"/>
+	<Tag name="TT_Blessing_Rebirth" text="使用：治疗3点毒液和辐射伤害。"/>
+	<Tag name="TT_Blessing_Temporals" text="被动：免疫所有负面的时效性状态（着火，中毒，电磁脉冲，兴奋消退）。"/>
+				
+	
+	<!-- Combat Log -->
+	<Tag name="UI_Combat_Log_Title" text="战斗记录"/>
+	<Tag name="TT_Combat_Log" text="战斗记录会把你消灭丧尸的行动记录下来。"/>			
+
+		
+		
+		
+		
+	<!-- DO NOT EDIT ANY TAGS BELOW -->	
+	<!-- These are generated automatically and frequently overwritten -->
+	<!-- Any changes below here will NOT be saved -->
+	
+	
+		
+		
+		
+	<!-- Enemies -->	
+	<Tag name="Enemy_Zombie" text="丧尸"/>	
+	<Tag name="Enemy_IrradiatedZombie" text="发光丧尸"/>	
+	<Tag name="Enemy_SpittingZombie" text="飞沫丧尸"/>	
+	<Tag name="Enemy_Crawler" text="爬行者"/>	
+	<Tag name="Enemy_VenomCloudZombie" text="毒云丧尸"/>	
+	<Tag name="Enemy_Crocodile" text="鳄鱼"/>	
+	<Tag name="Enemy_Jaguar" text="美洲虎"/>	
+	<Tag name="Enemy_MoonCultGuard" text="拜月教守卫"/>	
+	<Tag name="Enemy_MoonCultFanatic" text="拜月教狂信徒"/>	
+	<Tag name="Enemy_MoonCultPoisoner" text="拜月教毒使"/>	
+	<Tag name="Enemy_MoonCultThief" text="拜月教盗贼"/>	
+	<Tag name="Enemy_ArmourZombie" text="盔甲丧尸"/>	
+	<Tag name="Enemy_SprintingZombie" text="冲刺丧尸"/>	
+	<Tag name="Enemy_BloatedZombie" text="浮肿丧尸"/>	
+	<Tag name="Enemy_ZombieHorde" text="丧尸群"/>	
+	<Tag name="Enemy_ZombieMonkeys" text="丧尸猴群"/>	
+	<Tag name="Enemy_ZombieMonkey" text="丧尸猴"/>	
+	<Tag name="Enemy_MoonCultLookout" text="拜月教警戒员"/>	
+	<Tag name="Enemy_MutantThing" text="变异体"/>	
+	<Tag name="Enemy_MoonCultNecromancer" text="拜月教巫师"/>	
+	<Tag name="Enemy_MutantThing" text="变异体"/>	
+		
+	<!-- Guardians -->	
+	<Tag name="Enemy_MoonCultAssassin" text="拜月教刺客"/>	
+	<Tag name="Enemy_Statue" text="古代雕像"/>	
+	<Tag name="Enemy_Statue" text="古代雕像"/>	
+	<Tag name="Enemy_StatueHand" text="雕像手臂"/>	
+	<Tag name="Enemy_MeatMachine" text="绞肉机器"/>	
+	<Tag name="Enemy_Slime" text="史莱姆"/>	
+	<Tag name="Enemy_FlamethrowerCultist" text="火焰喷射器邪教徒"/>	
+	<Tag name="Enemy_ZombieCrocodile" text="丧尸鳄鱼"/>	
+	<Tag name="Enemy_JaguarMatriarch" text="雌性美洲虎首领"/>	
+	<Tag name="Enemy_SuicideCultist" text="殉道邪教徒"/>	
+	<Tag name="Enemy_TempleGuardChampion" text="神庙捍卫者"/>	
+	<Tag name="Enemy_Shade" text="暗影"/>	
+	<Tag name="Enemy_Darkness" text="暗冥"/>	
+	<Tag name="Enemy_ZombieCrocodileTrap" text="丧尸鳄鱼"/>	
+		
+	<!-- Enemy Descriptions -->	
+	<Tag name="Enemy_Description_Zombie" text="毒液：造成毒液伤害。\n\n从死人中复活的腐烂尸体，被迫成为暗冥的仆人。"/>	
+	<Tag name="Enemy_Description_IrradiatedZombie" text="毒液：造成毒液伤害。\n\n放射性：战斗开始时造成1到3点辐射伤害。\n\n重度暴露在放射性材料中的不幸丧尸。 "/>	
+	<Tag name="Enemy_Description_SpittingZombie" text="毒液：造成毒液伤害。\n\n远程：敌人能从远处进行攻击，且不会移动至近战位置。\n进行近身战时-2力量。\n\n有着突出下巴的丧尸，会向你喷吐一连串恶臭不堪的胆汁。"/>	
+	<Tag name="Enemy_Description_Crawler" text="埋伏：敌人直接出现在近战位置！\n\n无法站立的变异丧尸。直到它抓住你的脚时你才察觉到它的存在。"/>	
+	<Tag name="Enemy_Description_VenomCloudZombie" text="毒云：每次攻击以及近战回合开始时都会造成毒液伤害。\n\n那些围绕在丧尸周围的被感染了的飞虫会朝你涌过来，钻进你的眼睛，嘴和鼻子里。"/>	
+	<Tag name="Enemy_Description_Crocodile" text="埋伏：敌人直接出现在近战位置！"/>	
+	<Tag name="Enemy_Description_Jaguar" text="埋伏：敌人直接出现在近战位置！"/>	
+	<Tag name="Enemy_Description_MoonCultGuard" text="远程：敌人能从远处进行攻击，且不会移动至近战位置。\n进行近身战时-2力量。\n\n深信末日启示的拜月教信徒，是月亮之神『特库希斯特卡特尔』的崇拜者。"/>	
+	<Tag name="Enemy_Description_MoonCultFanatic" text="毒液：造成毒液伤害。\n\n一个发了疯的邪教徒向你冲了过来，他手里的弯刀正不断滴出黑色毒液。"/>
+	<Tag name="Enemy_Description_MoonCultPoisoner" text="毒素：若成功命中，则你会在2D6回合内-3搏斗，射术以及反应。"/>	
+	<Tag name="Enemy_Description_MoonCultThief" text="埋伏：敌人直接出现在近战位置！\n\n被击中时会随机损失一件道具。"/>	
+	<Tag name="Enemy_Description_ArmourZombie" text="毒液：造成毒液伤害。\n\n从古代金字塔深处复活的丧尸，依然穿着原始但有效的盔甲。"/>	
+	<Tag name="Enemy_Description_SprintingZombie" text="毒液：造成毒液伤害。\n\n埋伏：敌人直接出现在近战位置！\n\n从阴影中突然向你冲过来的丧尸，你甚至都还来不及反应。"/>	
+	<Tag name="Enemy_Description_BloatedZombie" text="毒液：造成毒液伤害。\n\n巨大且臃肿的丧尸。它那膨胀的腹部看起来随时都会爆炸。"/>
+	<Tag name="Enemy_Description_ZombieHorde" text="各个方向都出现了丧尸，你被包围了……"/>	
+	<Tag name="Enemy_Description_ZombieMonkeys" text="一群被毒液感染了的猴子正徘徊在你上方的树上……"/>	
+	<Tag name="Enemy_Description_ZombieMonkey" text="毒液：造成毒液伤害。\n\n被污染了这片区域的毒液所腐化的猴子。"/>	
+	<Tag name="Enemy_Description_MoonCultLookout" text="远程：敌人能从远处进行攻击，并且不会移动至近战位置。\n进行近身战时-2力量。\n\n拥有敏锐视力的瞭望员，放任不管的话会叫来增援。"/>	
+	<Tag name="Enemy_Description_MutantThing" text="放射性：战斗开始时造成3到5点辐射伤害。\n\n这只怪兽以前也许是个人类，不过现在已经无从考究了。"/>	
+	<Tag name="Enemy_Description_MoonCultNecromancer" text="一个穿着长袍的邪教徒带领者一大群蹒跚的丧尸出现了。\n\n战斗开始时召唤2到3只丧尸。"/>	
+	<Tag name="Enemy_Description_MutantThing" text="放射性：战斗开始时造成3到5点辐射伤害。\n\n这只怪兽以前也许是个人类，不过现在已经无从考究了。"/>	
+		
+	<!-- Guardian Descriptions -->	
+	<Tag name="Enemy_Description_MoonCultAssassin" text="埋伏：敌人直接出现在近战位置！\n\n精通暗中偷袭的刺客，要是在单个回合内没有将他击杀，他就会从你眼前消失。但他之后还会回来……"/>	
+	<Tag name="Enemy_Description_Statue" text="一座巨大的雕像，由未知能量所驱动。会利用它那巨大的手臂来格挡伤害。\n\n每摧毁一条手臂能减少雕像2点护甲。"/>	
+	<Tag name="Enemy_Description_StatueHand" text="这些巨大的石头手臂会在雕像面前迂回以阻止伤害。"/>	
+	<Tag name="Enemy_Description_MeatMachine" text="绞肉机器回来了……\n\n攻击造成1到3点伤害，并且永久减少1点随机状态（搏斗，射术或反应），最低可以降至5点。\n\n如果所有状态都小于5，那它的攻击将是致命一击。"/>	
+	<Tag name="Enemy_Description_Slime" text="只能被激光长枪，火焰喷射器，硝化炸药或网络神经电子干扰器杀死。\n\n它的攻击能让战士立即死亡。"/>	
+	<Tag name="Enemy_Description_FlamethrowerCultist" text="远程：敌人能从远处进行攻击，且不会移动至近战位置。\n进行近身战时-2力量。\n\n被成功攻击的话你会着火，每回合受到1点伤害，持续3到5回合。"/>
+	<Tag name="Enemy_Description_ZombieCrocodile" text="毒液：造成毒液伤害。\n\n毒云：每个近战回合都会造成1到3点毒液伤害。\n\n成功命中时造成2点伤害。"/>	
+	<Tag name="Enemy_Description_JaguarMatriarch" text="埋伏：敌人直接出现在近战位置！\n\n一头巨大的美洲虎从阴影中接近，而且她还不是单独来的……"/>	
+	<Tag name="Enemy_Description_SuicideCultist" text="一名绑着塑胶炸弹的邪教徒从隐蔽处突然跳起。\n\n你只有一次射击他的机会……"/>	
+	<Tag name="Enemy_Description_TempleGuardChampion" text="毒液：造成毒液伤害。\n\n成功命中时造成3点伤害。\n\n缓慢又笨拙的巨大怪物，它的拳头非常有力。不要靠得太近！"/>	
+	<Tag name="Enemy_Description_Shade" text="每次击杀暗影都能削弱暗冥的实力。"/>	
+	<Tag name="Enemy_Description_Darkness" text="毒液：造成毒液伤害。\n\n成功命中时造成2点伤害。\n\n只能被激光长枪击杀。\n\n打倒暗冥拯救世界吧！"/>	
+	<Tag name="Enemy_Description_ZombieCrocodileTrap" text="毒液：造成毒液伤害。\n\n毒云：每个近战回合都会造成1到3点毒液伤害。\n\n成功命中时造成2点伤害。"/>	
+		
+	<!-- Trap Names -->	
+	<Tag name="Trap_Razorwire" text="带刺铁丝网"/>	
+	<Tag name="Trap_Mines" text="地雷"/>	
+	<Tag name="Trap_MagneticField" text="磁力场"/>	
+	<Tag name="Trap_Net" text="网"/>	
+	<Tag name="Trap_CaveIn" text="坍方"/>	
+	<Tag name="Trap_Boulder" text="巨石"/>	
+	<Tag name="Trap_Lunatic" text="疯子"/>	
+	<Tag name="Trap_Swamp" text="沼泽"/>	
+	<Tag name="Trap_PitTrap" text="落穴陷阱"/>	
+	<Tag name="Trap_RadCanister" text="辐射桶"/>	
+	<Tag name="Trap_VenomCloud" text="毒云"/>	
+	<Tag name="Trap_EMPMines" text="电磁脉冲地雷"/>	
+	<Tag name="Trap_RiverCrossing" text="跨河"/>	
+	<Tag name="Trap_ThickUndergrowth" text="茂密的灌木丛"/>	
+	<Tag name="Trap_DeadEnd" text="死路"/>	
+	<Tag name="Trap_ZombieHorde" text="丧尸群"/>	
+	<Tag name="Trap_ZombieMonkeys" text="丧尸猴群"/>	
+	<Tag name="Trap_Flood" text="洪水陷阱"/>
+	<Tag name="Trap_Piranha" text="食人鱼泛滥水域"/>
+	
+	<!-- Trap Descriptions -->	
+	<Tag name="Trap_Description_Razorwire" text="密集缠绕的带刺铁丝网挡住了你的路。你需要花费1D6回合来清理出道路，在你被拖延的这段时间里有可能会出现丧尸。 "/>	
+	<Tag name="Trap_Description_Mines" text="你走进了地雷区……\n\n掷出低于你[0066FF]反应-2[-]的点数，否则你将受到D6点伤害，并承担随机道具被摧毁的风险。"/>	
+	<Tag name="Trap_Description_MagneticField" text="该场地触发的陷阱能让你的所有电子装备都失灵2D6回合。"/>	
+	<Tag name="Trap_Description_Net" text="你触发了路上的绊索陷阱，一张网从你头上落了下来。\n\n掷出低于你[0066FF]反应[-]的点数，否则你将失去1D6回合，并承担丧尸出现的风险。"/>	
+	<Tag name="Trap_Description_CaveIn" text="洞顶在没有任何征兆的情况下塌了下来！\n\n掷出低于你[0066FF]反应[-]的点数，否则你将损失生命和时间，并承担随机道具被摧毁的风险。"/>	
+	<Tag name="Trap_Description_Boulder" text="滚隆滚隆滚隆！"/>	
+	<Tag name="Trap_Description_Lunatic" text="不知从哪冒出来一个衣衫褴褛的疯子，他偷走了你一件道具，并且很快就没了踪影。"/>
+	<Tag name="Trap_Description_Swamp" text="看上去危机四伏的沼泽。你很走运，在穿越沼泽时没有遇到鳄鱼，虽然这花了些时间：损失D6回合。"/>	
+	<Tag name="Trap_Description_PitTrap" text="你踩错了位置，地板开始坍塌。\n\n掷出低于你[0066FF]反应-1[-]的点数来避免坠落，否则你将受到1至3点伤害以及损失时间。"/>	
+	<Tag name="Trap_Description_RadCanister" text="你碰倒了具有强烈放射性的金属桶，很明显它是被遗弃的物品。\n\n受到D6+1点[00ff00]辐射[-]伤害。"/>	
+	<Tag name="Trap_Description_VenomCloud" text="密云般的飞虫突然向你蜂拥了过来，这些受感染的昆虫迅速地堵住了你的眼睛，嘴巴和鼻子，并在你伤口上肆意狂欢。\n\n受到D6点[00ff00]毒液[-]伤害。"/>	
+	<Tag name="Trap_Description_EMPMines" text="你走进了地雷区……\n\n掷出低于你[0066FF]反应-2[-]的点数，否则所有电子道具将会失灵2D6分钟。"/>	
+	<Tag name="Trap_Description_RiverCrossing" text="要继续前进只能蹚过前面湍急的河流。\n\n进行D6判定。\n1：丧尸鳄鱼\n2至4：鳄鱼\n5至6：平安渡过！"/>	
+	<Tag name="Trap_Description_ThickUndergrowth" text="即使是用你的电锯来清理这些挡路的植物，要穿过这片丛林也要花不好时间。你需要更强的工具来清通道路或是绕其它路走。\n\n使用硝化炸药或增加4张卡牌至卡组。"/>	
+	<Tag name="Trap_Description_DeadEnd" text="这是条死路，你一定是在哪里转错方向了。如果你无法清出一条道路就得原路折返。\n\n使用硝化炸药或增加4张卡牌至卡组。"/>	
+	<Tag name="Trap_Description_ZombieHorde" text="各个方向都出现了丧尸，你被包围了……"/>
+	<Tag name="Trap_Description_ZombieMonkeys" text="一群被毒液感染了的猴子正徘徊在你上方的树上……"/>	
+	<Tag name="Trap_Description_Flood" text="前方通道传来了巨大的回响，从隐藏于上方蓄水池中倾倒下来的水犹如一堵墙般向你冲了过来。\n\n掷出低于你[0066FF]反应-2[-]的点数，否则你将花费2分钟来游到安全的地方。"/>
+	<Tag name="Trap_Description_Piranha" text="水突然向你冲了过来，你被一群食人鱼给包围了。你无法战斗，你只有逃跑这个选项。\n\n受到2点伤害，然后掷出低于你[0066FF]反应[-]的点数以避免再次受到d6点伤害。"/>
+		
+	<!-- Items -->	
+	<Tag name="Equipment_Chainsaw" text="电锯"/>	
+	<Tag name="Equipment_StunNux" text="击晕拳环"/>	
+	<Tag name="Equipment_ThrowingNet" text="手抛网"/>	
+	<Tag name="Equipment_PoisonNeedle" text="毒针"/>	
+	<Tag name="Equipment_Knife" text="匕首"/>	
+	<Tag name="Equipment_ChainsawStonecutter" text="劈石电锯"/>	
+	<Tag name="Equipment_ChainsawEngine" text="柴油电锯"/>	
+	<Tag name="Equipment_Chainsaw2handed" text="双手电锯"/>	
+	<Tag name="Equipment_ChainsawBalanced" text="精制电锯"/>	
+	<Tag name="Equipment_ChainsawImplanted" text="植入式电锯"/>	
+	<Tag name="Equipment_Jaguar" text="美洲虎"/>	
+	<Tag name="Equipment_Blaster" text="爆能枪"/>	
+	<Tag name="Equipment_AutomaticRifle" text="自动步枪"/>	
+	<Tag name="Equipment_Smg" text="机关枪"/>	
+	<Tag name="Equipment_Shotgun" text="战斗霰弹枪"/>	
+	<Tag name="Equipment_SniperRifle" text="XM600狙击步枪"/>	
+	<Tag name="Equipment_Dynamite" text="硝化炸药"/>	
+	<Tag name="Equipment_Man2ManRockets" text="追人火箭"/>	
+	<Tag name="Equipment_Flamethrower" text="火焰喷射器"/>	
+	<Tag name="Equipment_Reaper" text="收割者"/>	
+	<Tag name="Equipment_GuidedRockets" text="电传飞控导弹"/>	
+	<Tag name="Equipment_AntiRadCapsules" text="抗辐药"/>	
+	<Tag name="Equipment_ApRounds" text="穿甲子弹"/>	
+	<Tag name="Equipment_CameraDrone" text="摄影无人机"/>	
+	<Tag name="Equipment_CATS" text="电脑辅助瞄准系统"/>	
+	<Tag name="Equipment_CyberNeuralElectronScrambler" text="网络神经电子干扰器"/>	
+	<Tag name="Equipment_ExtraClip" text="额外弹夹"/>	
+	<Tag name="Equipment_FlashBomb" text="闪光弹"/>	
+	<Tag name="Equipment_GeigerCounter" text="盖格计数器"/>	
+	<Tag name="Equipment_HeatDetector" text="热量探测仪"/>	
+	<Tag name="Equipment_HolographicImagizer" text="Holographic Imagizer"/>	
+	<Tag name="Equipment_Jetpack" text="喷气背包"/>	
+	<Tag name="Equipment_MedKit" text="医疗包"/>	
+	<Tag name="Equipment_MetalDetector" text="金属探测仪"/>	
+	<Tag name="Equipment_TimeGrenade" text="传送手雷"/>	
+	<Tag name="Equipment_Smash" text="战斗用兴奋剂"/>	
+	<Tag name="Equipment_TeleportImplant" text="植入式传送仪"/>	
+	<Tag name="Equipment_TemporalDisturbanceDetector" text="时间干扰探测仪"/>	
+	<Tag name="Equipment_WireCutter" text="剪钳"/>	
+	<Tag name="Equipment_BodyArmour" text="防弹衣"/>	
+	<Tag name="Equipment_RadFibreSuit" text="防辐纤维衣"/>	
+	<Tag name="Equipment_Helmet" text="头盔"/>	
+	<Tag name="Equipment_SteelGloves" text="不锈钢手套"/>	
+	<Tag name="Equipment_IRGoggles" text="红外夜视仪"/>	
+	<Tag name="Equipment_ImplosionVest" text="聚爆马甲"/>	
+	<Tag name="Equipment_LaserLance" text="激光长枪"/>	
+	<Tag name="Equipment_Fist" text="拳头"/>	
+	<Tag name="Equipment_OcarinaOfTime" text="(DEV) Ocarina of Time"/>	
+	<Tag name="Equipment_Failsaw" text="(DEV) Failsaw"/>	
+	<Tag name="Equipment_SkipCard" text="(DEV) 'I WIN' button"/>	
+	<Tag name="Equipment_DeathPills" text="(DEV) Death Pills"/>	
+	<Tag name="Equipment_RadPills" text="(DEV) Rad Pills"/>	
+	<Tag name="Equipment_VenomPills" text="(DEV) Venom Pills"/>	
+	<Tag name="Equipment_SkipDeck" text="(DEV) Skip 24"/>	
+	<Tag name="Equipment_AllBuffs" text="(DEV) Buff Goggles"/>	
+	<Tag name="Equipment_Katana" text="武士刀"/>
+	<Tag name="Equipment_ExecutionersAxe" text="处刑者之斧"/>
+			
+		
+	<!-- Item Descriptions -->	
+	<Tag name="Equipment_Description_Chainsaw" text="一把定制的战斗电锯，上面有手枪式握把以及耐用的电池。是绝佳的丧尸克星。"/>	
+	<Tag name="Equipment_Description_StunNux" text="从指节拳环演化而来的击晕拳环能产生强烈的电流，它能让活体目标丧失行动能力。\n\n对阵活体目标时+4搏斗。"/>	
+	<Tag name="Equipment_Description_ThrowingNet" text="从表面上看这些网好像没什么科技含量，但其实它们已经用电磁锁定系统进行过升级了，很容易就能束缚住对手。\n\n在近战位置上使用该道具来困住和消灭敌人。\n\n不能对守护者或暗冥使用。"/>	
+	<Tag name="Equipment_Description_PoisonNeedle" text="见效慢但致命的剧毒，大多数敌人在2回合后都会死亡。对暗冥或雕像无效。 "/>	
+	<Tag name="Equipment_Description_Knife" text="实用的后备武器，还可以在不想接近敌人的时候当成飞刀扔出去，此时-2射术。"/>	
+	<Tag name="Equipment_Description_ChainsawStonecutter" text="穿甲：该武器无视2点护甲。\n\n经过强化的锯齿让这把工业电锯可以劈开护具和石头一类的东西。"/>
+	<Tag name="Equipment_Description_ChainsawEngine" text="以柴油为燃料的电锯。虽然有使用次数有限但它不会受到电磁脉冲的影响。"/>	
+	<Tag name="Equipment_Description_Chainsaw2handed" text="范围：命中时对场上所有其它敌人进行无消耗的额外攻击。\n\n运用了当代顶级战斗科技的电锯。让你能同时攻击复数敌人。"/>	
+	<Tag name="Equipment_Description_ChainsawBalanced" text="这把经过完美平衡的电锯能给你带来近身战斗上的额外加成。"/>	
+	<Tag name="Equipment_Description_ChainsawImplanted" text="用电锯替换电锯战士的手臂。无法被偷窃或摧毁。"/>	
+	<Tag name="Equipment_Description_Jaguar" text="掷出3+点数可以让你的美洲虎朋友帮你攻击敌人！"/>	
+	<Tag name="Equipment_Description_Blaster" text="简单又可靠，RFK5真是完美的副武器，而且子弹容量也比它之前的型号要多。"/>	
+	<Tag name="Equipment_Description_AutomaticRifle" text="穿甲：该武器无视1点护甲。\n\n兼具了射击精度与穿甲能力的SRH-VS220自动步枪是特种部队成员的心头之爱。"/>	
+	<Tag name="Equipment_Description_Smg" text="范围：命中时对场上所有其它敌人进行无消耗的额外攻击。\n\n虽然SFC7『黑寡妇』的精度以及威力都不是特别强，但它能满足那些喜欢疯狂扫射的人。"/>
+	<Tag name="Equipment_Description_Shotgun" text="虽然CLAW-18（近战突击武器）能进行短距离的大范围射击，但它在对抗护甲方面并不出色。"/>
+	<Tag name="Equipment_Description_SniperRifle" text="穿甲：该武器无视3点护甲。\n\n搭载了电脑辅助瞄准系统的巴雷特MX600狙击步枪在射程范围内拥有极高的精度。"/>	
+	<Tag name="Equipment_Description_Dynamite" text="范围：命中时对场上所有其它敌人进行无消耗的额外攻击。\n穿甲：该武器无视5点护甲。\n\n在『城市』或『金字塔』卡组中使用该道具能从卡组顶部移除D6张卡牌。\n\n硝化炸药不仅能（非常有效地）解决敌人，还能为你炸出捷径。"/>	
+	<Tag name="Equipment_Description_Man2ManRockets" text="范围：命中时对场上所有其它敌人进行无消耗的额外攻击。\n穿甲：该武器无视3点护甲。\n\n追人火箭发射器会射出一连串小型火箭来攻击使用者面前的复数敌人。"/>	
+	<Tag name="Equipment_Description_Flamethrower" text="范围：命中时对场上所有其它敌人进行无消耗的额外攻击。\n\n为了适应丛林的战斗，HK-19火焰喷射器进行过了专门的调整，极度地扩大了它的火焰覆盖范围。"/>
+	<Tag name="Equipment_Description_Reaper" text="范围：命中时对场上所有其它敌人进行无消耗的额外攻击。\n穿甲：该武器无视2点护甲。\n\n高频射速以及大口径子弹让收割者成为了杀死成片敌人以及披甲目标的利器，虽然它的重量会让携带者-1搏斗。"/>	
+	<Tag name="Equipment_Description_GuidedRockets" text="范围：命中时对场上所有其它敌人进行无消耗的额外攻击。\n穿甲：该武器无视10点护甲。\n\n据说该一次性电传飞控火箭能精准制导和贯穿任何现有已知的装甲。"/>	
+	<Tag name="Equipment_Description_AntiRadCapsules" text="能在任意时刻使用，治疗6点辐射伤害。"/>	
+	<Tag name="Equipment_Description_ApRounds" text="包含了重核全金属外壳子弹的弹夹，能让任意枪械+1穿甲值（除了霰弹枪）。"/>	
+	<Tag name="Equipment_Description_CameraDrone" text="这架由电池供电的遥控摄影无人机能帮你侦察前方道路的情况，以便制定出更安全的路线。从当前卡组移除D6张卡牌。\n\n只能在丛林和城市卡组中使用。"/>
+	<Tag name="Equipment_Description_CATS" text="绝大部分非重型枪械都能搭载这种来自火星科技的电脑辅助瞄准系统，它能让使用这种枪的人+2射术。"/>
+	<Tag name="Equipment_Description_CyberNeuralElectronScrambler" text="网络神经电子干扰器是种能抢夺目标组成原子的高风险武器。使用者需要付出高昂的代价来使用这种力量。使用后可以消灭任何敌人（除了暗冥），自身会立即受到D6点伤害。"/>	
+	<Tag name="Equipment_Description_ExtraClip" text="为你选择的武器额外增加一个满子弹的弹夹。"/>
+	<Tag name="Equipment_Description_FlashBomb" text="远程：只能在远处使用。\n\n致盲敌人，让你更容易从战斗中逃跑。\n\n对守护者效果不佳。"/>	
+	<Tag name="Equipment_Description_GeigerCounter" text="对辐射源进行探测以便你绕开它们。\n\n只能在探测警告发生后使用：背向移除1张辐射卡并增加3张随机卡至卡组顶部。"/>	
+	<Tag name="Equipment_Description_HeatDetector" text="对附近的热源进行探测，能阻止活体『埋伏』类敌人对你先发制人，还能让你在翻到『疯子』陷阱后略过它。"/>
+	<Tag name="Equipment_Description_HolographicImagizer" text="-NOT INCLUDED- "/>	
+	<Tag name="Equipment_Description_Jetpack" text="只能在『丛林』或『城市』卡组中的『晴朗』卡中使用。\n\n略过接下来的D6张卡。"/>	
+	<Tag name="Equipment_Description_MedKit" text="用于急救的医疗包，使用后治疗D6点伤害。"/>
+	<Tag name="Equipment_Description_MetalDetector" text="对铁丝网和地雷进行探测，能让你在翻到这些卡时扔掉这些卡。"/>	
+	<Tag name="Equipment_Description_TimeGrenade" text="实验性的传送手雷，它所使用的位移技术学习自传送裂缝现象。在战斗中使用它能把敌人传送至另外一副卡组的随机位置。对暗冥无效。"/>	
+	<Tag name="Equipment_Description_Smash" text="拥有强烈副作用的非法战斗用兴奋剂。\n\n在D6+2回合内+3搏斗，之后-2反应和搏斗，持续同样长的回合。"/>	
+	<Tag name="Equipment_Description_TeleportImplant" text="短距离传送器，能把你传送回空投点的警标处。\n\n立即把你传送至空投点，但卡组会增加6张卡牌。"/>	
+	<Tag name="Equipment_Description_TemporalDisturbanceDetector" text="对传送裂缝引起的空间异象进行探测，能让玩家避免与暗冥产生多余的对抗。\n\n在成功探测到时使用能让金字塔卡组进行重新洗牌。"/>
+	<Tag name="Equipment_Description_WireCutter" text="能让使用者轻松挣脱网罩和铁丝网陷阱，翻到这些卡立即舍弃掉它们。"/>	
+	<Tag name="Equipment_Description_BodyArmour" text="该Mk4活性装甲能通过将冲击发散至全身的方式平均地吸收伤害。"/>	
+	<Tag name="Equipment_Description_RadFibreSuit" text="带有铅和炭条的全身防护服，能吸收少量辐射。\n\n所有辐射伤害减少1点。"/>	
+	<Tag name="Equipment_Description_Helmet" text="丧尸就是喜欢迎『头』而上！\n\n虽然头盔不能帮你免除伤害，但它能阻止丧尸通过近战攻击将毒液传染给你。"/>	
+	<Tag name="Equipment_Description_SteelGloves" text="经过加固了的手套，能提供额外的近战伤害。"/>	
+	<Tag name="Equipment_Description_IRGoggles" text="具有增强使用者夜视能力的标准型护目镜。\n\n不管是太阳下山还是进入了金字塔卡组，都能免除-1搏斗的惩罚。"/>	
+	<Tag name="Equipment_Description_ImplosionVest" text="最终手段：一件含有微型电路的马甲，它能干预暗冥的传送裂缝，还能以强力的爆炸消灭暗冥。\n\n虽然激活该道具会杀死使用者，但如果与裂缝的距离足够近的话，世界也会因此得到拯救。"/>	
+	<Tag name="Equipment_Description_LaserLance" text="穿甲：该武器伤害无视3点护甲。\n\n经过特制的激光武器，专门用于破坏暗冥传送裂缝的稳定。这是能杀死暗冥的唯一武器（不算聚爆马甲）。"/>	
+	<Tag name="Equipment_Description_Fist" text="有时候你就是想亲手解决事情。 "/>	
+	<Tag name="Equipment_Description_OcarinaOfTime" text="> A v > A v"/>	
+	<Tag name="Equipment_Description_Failsaw" text="L2P N00b"/>	
+	<Tag name="Equipment_Description_SkipCard" text="Skips current card"/>	
+	<Tag name="Equipment_Description_DeathPills" text="Tasty tasty Cyanide"/>	
+	<Tag name="Equipment_Description_RadPills" text="Like, totally rad, dude."/>	
+	<Tag name="Equipment_Description_VenomPills" text="Nom nom nom Zombies"/>	
+	<Tag name="Equipment_Description_SkipDeck" text="Skip 10 cards"/>	
+	<Tag name="Equipment_Description_AllBuffs" text="Displays all buff icons on HUD"/>
+	<Tag name="Equipment_Description_Katana" text="来自黑暗时代的遗物，那时候电锯还没被认为是可以用来战斗的武器。\n科技含量不高但非常可靠，虽然要用好武士刀需要高超的技巧，不过在合适的人手上能发挥出致命的效果。"/>
+	<Tag name="Equipment_Description_ExecutionersAxe" text="处刑者之斧：帮别人出头的最快方法。虽然很重，但在近身战中非常强力！"/>
+	
+		
+	<!-- Item Tooltips -->	
+	<Tag name="TT_Equipment_Chainsaw" text="+2搏斗"/>	
+	<Tag name="TT_Equipment_StunNux" text="+1搏斗，面对活体敌人时+4搏斗"/>	
+	<Tag name="TT_Equipment_ThrowingNet" text="困住近战范围内的敌人以便脱身。对暗冥和守护者无效。"/>	
+	<Tag name="TT_Equipment_PoisonNeedle" text="N/A"/>	
+	<Tag name="TT_Equipment_Knife" text="+1搏斗\n用于投掷时-2射术。"/>	
+	<Tag name="TT_Equipment_ChainsawStonecutter" text="+2搏斗\n穿甲2"/>	
+	<Tag name="TT_Equipment_ChainsawEngine" text="+2搏斗\n免疫电磁脉冲。"/>	
+	<Tag name="TT_Equipment_Chainsaw2handed" text="+2搏斗\n范围"/>	
+	<Tag name="TT_Equipment_ChainsawBalanced" text="+3搏斗"/>	
+	<Tag name="TT_Equipment_ChainsawImplanted" text="+2搏斗\n不能被偷窃，也不会失灵。"/>	
+	<Tag name="TT_Equipment_Jaguar" text="掷出3+点数可以消灭任意敌人（除了暗冥）。"/>
+	<Tag name="TT_Equipment_Blaster" text="子弹上限：24"/>	
+	<Tag name="TT_Equipment_AutomaticRifle" text="+1射术\n穿甲1\n子弹上限：12"/>
+	<Tag name="TT_Equipment_Smg" text="范围（能攻击复数敌人）\n子弹上限：16"/>	
+	<Tag name="TT_Equipment_Shotgun" text="+2射术\n子弹上限：12"/>	
+	<Tag name="TT_Equipment_SniperRifle" text="+3射术\n穿甲3\n子弹上限：6"/>	
+	<Tag name="TT_Equipment_Dynamite" text="穿甲5\n在翻转卡牌前使用能跳过D6张卡。\n在部分陷阱卡上使用能避免原路折返。"/>	
+	<Tag name="TT_Equipment_Man2ManRockets" text="+2射术\n穿甲3\n范围（能攻击复数敌人）"/>	
+	<Tag name="TT_Equipment_Flamethrower" text="+3射术\n范围（能攻击复数敌人）"/>	
+	<Tag name="TT_Equipment_Reaper" text="+2射术\n穿甲2\n范围（能攻击复数敌人）\n持有时-1搏斗。"/>	
+	<Tag name="TT_Equipment_GuidedRockets" text="+10射术\n穿甲10"/>	
+	<Tag name="TT_Equipment_AntiRadCapsules" text="治疗D6点辐射伤害。"/>	
+	<Tag name="TT_Equipment_ApRounds" text="N/A"/>	
+	<Tag name="TT_Equipment_CameraDrone" text="N/A"/>	
+	<Tag name="TT_Equipment_CATS" text="N/A"/>	
+	<Tag name="TT_Equipment_CyberNeuralElectronScrambler" text="能消灭任意敌人（除了暗冥）。"/>	
+	<Tag name="TT_Equipment_ExtraClip" text="N/A"/>	
+	<Tag name="TT_Equipment_FlashBomb" text="能从守护者以外的任何敌人手上逃走。对暗冥也有效。"/>	
+	<Tag name="TT_Equipment_GeigerCounter" text="在翻转辐射卡前使用能移除那张卡并原路折返。（卡组增加4张新卡）"/>	
+	<Tag name="TT_Equipment_HeatDetector" text="在看到警报后使用能让埋伏无效，或者用来避开疯子陷阱。"/>	
+	<Tag name="TT_Equipment_HolographicImagizer" text="N/A"/>	
+	<Tag name="TT_Equipment_Jetpack" text="在『晴朗』卡中使用能跳过D6张卡。"/>	
+	<Tag name="TT_Equipment_MedKit" text="治疗D6点生命。"/>	
+	<Tag name="TT_Equipment_MetalDetector" text="在看到警报后使用能避开地雷和带刺铁丝网。"/>
+	<Tag name="TT_Equipment_TimeGrenade" text="N/A"/>	
+	<Tag name="TT_Equipment_Smash" text="在D6+2回合内+3搏斗，之后-2搏斗和反应，持续一样长的回合。"/>	
+	<Tag name="TT_Equipment_TeleportImplant" text="把自己传送至空投点，卡组增加6张卡牌。"/>
+	<Tag name="TT_Equipment_TemporalDisturbanceDetector" text="在看到警报后使用能暂时避开暗冥。"/>	
+	<Tag name="TT_Equipment_WireCutter" text="N/A"/>	
+	<Tag name="TT_Equipment_BodyArmour" text="N/A"/>	
+	<Tag name="TT_Equipment_RadFibreSuit" text="N/A"/>	
+	<Tag name="TT_Equipment_Helmet" text="N/A"/>	
+	<Tag name="TT_Equipment_SteelGloves" text="N/A"/>	
+	<Tag name="TT_Equipment_IRGoggles" text="N/A"/>	
+	<Tag name="TT_Equipment_ImplosionVest" text="能杀死自己，以及近战范围内的所有敌人。\n在没有激光长枪的情况下，这是唯一能杀死暗冥的方法。"/>
+	<Tag name="TT_Equipment_LaserLance" text="穿甲3\n能杀死暗冥的唯一武器。"/>	
+	<Tag name="TT_Equipment_Fist" text="用起来相当有手感"/>	
+	<Tag name="TT_Equipment_OcarinaOfTime" text="N/A"/>	
+	<Tag name="TT_Equipment_Failsaw" text="N/A"/>	
+	<Tag name="TT_Equipment_SkipCard" text="N/A"/>	
+	<Tag name="TT_Equipment_DeathPills" text="N/A"/>	
+	<Tag name="TT_Equipment_RadPills" text="N/A"/>	
+	<Tag name="TT_Equipment_VenomPills" text="N/A"/>	
+	<Tag name="TT_Equipment_SkipDeck" text="N/A"/>	
+	<Tag name="TT_Equipment_AllBuffs" text="N/A"/>	
+	<Tag name="TT_Equipment_Katana" text="+1搏斗\n穿甲1"/>
+	<Tag name="TT_Equipment_ExecutionersAxe" text="-2搏斗\n穿甲3\n范围"/>
+</LanguageData>

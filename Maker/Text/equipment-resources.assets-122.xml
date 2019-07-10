@@ -1,0 +1,788 @@
+									
+	<EquipmentData Version="1.0" Title = "Chainsaw Warrior" Platform="steam">								
+									
+		<Equipment Name="Equipment_Chainsaw" Image="Item_Chainsaw" Category="HtH" Electric="true" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="1" Hidden="false" Protected="false">							
+			<StatModifiers><Modifier Name="HtH" Value="2"/></StatModifiers>						
+			<Description><Text Lang="en">Equipment_Description_Chainsaw</Text></Description>						
+									
+			<EventUses>			
+				<Event State="active" Type="weapon" Useage="melee"/>										
+			</EventUses>						
+			
+			<EventHit>
+				<EventAction LogicalOp="ALWAYS">
+					<Effects>
+						<Effect><Animation Name="FX_Chainsaw"/></Effect>
+					</Effects>
+				</EventAction>
+			</EventHit>
+									
+		</Equipment>
+
+		<Equipment Name="Equipment_ExecutionersAxe" Image="Item_ExecutionersAxe" Category="HtH" Electric="false" Locked="true" Reload="false" APVal="3" Spread="true" UsesMax="-1" UsesInit="-1" Cost="1" Hidden="false" Protected="false">							
+			<StatModifiers><Modifier Name="HtH" Value="-2"/></StatModifiers>						
+			<Description><Text Lang="en">Equipment_Description_ExecutionersAxe</Text></Description>						
+									
+			<EventUses>				
+				<Event State="active" Type="weapon" Useage="melee"/>									
+			</EventUses>						
+			
+			<EventHit>
+				<EventAction LogicalOp="ALWAYS">
+					<Effects>
+						<Effect><Animation Name="FX_Slash"/></Effect>
+					</Effects>
+				</EventAction>
+			</EventHit>
+									
+		</Equipment>							
+		
+		<Equipment Name="Equipment_StunNux" Image="Item_StunNux" Category="HtH" Electric="true" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="1" Hidden="false" Protected="false">							
+			<StatModifiers><Modifier Name="HtH" Value="1"/></StatModifiers>						
+			<Description><Text Lang="en">Equipment_Description_StunNux</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="weapon" Useage="melee"  SubType="living" ><EventAction><Effects><Effect Target="Player" Field="hthMod" Op="PLUS" Val="3"/><Effect><Message ><Text Lang="en">活体敌人：+4搏斗</Text></Message></Effect></Effects></EventAction></Event><Event State="active" Type="weapon" Useage="melee"/>									
+			</EventUses>
+									
+			<EventHit><EventAction><Effects><Effect><Animation Name="FX_Stun"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>
+		
+		<Equipment Name="Equipment_Katana" Image="Item_Katana" Category="HtH" Electric="false" Locked="false" Reload="false" APVal="1" Spread="false" UsesMax="-1" UsesInit="-1" Cost="1" Hidden="false" Protected="true">							
+			<StatModifiers><Modifier Name="HtH" Value="1"/></StatModifiers>						
+			<Description><Text Lang="en">Equipment_Description_Katana</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="weapon" Useage="melee"/>					
+									
+			</EventUses>						
+			<EventHit><EventAction LogicalOp="ALWAYS"><Effects><Effect><Animation Name="FX_Slash"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>						
+									
+		<Equipment Name="Equipment_ThrowingNet" Image="Item_ThrowingNet" Category="HtH" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="2" UsesInit="2" Cost="1" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_ThrowingNet</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="item" Useage="melee"/>					
+									
+			</EventUses>						
+			<EventHit><EventAction><Effects><Effect Target="Game" Field="SkipCards" Op="FUNCTION" Val="1" /><Effect><Animation Name="FX_Stun"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>							
+									
+	<!--	<Equipment Name="Equipment_PoisonNeedle" Image="Item_PoisonNeedle" Category="HtH" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="1" UsesInit="1" Cost="1" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_PoisonNeedle</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="item" Useage="melee"/>					
+									
+			</EventUses>						
+			<EventHit><EventAction LogicalOp="ALWAYS"><Effects><Effect><CachedVal Field="StimRoll" Op="SET" ><DiceVal  Roll="1d6" Type="player" Show="true" /></CachedVal></Effect><Effect><Buffs><Buff durationType="Rounds" duration="3" ><EventImmediate><Effects><Effect><Message><Text Lang="en">[Enemy] is poisoned!</Text></Message></Effect></Effects></EventImmediate><EventBuffEnd><Effects><Effect><Message><Text Lang="en">The poison finally takes hold, and the [Enemy] dies</Text></Message></Effect><Effect Target="Game" Field="DestroyEnemy" Op="FUNCTION"/></Effects></EventBuffEnd></Buff></Buffs></Effect></Effects></EventAction></EventHit>						
+		</Equipment>	-->						
+									
+		<Equipment Name="Equipment_Knife" Image="Item_Knife" Category="HtH" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="1" Hidden="false" Protected="false">							
+			<StatModifiers><Modifier Name="HtH" Value="1"/><Modifier Name="Marksmanship" Value="-2"/></StatModifiers>						
+			<Description><Text Lang="en">Equipment_Description_Knife</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="weapon" Useage="melee"/>					
+				<Event State="active" Type="weapon" Useage="ranged"/><EventHit><EventAction><Effects><Effect><Animation Name="FX_Slash"/></Effect></Effects></EventAction></EventHit>					
+			</EventUses>						
+			<EventHit><EventAction LogicalOp="ALWAYS"><Effects><Effect><Animation Name="FX_Slash"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>							
+									
+		<Equipment Name="Equipment_ChainsawStonecutter" Image="Item_ChainsawStonecutter" Category="HtH" Electric="true" Locked="true" Reload="false" APVal="2" Spread="false" UsesMax="-1" UsesInit="-1" Cost="1" Hidden="false" Protected="false">							
+			<StatModifiers><Modifier Name="HtH" Value="2"/></StatModifiers>						
+			<Description><Text Lang="en">Equipment_Description_ChainsawStonecutter</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="weapon" Useage="melee"/>					
+									
+			</EventUses>						
+			<EventHit><EventAction LogicalOp="ALWAYS"><Effects><Effect><Animation Name="FX_Chainsaw"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>							
+									
+		<Equipment Name="Equipment_ChainsawEngine" Image="Item_ChainsawEngine" Category="HtH" Electric="false" Locked="true" Reload="false" APVal="0" Spread="false" UsesMax="30" UsesInit="30" Cost="1" Hidden="false" Protected="false">							
+			<StatModifiers><Modifier Name="HtH" Value="2"/></StatModifiers>						
+			<Description><Text Lang="en">Equipment_Description_ChainsawEngine</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="weapon" Useage="melee"/>					
+									
+			</EventUses>						
+			<EventHit><EventAction LogicalOp="ALWAYS"><Effects><Effect><Animation Name="FX_Chainsaw"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>							
+									
+		<Equipment Name="Equipment_Chainsaw2handed" Image="Item_Chainsaw2handed" Category="HtH" Electric="true" Locked="true" Reload="false" APVal="0" Spread="true" UsesMax="-1" UsesInit="-1" Cost="1" Hidden="false" Protected="false">							
+			<StatModifiers><Modifier Name="HtH" Value="1"/></StatModifiers>						
+			<Description><Text Lang="en">Equipment_Description_Chainsaw2handed</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="weapon" Useage="melee"/>					
+									
+			</EventUses>						
+			<EventHit><EventAction LogicalOp="ALWAYS"><Effects><Effect><Animation Name="FX_Chainsaw"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>							
+									
+		<Equipment Name="Equipment_ChainsawBalanced" Image="Item_ChainsawBalanced" Category="HtH" Electric="true" Locked="true" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="1" Hidden="false" Protected="false">							
+			<StatModifiers><Modifier Name="HtH" Value="3"/></StatModifiers>						
+			<Description><Text Lang="en">Equipment_Description_ChainsawBalanced</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="weapon" Useage="melee"/>					
+									
+			</EventUses>						
+			<EventHit><EventAction LogicalOp="ALWAYS"><Effects><Effect><Animation Name="FX_Chainsaw"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>							
+									
+		<Equipment Name="Equipment_ChainsawImplanted" Image="Item_ChainsawImplanted" Category="HtH" Electric="true" Locked="true" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="1" Hidden="false" Protected="true">							
+			<StatModifiers><Modifier Name="HtH" Value="2"/></StatModifiers>						
+			<Description><Text Lang="en">Equipment_Description_ChainsawImplanted</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="weapon" Useage="melee"/>					
+									
+			</EventUses>						
+			<EventHit><EventAction LogicalOp="ALWAYS"><Effects><Effect><Animation Name="FX_Chainsaw"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>							
+									
+		<Equipment Name="Equipment_Jaguar" Image="Item_Jaguar" Category="HtH" Electric="false" Locked="true" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="1" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_Jaguar</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="item" Useage="melee"/>					
+									
+			</EventUses>						
+			<EventHit><EventAction LogicalOp="ALWAYS"><Effects><Effect><Message><Text Lang="en">是敌是友，全凭骰子！</Text></Message></Effect></Effects></EventAction><EventAction LogicalOp="IF"><Conditions><Cond CombineOp="LESS_THAN_OR_EQUAL"><Cond><DiceVal Roll="1d6" Type="player" Show="true"/></Cond><Cond><LiteralVal Val="2"/></Cond></Cond></Conditions><Effects><Effect><Message><Text Lang="en">交友失败……</Text></Message></Effect><Effect Target="Player" Field="woundsDelta" Op="MINUS"><DiceVal Roll="2d6" Type="enemy" Show="true"/></Effect><Effect Target="Game" Field="DestroyEquipment[Equipment_Jaguar]" Op="FUNCTION"/><Effect><Message><Text Lang="en">毕竟美洲虎不是什么善类。它对你发起了进攻，然后逃走了，你受到了[Value]点伤害！</Text></Message></Effect></Effects></EventAction><EventAction LogicalOp="ELSE"><Effects><Effect><Animation Name="FX_Slash"/></Effect><Effect><Message><Text Lang="en">你的美洲虎朋友帮你消灭了敌人！</Text></Message></Effect><Effect Target="Game" Field="DestroyEnemy" Op="FUNCTION"/></Effects></EventAction></EventHit>						
+		</Equipment>							
+									
+		<Equipment Name="Equipment_Blaster" Image="Item_Blaster" Category="Gun" Electric="false" Locked="false" Reload="true" APVal="0" Spread="false" UsesMax="24" UsesInit="24" Cost="2" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_Blaster</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="weapon" Useage="ranged"/>					
+									
+			</EventUses>						
+			<EventHit><EventAction><Effects><Effect><Animation Name="FX_Blaster"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>							
+									
+		<Equipment Name="Equipment_AutomaticRifle" Image="Item_AutomaticRifle" Category="Gun" Electric="false" Locked="false" Reload="true" APVal="1" Spread="false" UsesMax="12" UsesInit="12" Cost="2" Hidden="false" Protected="false">							
+			<StatModifiers><Modifier Name="Marksmanship" Value="1"/></StatModifiers>						
+			<Description><Text Lang="en">Equipment_Description_AutomaticRifle</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="weapon" Useage="ranged"/>					
+									
+			</EventUses>						
+			<EventHit><EventAction><Effects><Effect><Animation Name="FX_Machinegun"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>							
+									
+		<Equipment Name="Equipment_Smg" Image="Item_Smg" Category="Gun" Electric="false" Locked="false" Reload="true" APVal="0" Spread="true" UsesMax="12" UsesInit="12" Cost="2" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_Smg</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="weapon" Useage="ranged"/>					
+									
+			</EventUses>						
+			<EventHit><EventAction><Effects><Effect><Animation Name="FX_Machinegun"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>							
+									
+		<Equipment Name="Equipment_Shotgun" Image="Item_Shotgun" Category="Gun" Electric="false" Locked="true" Reload="true" APVal="0" Spread="false" UsesMax="12" UsesInit="12" Cost="2" Hidden="false" Protected="false">							
+			<StatModifiers><Modifier Name="Marksmanship" Value="2"/></StatModifiers>						
+			<Description><Text Lang="en">Equipment_Description_Shotgun</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="weapon" Useage="ranged"/>					
+									
+			</EventUses>						
+			<EventHit><EventAction><Effects><Effect><Animation Name="FX_Shotgun"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>							
+									
+		<Equipment Name="Equipment_SniperRifle" Image="Item_SniperRifle" Category="Gun" Electric="false" Locked="true" Reload="true" APVal="3" Spread="false" UsesMax="6" UsesInit="6" Cost="2" Hidden="false" Protected="false">							
+			<StatModifiers><Modifier Name="Marksmanship" Value="3"/></StatModifiers>						
+			<Description><Text Lang="en">Equipment_Description_SniperRifle</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="weapon" Useage="ranged"/>					
+									
+			</EventUses>						
+			<EventHit><EventAction><Effects><Effect><Animation Name="FX_Sniper"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>							
+									
+		<Equipment Name="Equipment_Dynamite" Image="Item_Dynamite" Category="Heavy" Electric="false" Locked="false" Reload="false" APVal="5" Spread="true" UsesMax="3" UsesInit="3" Cost="3" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_Dynamite</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="weapon" Useage="ranged"/>					
+				<Event State="active" Type="item" Useage="trap" SubType="deadend">
+				<EventAction><Effects><Effect><Message><Text Lang="en">你用硝化炸药炸通了路！</Text></Message></Effect><Effect Target="Game" Field="SkipCards" Op="FUNCTION" Val="1"/></Effects></EventAction>
+				</Event>
+					<Event State="active" Type="item" Useage="preFlip">
+						<EventAction>
+							<Effects>
+								<Effect>
+									<Message>
+										<Text Lang="en">你炸掉了1d6张卡。</Text>
+									</Message>
+								</Effect>
+								<Effect><CachedVal Field="DynamiteRoll" Op="SET" ><DiceVal  Roll="1d6" Type="player" Show="true" /></CachedVal></Effect>
+								<Effect Target="Game" Field="ReduceGameTime" Op="FUNCTION" Val="1"/>
+								<Effect Target="Game" Field="SkipCards" Op="FUNCTION">
+									<CachedVal Field="DynamiteRoll" Op="GET" />
+								</Effect>
+								<Effect></Effect>
+								<Effect>
+									<Message><Text Lang="en">结果：[Value]</Text></Message>
+								</Effect>
+							</Effects>
+						</EventAction>
+					</Event>					
+			</EventUses>						
+			<EventHit><EventAction><Effects><Effect><Animation Name="FX_Explosion"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>							
+									
+		<Equipment Name="Equipment_Man2ManRockets" Image="Item_Man2ManRockets" Category="Heavy" Electric="false" Locked="false" Reload="true" APVal="3" Spread="true" UsesMax="4" UsesInit="4" Cost="3" Hidden="false" Protected="false">							
+			<StatModifiers><Modifier Name="Marksmanship" Value="2"/></StatModifiers>						
+			<Description><Text Lang="en">Equipment_Description_Man2ManRockets</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="weapon" Useage="ranged"/>					
+									
+			</EventUses>						
+			<EventHit><EventAction><Effects><Effect><Animation Name="FX_Explosion"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>							
+									
+		<Equipment Name="Equipment_Flamethrower" Image="Item_Flamethrower" Category="Heavy" Electric="false" Locked="false" Reload="true" APVal="0" Spread="true" UsesMax="8" UsesInit="8" Cost="3" Hidden="false" Protected="false">							
+			<StatModifiers><Modifier Name="Marksmanship" Value="3"/></StatModifiers>						
+			<Description><Text Lang="en">Equipment_Description_Flamethrower</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="weapon" Useage="ranged"/>									
+			</EventUses>
+									
+			<EventHit><EventAction><Effects><Effect><Animation Name="FX_FlameThrower"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>							
+									
+		<Equipment Name="Equipment_Reaper" Image="Item_Reaper" Category="Heavy" Electric="true" Locked="true" Reload="true" APVal="2" Spread="true" UsesMax="10" UsesInit="10" Cost="3" Hidden="false" Protected="false">							
+			
+			<StatModifiers>
+				<Modifier Name="HtH" Value="-1"/>
+				<Modifier Name="Marksmanship" Value="2"/>
+			</StatModifiers>
+									
+			<Description><Text Lang="en">Equipment_Description_Reaper</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="weapon" Useage="ranged"/>									
+			</EventUses>
+			
+			<EventReceived>
+				<EventAction>
+					<Effects>
+						<Effect Target="Player" Field="hthValue" Op="PLUS" Val="-1"/>
+					</Effects>
+				</EventAction>
+			</EventReceived>
+			
+			<EventRemoved>
+				<EventAction>
+					<Effects>
+						<Effect Target="Player" Field="hthValue" Op="MINUS" Val="1"/>
+					</Effects>
+				</EventAction>
+			</EventRemoved>
+															
+			<EventHit><EventAction><Effects><Effect><Animation Name="FX_Reaper"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>							
+									
+		<Equipment Name="Equipment_GuidedRockets" Image="Item_GuidedRockets" Category="Heavy" Electric="true" Locked="true" Reload="true" APVal="10" Spread="false" UsesMax="1" UsesInit="1" Cost="3" Hidden="false" Protected="false">							
+			<StatModifiers><Modifier Name="Marksmanship" Value="10"/></StatModifiers>						
+			<Description><Text Lang="en">Equipment_Description_GuidedRockets</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="weapon" Useage="ranged"/>					
+									
+			</EventUses>						
+			<EventHit><EventAction><Effects><Effect><Animation Name="FX_Explosion"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>							
+									
+		<Equipment Name="Equipment_AntiRadCapsules" Image="Item_AntiRadCapsules" Category="Device" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="1" UsesInit="1" Cost="1" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_AntiRadCapsules</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="item" Useage="preFlip"><EventAction><Effects><Effect Target="Player" Field="radiationDelta" Op="PLUS"><DiceVal Roll="1d6" Type="Player" Show="true"/></Effect><Effect><Message><Text Lang="en">消除了[Value]点[0000ff]辐射[-]伤害。</Text></Message></Effect></Effects></EventAction></Event>					
+									
+			</EventUses>						
+									
+		</Equipment>							
+									
+		<Equipment Name="Equipment_ApRounds" Image="Item_ApRounds" Category="Device" Electric="false" Locked="true" Reload="false" APVal="0" Spread="false" UsesMax="1" UsesInit="1" Cost="1" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_ApRounds</Text></Description>						
+			<Upgrade><Equipment Name="Equipment_Blaster"/><Equipment Name="Equipment_AutomaticRifle"/><Equipment Name="Equipment_Smg"/><Equipment Name="Equipment_SniperRifle"/><Equipment Name="Equipment_Reaper"/></Upgrade><StatModifiers><Modifier Name="Arp" Value="1"/></StatModifiers>						
+					
+		</Equipment>							
+									
+	<!--	<Equipment Name="Equipment_CameraDrone" Image="Item_CameraDrone" Category="Device" Electric="true" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="2" UsesInit="2" Cost="1" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_CameraDrone</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="item" Useage="preFlip"><EventAction><Effects><Effect Target="Game" Field="SkipCards" Op="FUNCTION" useage="all"><DiceVal Roll="1d6" Type="Player" Show="true"/></Effect><Effect><Message><Text Lang="en">移除了[Value]张卡牌。</Text></Message></Effect></Effects></EventAction></Event>					
+									
+			</EventUses>						
+									
+		</Equipment>	-->						
+									
+		<Equipment Name="Equipment_CATS" Image="Item_CATS" Category="Device" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="1" UsesInit="1" Cost="1" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_CATS</Text></Description>						
+			<Upgrade><Equipment Name="Equipment_Blaster"/><Equipment Name="Equipment_AutomaticRifle"/><Equipment Name="Equipment_Smg"/><Equipment Name="Equipment_Shotgun"/><Equipment Name="Equipment_SniperRifle"/><Equipment Name="Equipment_Man2ManRockets"/><Equipment Name="Equipment_Reaper"/><Equipment Name="Equipment_GuidedRockets"/><Equipment Name="Equipment_LaserLance"/></Upgrade><StatModifiers><Modifier Name="Marksmanship" Value="2"/></StatModifiers>						
+			<EventUses>						
+									
+									
+			</EventUses>						
+									
+		</Equipment>							
+									
+		<Equipment Name="Equipment_CyberNeuralElectronScrambler" Image="Item_CyberNeuralElectronScrambler" Category="HtH" Electric="true" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="1" UsesInit="1" Cost="1" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_CyberNeuralElectronScrambler</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="item" Useage="melee"/>					
+									
+			</EventUses>						
+			<EventHit><EventAction LogicalOp="ALWAYS"><Effects><Effect><Animation Name="FX_Stun"/></Effect><Effect Target="Game" Field="DestroyEnemy" Op="FUNCTION"/><Effect Target="Player" Field="woundsDelta" Op="MINUS"><DiceVal Roll="1d6" Type="enemy" Show="true"/></Effect><Effect><Message><Text Lang="en">敌人被消灭了，但你受到了[Value]点伤害。</Text></Message></Effect></Effects></EventAction></EventHit>						
+		</Equipment>							
+									
+		<Equipment Name="Equipment_ExtraClip" Image="Item_ExtraClip" Category="Device" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="1" UsesInit="1" Cost="1" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_ExtraClip</Text></Description>						
+			<Upgrade><Equipment Name="Equipment_Blaster"/><Equipment Name="Equipment_AutomaticRifle"/><Equipment Name="Equipment_Smg"/><Equipment Name="Equipment_Shotgun"/><Equipment Name="Equipment_SniperRifle"/><Equipment Name="Equipment_Man2ManRockets"/><Equipment Name="Equipment_Flamethrower"/><Equipment Name="Equipment_Reaper"/><Equipment Name="Equipment_Man2ManRockets"/><Equipment Name="Equipment_LaserLance"/></Upgrade>						
+			<EventUses>						
+									
+									
+			</EventUses>						
+									
+		</Equipment>							
+									
+		<Equipment Name="Equipment_FlashBomb" Image="Item_FlashBomb" Category="Device" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="2" UsesInit="2" Cost="1" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_FlashBomb</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="item" Useage="ranged"/>					
+									
+			</EventUses>						
+			<EventHit><EventAction LogicalOp="ALWAYS"><Effects><Effect Target="Game" Field="Escape" Op="FUNCTION" Val="true"/><Effect><Message><Text Lang="en">在[Enemy]被致盲时你成功逃走了。</Text></Message></Effect></Effects></EventAction></EventHit>						
+		</Equipment>							
+									
+		<Equipment Name="Equipment_GeigerCounter" Image="Item_GeigerCounter" Category="Device" Electric="true" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="1" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_GeigerCounter</Text></Description>						
+									
+			<EventUses>						
+				<Event State="passive" Useage="preFlip" Type="item" SubType="rad">
+					<EventAction>
+						<Effects>
+							<Effect><Message><Text Lang="en">探测到辐射！</Text></Message></Effect>
+							<Effect><Animation Name="FX_Warning_Radiation"/></Effect>
+						</Effects>
+					</EventAction>
+				</Event>
+					<Event State="active" Type="item" Useage="preFlip" SubType="rad">
+						<EventAction LogicalOp="IF">
+							<Conditions><Cond CombineOp="GREATER_THAN_OR_EQUAL"><Cond><RandomVal Min="1" Max="2"/></Cond><Cond><LiteralVal Val="2"/></Cond></Cond></Conditions>
+							<Effects>
+								<Effect Target="Game" Field="SkipCards" Op="FUNCTION" Val="1" />
+								<Effect><SpawnCards Cards="3"><Categories><Category Name="level_1" Cards="2"/><Category Name="level_2" Cards="1"/></Categories></SpawnCards></Effect>
+								<Effect><Message><Text Lang="en">成功避开了辐射源：卡组增加3张卡。</Text></Message></Effect>
+							</Effects>
+						</EventAction>
+						<EventAction LogicalOp="ELSE">
+							<Effects>
+								<Effect Target="Game" Field="SkipCards" Op="FUNCTION" Val="1" />
+								<Effect><SpawnCards Cards="3"><Categories><Category Name="level_1" Cards="2"/><Category Name="trap" Cards="1"/></Categories></SpawnCards></Effect>
+								<Effect><Message><Text Lang="en">成功避开了辐射源：卡组增加3张卡。</Text></Message></Effect>
+							</Effects>
+						</EventAction>
+					</Event>									
+			</EventUses>						
+									
+		</Equipment>							
+									
+		<Equipment Name="Equipment_HeatDetector" Image="Item_HeatDetector" Category="Device" Electric="true" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="1" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_HeatDetector</Text></Description>						
+									
+			<EventUses>						
+				<Event State="passive" Useage="ambush" Type="item" SubType="living"><EventAction ><Effects><Effect><Message><Text Lang="en">成功避开了埋伏！可以使用远程武器。</Text></Message></Effect><Effect><Animation Name="FX_Warning_HeatDetector"/></Effect></Effects></EventAction></Event><Event State="passive" Useage="trap" Type="item" SubType="lunatic"><EventAction ><Effects><Effect><Message><Text Lang="en">探测到陷阱！</Text></Message></Effect><Effect><Animation Name="FX_Warning_HeatDetector"/></Effect></Effects></EventAction></Event><Event State="active" Useage="trap" Type="item" SubType="lunatic">
+				<EventAction >
+					<Effects>
+						<Effect Target="Game" Field="SkipCards" Op="FUNCTION" Val="1"/>
+						<Effect Target="Game" Field="ReduceGameTime" Op="FUNCTION" Val="1"/>
+					</Effects>
+				</EventAction>
+				</Event>					
+									
+			</EventUses>						
+									
+		</Equipment>							
+									
+	<!--	<Equipment Name="Equipment_HolographicImagizer" Image="Item_HolographicImagizer" Category="Device" Electric="true" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="1" UsesInit="1" Cost="1" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_HolographicImagizer</Text></Description>						
+									
+			<EventUses>						
+									
+									
+			</EventUses>						
+									
+		</Equipment>	-->						
+									
+		<Equipment Name="Equipment_Jetpack" Image="Item_Jetpack" Category="Device" Electric="true" Locked="true" Reload="false" APVal="0" Spread="false" UsesMax="3" UsesInit="3" Cost="1" Hidden="false" Protected="false">												
+			<Description><Text Lang="en">Equipment_Description_Jetpack</Text></Description>										
+			<EventUses>						
+				<Event State="active" Type="item" Useage="clear">
+					<EventAction>
+						<Effects>
+							<Effect Target="Game" Field="Escape" Op="FUNCTION" Val="false"/>
+							<Effect Target="Game" Field="SkipCards" Op="FUNCTION"><DiceVal Roll="1d6" Type="Player" Show="true"/></Effect>
+							<Effect Target="Game" Field="SkipCards" Op="FUNCTION" Val="1"/>
+						</Effects>
+					</EventAction>
+				</Event>									
+			</EventUses>											
+		</Equipment>							
+									
+		<Equipment Name="Equipment_MedKit" Image="Item_MedKit" Category="Device" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="1" UsesInit="1" Cost="1" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_MedKit</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="item" Useage="preFlip">
+					<EventAction>
+						<Effects>
+							<Effect Target="Player" Field="woundsDelta" Op="PLUS"><DiceVal Roll="1d6" Type="Player" Show="true"/></Effect>
+							<Effect><Message><Text Lang="en">治疗[Value]点伤害。</Text></Message></Effect>
+							<Effect><Animation Name="FX_Screen_Fix_Wounds"/></Effect>
+						</Effects>
+					</EventAction>
+				</Event>
+				
+				<Event State="active" Type="item" Useage="clear">
+					<EventAction>
+						<Effects>
+							<Effect Target="Player" Field="woundsDelta" Op="PLUS"><DiceVal Roll="1d6" Type="Player" Show="true"/></Effect>
+							<Effect><Message><Text Lang="en">治疗[Value]点伤害。</Text></Message></Effect>
+							<Effect><Animation Name="FX_Screen_Fix_Wounds"/></Effect>
+						</Effects>
+					</EventAction>
+				</Event>					
+									
+			</EventUses>						
+									
+		</Equipment>							
+									
+		<Equipment Name="Equipment_MetalDetector" Image="Item_MetalDetector" Category="Device" Electric="true" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="1" Hidden="false" Protected="false">												
+			<Description><Text Lang="en">Equipment_Description_MetalDetector</Text></Description>										
+			<EventUses>
+								
+				<Event State="passive" Useage="trap" Type="item" SubType="metal">
+					<EventAction>
+						<Effects>
+							<Effect><Message><Text Lang="en">探测到陷阱！</Text></Message></Effect>
+							<Effect><Animation Name="FX_Warning_Ambush"/></Effect>
+						</Effects>
+					</EventAction>
+				</Event>
+				
+				<Event State="active" Useage="trap" Type="item" SubType="metal">
+					<EventAction>
+						<Effects>
+							<Effect Target="Game" Field="SkipCards" Op="FUNCTION" Val="1"/>
+						</Effects>
+					</EventAction>
+				</Event>					
+									
+			</EventUses>											
+		</Equipment>							
+									
+	<!--	<Equipment Name="Equipment_TimeGrenade" Image="Item_TimeGrenade" Category="Device" Electric="true" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="1" UsesInit="1" Cost="1" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_TimeGrenade</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="item" Useage="ranged"/>					
+									
+			</EventUses>						
+									
+		</Equipment>	-->						
+									
+		<Equipment Name="Equipment_Smash" Image="Item_Smash" Category="Device" Electric="false" Locked="true" Reload="false" APVal="0" Spread="false" UsesMax="2" UsesInit="2" Cost="1" Hidden="false" Protected="false">												
+			<Description><Text Lang="en">Equipment_Description_Smash</Text></Description>										
+			<EventUses>	
+								
+				<Event State="active" Type="item" Useage="all">
+					<EventAction LogicalOp="ALWAYS">
+						<Effects>
+							<Effect><CachedVal Field="StimRoll" Op="SET" ><DiceVal  Roll="1d6+2" Type="player" Show="true" /></CachedVal></Effect>
+							<Effect><Buff>StimPlus</Buff></Effect>
+						</Effects>
+					</EventAction>
+				</Event>
+												
+			</EventUses>												
+		</Equipment>							
+									
+		<Equipment Name="Equipment_TeleportImplant" Image="Item_TeleportImplant" Category="Device" Electric="true" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="1" UsesInit="1" Cost="1" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_TeleportImplant</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="item" Useage="preFlip">
+					<EventAction>
+						<Effects> 
+							<Effect Target="Game" Field="RemoveCards[Card_AirDrop]" Op="FUNCTION" Val="1"/>
+							<Effect><SpawnCards Cards="6"><Categories><Category Name="airdrop" Cards="1" RangeFrom="1" RangeTo="1"/> <Category Name="trap" Cards="1"/> <Category Name="level_1" Cards="3"/> <Category Name="level_2" Cards="1"/> </Categories> </SpawnCards> </Effect> 
+							<Effect Target="Game" Field="Teleport" Op="FUNCTION"/> 
+							<Effect><Message><Text Lang="en">已传送。</Text></Message></Effect>
+						</Effects>
+					</EventAction> 
+				</Event>
+				<Event State="active" Type="item" Useage="clear">
+					<EventAction>
+						<Effects>
+							<Effect Target="Game" Field="RemoveCards[Card_AirDrop]" Op="FUNCTION" Val="1"/> 
+							<Effect> <SpawnCards Cards="6"> <Categories>  <Category Name="airdrop" Cards="1" RangeFrom="1" RangeTo="1"/> <Category Name="trap" Cards="1"/> <Category Name="level_1" Cards="3"/> <Category Name="level_2" Cards="1"/> </Categories> </SpawnCards> </Effect>
+							<Effect Target="Game" Field="Teleport" Op="FUNCTION"/>
+							<Effect><Message><Text Lang="en">已传送。</Text></Message></Effect> 
+						</Effects>
+					</EventAction>
+				</Event> 										
+			</EventUses>						
+									
+		</Equipment>							
+									
+		<Equipment Name="Equipment_TemporalDisturbanceDetector" Image="Item_TemporalDisturbanceDetector" Category="Device" Electric="true" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="3" UsesInit="3" Cost="1" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_TemporalDisturbanceDetector</Text></Description>						
+									
+			<EventUses>						
+				<Event State="passive" Useage="preFlip" Type="item" SubType="darkness"><EventAction ><Effects><Effect><Message><Text Lang="en">侦测到暗冥！</Text></Message></Effect><Effect><Animation Name="FX_Warning_Ambush"/></Effect></Effects></EventAction></Event><Event State="active" Type="item" Useage="preFlip"  SubType="darkness"><EventAction><Effects><Effect Target="Game" Field="Escape" Op="FUNCTION" Val="true"/></Effects></EventAction></Event>					
+									
+			</EventUses>						
+									
+		</Equipment>							
+									
+	<!--	<Equipment Name="Equipment_WireCutter" Image="Item_WireCutter" Category="Device" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="1" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_WireCutter</Text></Description>						
+									
+			<EventUses>						
+									
+									
+			</EventUses>						
+									
+		</Equipment>	-->						
+									
+		<Equipment Name="Equipment_BodyArmour" Image="Item_BodyArmour" Category="Clothing" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="3" UsesInit="3" Cost="1" Hidden="false" Protected="true">							
+									
+			<Description><Text Lang="en">Equipment_Description_BodyArmour</Text></Description>						
+									
+			<EventUses>						
+				<Event State="passive" Type="item" Useage="damageTaken"><EventAction LogicalOp="IF"><Conditions><Cond Target="Player" Field="woundsDelta" Comp="LESS_THAN" Val="0"/></Conditions><Effects><Effect><Message><Text Lang="en">检测到物理伤害，骰子护甲救援已激活。</Text></Message></Effect></Effects></EventAction><EventAction LogicalOp="IF"><Conditions><Cond Target="Player" Field="woundsDelta" Comp="LESS_THAN" Val="0"/><Cond CombineOp="GREATER_THAN_OR_EQUAL"><Cond><DiceVal Roll="1d6" Type="player" Show="true"/></Cond><Cond><LiteralVal Val="5"/></Cond></Cond></Conditions><Effects><Effect Target="Player" Field="woundsDelta" Op="SET" Val="0"/><Effect><Message><Text Lang="en">攻击打到了你的护甲，所有伤害无效。</Text></Message></Effect><Effect Target="Game" Field="UseEquipment[Equipment_BodyArmour]" Op="FUNCTION"/><Effect><Animation Name="FX_Screen_Armour"/></Effect></Effects></EventAction> <EventAction LogicalOp="ELSEIF"><Conditions><Cond Target="Player" Field="woundsDelta" Comp="LESS_THAN" Val="0"/></Conditions><Effects><Effect><Message><Text Lang="en">你的护甲没能阻挡攻击。</Text></Message></Effect></Effects></EventAction></Event> 					
+									
+			</EventUses>						
+									
+		</Equipment>							
+									
+		<Equipment Name="Equipment_RadFibreSuit" Image="Item_RadFibreJumpsuit" Category="Clothing" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="1" Hidden="false" Protected="true">							
+									
+			<Description><Text Lang="en">Equipment_Description_RadFibreSuit</Text></Description>						
+									
+			<EventUses>						
+				<Event State="passive" Type="item" Useage="damageTaken"><EventAction LogicalOp="IF"><Conditions><Cond Target="Player" Field="radiationDelta" Comp="LESS_THAN" Val="0"/></Conditions><Effects><Effect><Message><Text Lang="en">防辐衣：辐射伤害减少。</Text></Message></Effect><Effect Target="Player" Field="radiationDelta" Op="PLUS" Val="1"/></Effects></EventAction></Event>					
+									
+			</EventUses>						
+									
+		</Equipment>							
+									
+	<!--	<Equipment Name="Equipment_Helmet" Image="Item_Helmet" Category="Clothing" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="1" Hidden="false" Protected="true">							
+									
+			<Description><Text Lang="en">Equipment_Description_Helmet</Text></Description>						
+									
+			<EventUses>						
+				<Event State="passive" Type="item" Useage="damageTaken"><EventAction LogicalOp="IF"><Conditions><Cond Target="Player" Field="venomDelta" Comp="LESS_THAN" Val="0"/></Conditions><Effects><Effect><Message><Text Lang="en">Venom damage detected</Text></Message></Effect> <Effect><EventAction SubType="zombie"  LogicalOp="IF"><Conditions><Cond Target="Player" Field="woundsDelta" Comp="LESS_THAN" Val="0"/></Conditions><Effects><Effect Target="Player" Field="venomDelta" Op="SET" Val="0"/></Effects></EventAction></Effect><Effect><Message><Text Lang="en">Helmet prevented Venom damage</Text></Message></Effect></Effects></EventAction></Event>					
+									
+			</EventUses>						
+									
+		</Equipment>	-->						
+									
+		<Equipment Name="Equipment_SteelGloves" Image="Item_SteelGloves" Category="Clothing" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="1" Hidden="false" Protected="true">							
+									
+			<Description><Text Lang="en">Equipment_Description_SteelGloves</Text></Description>						
+			
+			<EventReceived>
+				<EventAction>
+					<Effects>
+						<Effect Target="Player" Field="hthValue" Op="PLUS" Val="1"/>
+					</Effects>
+				</EventAction>
+			</EventReceived>
+			
+			<EventRemoved>
+				<EventAction>
+					<Effects>
+						<Effect Target="Player" Field="hthValue" Op="MINUS" Val="1"/>
+					</Effects>
+				</EventAction>
+			</EventRemoved>
+			
+			<StatModifiers><Modifier Name="HtH" Value="1"/></StatModifiers>						
+			
+			<EventUses>						
+				
+			</EventUses>											
+		</Equipment>							
+									
+	<!--	<Equipment Name="Equipment_IRGoggles" Image="Item_IRGoggles" Category="Clothing" Electric="true" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="1" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_IRGoggles</Text></Description>						
+									
+			<EventUses>						
+									
+									
+			</EventUses>						
+									
+		</Equipment>	-->						
+									
+		<Equipment Name="Equipment_ImplosionVest" Image="Item_ImplosionVest" Category="Clothing" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="1" UsesInit="1" Cost="1" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_ImplosionVest</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="item" Useage="melee"><EventAction><Effects><Effect><Message><Text Lang="en">天啊，游戏结束了，结束了。</Text></Message></Effect><Effect><Animation Name="FX_Screen_Implosion"/></Effect><Effect Target="Game" Field="ImplosionVest" Op="FUNCTION"/></Effects></EventAction></Event> <Event State="active" Type="item" Useage="preFlip"><EventAction><Effects><Effect><Message><Text Lang="en">天啊，游戏结束了，结束了。</Text></Message></Effect><Effect><Animation Name="FX_Screen_Implosion"/></Effect><Effect Target="Game" Field="ImplosionVest" Op="FUNCTION"/></Effects></EventAction></Event>					
+									
+			</EventUses>						
+									
+		</Equipment>							
+									
+		<Equipment Name="Equipment_LaserLance" Image="Item_LaserLance" Category="Special" Electric="true" Locked="false" Reload="true" APVal="3" Spread="false" UsesMax="3" UsesInit="3" Cost="0" Hidden="false" Protected="false">							
+									
+			<Description><Text Lang="en">Equipment_Description_LaserLance</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="weapon" Useage="ranged"/>					
+									
+			</EventUses>						
+			<EventHit><EventAction><Effects><Effect><Animation Name="FX_LaserLance"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>							
+									
+		<Equipment Name="Equipment_Fist" Image="Item_Fist" Category="Special" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="0" UsesInit="0" Cost="0" Hidden="false" Protected="true">							
+									
+			<Description><Text Lang="en">Equipment_Description_Fist</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="weapon" Useage="melee"/>					
+									
+			</EventUses>						
+			<EventHit><EventAction LogicalOp="ALWAYS"><Effects><Effect><Animation Name="FX_Fist"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>						
+									
+	<!--	<Equipment Name="Equipment_OcarinaOfTime" Image="Item_GeigerCounter" Category="Device" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="0" Hidden="false" Protected="true">							
+									
+			<Description><Text Lang="en">Equipment_Description_OcarinaOfTime</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="item" Useage="preFlip"><EventAction><Effects><Effect Target="Game" Field="ReduceGameTime" Op="FUNCTION" Val="60"/></Effects></EventAction></Event>					
+									
+			</EventUses>						
+									
+		</Equipment>	-->						
+									
+	<!--	<Equipment Name="Equipment_Failsaw" Image="Item_Knife" Category="HtH" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="0" Hidden="false" Protected="true">							
+			<StatModifiers><Modifier Name="HtH" Value="-10"/></StatModifiers>						
+			<Description><Text Lang="en">Equipment_Description_Failsaw</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="weapon" Useage="melee"/>					
+									
+			</EventUses>						
+			<EventHit><EventAction LogicalOp="ALWAYS"><Effects><Effect><Animation Name="FX_Chainsaw"/></Effect></Effects></EventAction></EventHit>						
+		</Equipment>	-->						
+									
+	<!--	<Equipment Name="Equipment_SkipCard" Image="Item_MetalDetector" Category="Device" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="0" Hidden="false" Protected="true">							
+									
+			<Description><Text Lang="en">Equipment_Description_SkipCard</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="item" Useage="ranged"><EventAction><Effects><Effect Target="Game" Field="DestroyEnemy" Op="FUNCTION"/></Effects></EventAction></Event><Event State="active" Type="item" Useage="melee"><EventAction><Effects><Effect Target="Game" Field="DestroyEnemy" Op="FUNCTION"/></Effects></EventAction></Event>					
+									
+			</EventUses>						
+									
+		</Equipment>	-->						
+									
+	<!--	<Equipment Name="Equipment_DeathPills" Image="Item_Smash" Category="Device" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="0" Hidden="false" Protected="true">							
+									
+			<Description><Text Lang="en">Equipment_Description_DeathPills</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="item" Useage="preFlip"><EventAction><Effects><Effect Target="Player" Field="woundsDelta" Op="MINUS" Val="10"/><Effect><Animation Name="FX_Screen_Damage"/></Effect></Effects></EventAction></Event>					
+									
+			</EventUses>						
+									
+		</Equipment>	-->						
+									
+	<!--	<Equipment Name="Equipment_RadPills" Image="Item_Smash" Category="Device" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="0" Hidden="false" Protected="true">							
+									
+			<Description><Text Lang="en">Equipment_Description_RadPills</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="item" Useage="preFlip"><EventAction><Effects><Effect Target="Player" Field="radiationDelta" Op="MINUS" Val="10"/><Effect><Animation Name="FX_Screen_Radiation"/></Effect></Effects></EventAction></Event>					
+									
+			</EventUses>						
+									
+		</Equipment>	-->						
+									
+	<!--	<Equipment Name="Equipment_VenomPills" Image="Item_Smash" Category="Device" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="0" Hidden="false" Protected="true">							
+									
+			<Description><Text Lang="en">Equipment_Description_VenomPills</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="item" Useage="preFlip"><EventAction><Effects><Effect Target="Player" Field="venomDelta" Op="MINUS" Val="10"/><Effect><Animation Name="FX_Screen_Venom"/></Effect></Effects></EventAction></Event>					
+									
+			</EventUses>						
+									
+		</Equipment>	-->						
+									
+	<!--	<Equipment Name="Equipment_SkipDeck" Image="Item_TemporalDisturbanceDetector" Category="Device" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="0" Hidden="false" Protected="true">							
+									
+			<Description><Text Lang="en">Equipment_Description_SkipDeck</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="item" Useage="preFlip"><EventAction><Effects><Effect Target="Game" Field="SkipCards" Op="FUNCTION" Val="24"/></Effects></EventAction></Event>					
+									
+			</EventUses>						
+									
+		</Equipment>	-->						
+									
+	<!--	<Equipment Name="Equipment_AllBuffs" Image="Item_IRGoggles" Category="Device" Electric="false" Locked="false" Reload="false" APVal="0" Spread="false" UsesMax="-1" UsesInit="-1" Cost="0" Hidden="false" Protected="true">							
+									
+			<Description><Text Lang="en">Equipment_Description_AllBuffs</Text></Description>						
+									
+			<EventUses>						
+				<Event State="active" Type="item" Useage="preFlip"><EventAction><Effects><Effect><CachedVal Field="PoisonRoll" Op="SET" Val="20" /></Effect><Effect><Buff>Poison</Buff></Effect><Effect><CachedVal Field="FireRoll" Op="SET" Val="5"/></Effect><Effect><Buff>Fire</Buff></Effect><Effect><CachedVal Field="StimRoll" Op="SET" Val="5"/></Effect><Effect><Buff>StimPlus</Buff></Effect><Effect><Buff>StimMinus</Buff></Effect><Effect><CachedVal Field="EMPRoll" Op="SET" Val="5"/></Effect><Effect><Buff>EMP</Buff></Effect></Effects></EventAction></Event>					
+									
+			</EventUses>						
+									
+		</Equipment>	-->						
+									
+</EquipmentData>									
